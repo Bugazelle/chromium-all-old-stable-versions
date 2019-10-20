@@ -41,3 +41,10 @@ If you are still interesting about the **HUGE** docker image, pull it! ;)
 ```
 docker pull bugazelle/chromium-all-old-stable-versions
 ```
+
+## Chrome (Not Chromium) Old/History Versions
+
+1. Linux NPM Packages: [http://orion.lcg.ufrj.br/RPMS/myrpms/google/](http://orion.lcg.ufrj.br/RPMS/myrpms/google/)
+
+2. Linux Deb, Mac, Windows Packages: [https://www.slimjet.com/chrome/google-chrome-old-version.php](https://www.slimjet.com/chrome/google-chrome-old-version.php)
+
