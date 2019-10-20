@@ -19,8 +19,7 @@ COPY ./src/ $HOME/src
 WORKDIR $HOME
 
 # Run: Install basic components
-RUN pwd && \
-    chmod -R +x $HOME/src && \
+RUN chmod -R +x $HOME/src && \
     ls -l $HOME/src && \
     $HOME/src/base.sh
 

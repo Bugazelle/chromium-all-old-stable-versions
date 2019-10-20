@@ -1,7 +1,7 @@
 Chromium All Old Stable Versions
 ====================
 
-List all possible chromium stable versions here.
+List all possible chromium stable versions: **[chromium.json](https://raw.githubusercontent.com/Bugazelle/chromium-all-old-stable-versions/master/chromium.json), [chromium.csv](https://raw.githubusercontent.com/Bugazelle/chromium-all-old-stable-versions/master/chromium.csv)**
 
 Hope could be the help to you. :)
 
@@ -32,15 +32,9 @@ Hope could be the help to you. :)
    ![DownloadProcess](src/DownloadProcess.png)
 
 ## Build Process
-Consider downloading behavior takes time, use DockerHub to download the chromium.
+Consider behavior takes time, use DockerHub to get chromium url.
 
 And then push the chromium zips back to repo.
-
-If you are still interesting about the **HUGE** docker image, pull it! ;)
-
-```
-docker pull bugazelle/chromium-all-old-stable-versions
-```
 
 ## Chrome (Not Chromium) Old/History Versions
 
