@@ -1,6 +1,8 @@
 Chromium All Old Stable Versions
 ====================
 
+> Updated at: 2019.10.20
+
 List all possible chromium stable versions: **[chromium.json](https://raw.githubusercontent.com/Bugazelle/chromium-all-old-stable-versions/master/chromium.json), [chromium.csv](https://raw.githubusercontent.com/Bugazelle/chromium-all-old-stable-versions/master/chromium.csv)**
 
 Hope could be the help to you. :)

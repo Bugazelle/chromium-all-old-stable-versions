@@ -319,20 +319,20 @@ class Chromium(object):
         """
 
         # Only for test purpose
-        self.os_type = ['linux']
-        self.chromium_downloads = {
-            'linux': [
-                {
-                    'version': '44.0.2403.157',
-                    'position_url': 'https://omahaproxy.appspot.com/deps.json?version=44.0.2403.157',
-                    'position': 330231,
-                    'download_position': 330234,
-                    'download_url': 'https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/'
-                                    'Linux_x64%2F330234%2Fchrome-linux.zip?alt=media',
-                    'download_name': 'chrome-linux.zip'
-                }
-            ]
-        }
+        # self.os_type = ['linux']
+        # self.chromium_downloads = {
+        #     'linux': [
+        #         {
+        #             'version': '44.0.2403.157',
+        #             'position_url': 'https://omahaproxy.appspot.com/deps.json?version=44.0.2403.157',
+        #             'position': 330231,
+        #             'download_position': 330234,
+        #             'download_url': 'https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/'
+        #                             'Linux_x64%2F330234%2Fchrome-linux.zip?alt=media',
+        #             'download_name': 'chrome-linux.zip'
+        #         }
+        #     ]
+        # }
 
         print('Info: Start to download chromium...')
         pool = ThreadPoolExecutor(max_workers=workers)
