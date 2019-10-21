@@ -22,7 +22,7 @@ class Chromium(object):
     def __init__(self, channel='stable'):
         self.channel = channel
         self.strip_chars = ' \r\n\t/"\',\\'
-        self.os_type = ['mac', 'win', 'linux']
+        self.os_type = ['mac', 'win', 'win64', 'linux']
         self.omahaproxy_host = 'https://omahaproxy.appspot.com'
         self.chromium_download_url_template = 'https://www.googleapis.com/download/storage/v1/b/' \
                                               'chromium-browser-snapshots/o/{0}?alt=media'
@@ -139,7 +139,7 @@ class Chromium(object):
             error_message = 'Error: Unexpected error when requesting position url: {0}, {1}'.format(position_url, e)
             print(Fore.RED + error_message)
 
-    def get_chromium_positions(self, workers=3):
+    def get_chromium_positions(self, workers=10):
         """Function: get_chromium_positions
 
         :param workers: concurrent requests to get the positions (default 3)
@@ -160,7 +160,7 @@ class Chromium(object):
         pool.shutdown(wait=True)
         self.check_future_result(futures)
 
-    def __get_chromium_download_url_core(self, name_templates, position, value, os_type, win=False):
+    def __get_chromium_download_url_core(self, name_templates, position, value, os_type, win=False, win64=False):
         """Private Function: __chromium_download_core """
 
         status_codes = list()
@@ -170,8 +170,12 @@ class Chromium(object):
             try:
                 res = self.session.head(chromium_download_url, timeout=self.time_out)
                 status_code = res.status_code
+                if win64 is True and status_code != 200:
+                    chromium_download_url = chromium_download_url.replace('chrome-win.zip', 'chrome-win32.zip')
+                    res = self.session.head(chromium_download_url, timeout=self.time_out)
+                    status_code = res.status_code
                 if win is True and status_code != 200:
-                    chromium_download_url = chromium_download_url.replace('win32', 'win')
+                    chromium_download_url = chromium_download_url.replace('chrome-win32.zip', 'chrome-win.zip')
                     res = self.session.head(chromium_download_url, timeout=self.time_out)
                     status_code = res.status_code
                 status_codes.append(status_code)
@@ -197,6 +201,7 @@ class Chromium(object):
 
         # Format name
         win = False
+        win64 = False
         if os_type == 'mac':
             mac_name = 'Mac%2F{0}%2Fchrome-mac.zip'
             name_templates = {'chrome-mac.zip': mac_name}
@@ -205,20 +210,18 @@ class Chromium(object):
             linux_x32_name = 'Linux%2F{0}%2Fchrome-linux.zip'
             name_templates = {'chrome-linux-x64.zip': linux_x64_name,
                               'chrome-linux-x32.zip': linux_x32_name}
-        else:
+        elif os_type == 'win64':
             win_x64_name = 'Win_x64%2F{0}%2Fchrome-win.zip'
-            win_x32_name_32 = 'Win%2F{0}%2Fchrome-win32.zip'
-            name_templates = {'chrome-win-x64.zip': win_x64_name,
-                              'chrome-win-x32.zip': win_x32_name_32}
+            name_templates = {'chrome-win-x64.zip': win_x64_name}
+            win64 = True
+        else:
+            win_x32_name = 'Win%2F{0}%2Fchrome-win32.zip'
+            name_templates = {'chrome-win-x32.zip': win_x32_name}
             win = True
 
         # Prepare download
         value = {'version': version, 'position_url': position_url, 'position': position}
-        status_codes = self.__get_chromium_download_url_core(name_templates,
-                                                             position,
-                                                             value,
-                                                             os_type,
-                                                             win)
+        status_codes = self.__get_chromium_download_url_core(name_templates, position, value, os_type, win, win64)
         check_status_code = all(status_code == 200 for status_code in status_codes)
         if check_status_code is False:
             for i in range(position - self.position_offset, position + self.position_offset + 1):
@@ -230,12 +233,13 @@ class Chromium(object):
                                                                      new_position,
                                                                      value,
                                                                      os_type,
-                                                                     win)
+                                                                     win,
+                                                                     win64)
                 check_status_code = all(status_code == 200 for status_code in status_codes)
                 if check_status_code is True:
                     break
 
-    def get_chromium_download_url(self, workers=3):
+    def get_chromium_download_url(self, workers=10):
         """Function: chromium_download
 
         :param workers: how many concurrent requests to get the chromium url (default 3)
@@ -264,7 +268,7 @@ class Chromium(object):
         print('Info: Generating json/csv report...')
 
         # Json report
-        json_report = 'chromium.json'
+        json_report = 'chromium.stable.json'
         json_report_exists = os.path.exists(json_report)
         chromium_downloads = deepcopy(self.chromium_downloads)
         if json_report_exists is True:
@@ -276,7 +280,7 @@ class Chromium(object):
             json.dump(chromium_downloads, f, indent=4)
 
         # CSV report
-        csv_report = 'chromium.csv'
+        csv_report = 'chromium.stable.csv'
         csv_rows = list()
         for os_type, values in chromium_downloads.items():
             version = values['version']
@@ -312,7 +316,7 @@ class Chromium(object):
                             'when requesting download url: {0}, {1}'.format(download_url, e)
             print(Fore.RED + error_message)
 
-    def chromium_download(self, workers=3):
+    def chromium_download(self, workers=10):
         """Function: chromium_download
 
         :param workers: how many concurrent requests to download chromium (default 3)

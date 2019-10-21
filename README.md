@@ -1,13 +1,27 @@
 Chromium All Old Stable Versions
 ====================
 
-> Updated at: 2019.10.20
+> Updated at: 2019.10.22
 
-List all possible chromium stable versions: **[chromium.json](https://raw.githubusercontent.com/Bugazelle/chromium-all-old-stable-versions/master/chromium.json), [chromium.csv](https://raw.githubusercontent.com/Bugazelle/chromium-all-old-stable-versions/master/chromium.csv)**
+List all possible chromium stable versions.
 
 Hope could be the help to you. :)
 
-> Note: Some of certain positions don't have the chromium build. To get chromium, the position range is: [position-10, position+10]
+
+## Download Links
+1. [chromium.stable.json](https://raw.githubusercontent.com/Bugazelle/chromium-all-old-stable-versions/master/chromium.stable.json)
+2. [chromium.stable.csv](https://raw.githubusercontent.com/Bugazelle/chromium-all-old-stable-versions/master/chromium.stable.csv)
+
+> Warning: 
+> 1. Because the omahaproxy only provide the chromium_**base**_position for the main chromium release version.
+
+>    For example 77.x.xxxx.xx, such as [77.0.3865.75 - 681094](https://omahaproxy.appspot.com/deps.json?version=77.0.3865.90), [77.0.3865.90 - 681094](https://omahaproxy.appspot.com/deps.json?version=77.0.3865.90), they have the same position.
+
+>    So, the chromium download urls for 77.x.xxxx.xx are the same.
+
+>    Based on the official document, seems no better solution to fix this.
+
+> 2. Some of certain positions don't have the chromium build. To get chromium, the position range is: [position-10, position+10]
 
 ## Download Process
 1. Get Version: history.json
