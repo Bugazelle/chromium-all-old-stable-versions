@@ -283,14 +283,15 @@ class Chromium(object):
         csv_report = 'chromium.stable.csv'
         csv_rows = list()
         for os_type, values in chromium_downloads.items():
-            version = values['version']
-            position_url = values['position_url']
-            position = values['position']
-            download_position = values['download_position']
-            download_url = values['download_url']
-            download_name = values['download_name']
-            csv_row = [os_type, version, position_url, position, download_position, download_url, download_name]
-            csv_rows.append(csv_row)
+            for value in values:
+                version = value['version']
+                position_url = value['position_url']
+                position = value['position']
+                download_position = value['download_position']
+                download_url = value['download_url']
+                download_name = value['download_name']
+                csv_row = [os_type, version, position_url, position, download_position, download_url, download_name]
+                csv_rows.append(csv_row)
         with open(csv_report, 'w+') as f:
             csv_writer = csv.writer(f)
             csv_writer.writerows(csv_rows)
