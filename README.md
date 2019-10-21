@@ -3,9 +3,7 @@ Chromium All Old Stable Versions
 
 > Updated at: 2019.10.22
 
-List all possible chromium stable versions.
-
-Hope could be the help to you. :)
+List all possible chromium stable versions. Hope could be the help to you. :)
 
 
 ## Download Links
@@ -26,7 +24,7 @@ Hope could be the help to you. :)
 
    https://omahaproxy.appspot.com/history.json?channel=stable&os=linux
 
-   > OS: Linux, Mac, Win
+   > OS: Linux, Mac, Win, Win64
 
 2. Get Position: deps.json
 
