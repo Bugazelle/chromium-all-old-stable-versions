@@ -20,7 +20,6 @@ Hope could be the help to you. :)
 >    So, the chromium download urls for 77.x.xxxx.xx are the same.
 
 >    Based on the official document, seems no better solution to fix this.
-
 > 2. Some of certain positions don't have the chromium build. To get chromium, the position range is: [position-10, position+10]
 
 ## Download Process
