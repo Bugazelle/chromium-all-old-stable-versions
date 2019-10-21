@@ -278,7 +278,7 @@ class Chromium(object):
         # CSV report
         csv_report = 'chromium.csv'
         csv_rows = list()
-        for os_type, values in chromium_downloads:
+        for os_type, values in chromium_downloads.items():
             version = values['version']
             position_url = values['position_url']
             position = values['position']
