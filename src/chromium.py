@@ -250,17 +250,17 @@ class Chromium(object):
                 check_status_code = all(status_code == 200 for status_code in status_codes)
                 if check_status_code is True:
                     break
-
-                # Try right
-                status_codes = self.__get_chromium_download_url_core(name_templates,
-                                                                     new_position_right,
-                                                                     value,
-                                                                     os_type,
-                                                                     win,
-                                                                     win64)
-                check_status_code = all(status_code == 200 for status_code in status_codes)
-                if check_status_code is True:
-                    break
+                else:
+                    # Try right
+                    status_codes = self.__get_chromium_download_url_core(name_templates,
+                                                                         new_position_right,
+                                                                         value,
+                                                                         os_type,
+                                                                         win,
+                                                                         win64)
+                    check_status_code = all(status_code == 200 for status_code in status_codes)
+                    if check_status_code is True:
+                        break
 
     def get_chromium_download_url(self, workers=10):
         """Function: chromium_download
