@@ -17,10 +17,10 @@ git config user.email "$GIT_EMAIL"
 git checkout master
 git fetch origin
 git pull
-cp -a $HOME/*.json repo_name/src
+cp -a $HOME/*.json $HOME/repo_name/src
 mv $HOME/repo_name/src/chromium.stable.json $HOME/repo_name/
-cp -a $HOME/chromium.stable.csv repo_name/
-cp -a $HOME/Downloads/. repo_name/
+cp -a $HOME/chromium.stable.csv $HOME/repo_name/
+cp -a $HOME/Downloads/. $HOME/repo_name/ || true
 git lfs track "*.zip"
 git add .gitattributes
 git commit -m "[Auto] Track *.zip files using Git LFS"
