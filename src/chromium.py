@@ -11,6 +11,7 @@ import json
 import sys
 import csv
 import os
+import re
 
 requests.packages.urllib3.disable_warnings()
 init(autoreset=True)
@@ -22,10 +23,21 @@ class Chromium(object):
     def __init__(self, channel='stable'):
         self.channel = channel
         self.strip_chars = ' \r\n\t/"\',\\'
-        self.os_type = ['mac', 'win', 'win64', 'linux']
+        # self.os_type = {'mac': 'Mac/'}
+        self.os_type = {'mac': 'Mac/',
+                        'win': 'Win/',
+                        'win64': 'Win_x64/',
+                        'linux': 'Linux/',
+                        'linux64': 'Linux_x64/'}
         self.omahaproxy_host = 'https://omahaproxy.appspot.com'
         self.chromium_download_url_template = 'https://www.googleapis.com/download/storage/v1/b/' \
                                               'chromium-browser-snapshots/o/{0}?alt=media'
+        self.chromium_prefix_url_template = 'https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?' \
+                                            'delimiter=/&' \
+                                            'prefix={0}&' \
+                                            'fields=items(kind,mediaLink,metadata,name,size,updated),' \
+                                            'kind,prefixes,nextPageToken'
+        self.chromium_prefix_url_with_token_template = self.chromium_prefix_url_template + '&pageToken={1}'
         status_forcelist = [500, 502, 503, 504, 522, 524, 408, 400, 401, 403]
         retries = Retry(total=5, read=5, connect=5, backoff_factor=3, status_forcelist=status_forcelist)
         self.session = requests.session()
@@ -38,6 +50,49 @@ class Chromium(object):
         self.chromium_downloads = dict()
         self.time_out = 300
         self.position_offset = 100
+        self.chromium_existed_positions = dict()
+
+    def __get_existed_positions_core(self, url, os_type, ini_start=False):
+        """Private Function: __get_existed_positions_core"""
+
+        res = self.session.get(url, timeout=self.time_out)
+        status_code = res.status_code
+        if status_code != 200:
+            print(Fore.YELLOW + 'Fatal: Unexpected status code detected '
+                                'when requesting prefix url: {0}, {1}'.format(status_code, url))
+            sys.exit(1)
+        content = json.loads(res.content)
+        prefixes = content['prefixes']
+        prefixes_with_position = {re.search('/(.*?)/', prefix).group(1): prefix for prefix in prefixes}
+        if ini_start is True:
+            self.chromium_existed_positions[os_type] = prefixes_with_position
+        else:
+            self.chromium_existed_positions[os_type].update(prefixes_with_position)
+        try:
+            next_page_token = content['nextPageToken']
+        except KeyError:
+            next_page_token = None
+
+        return next_page_token
+
+    def get_existed_positions(self):
+        """Function: get_existed_positions
+
+        Crawl all the existing positions by using the API:
+        https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?
+        delimiter=/&prefix=Mac/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken&
+        pageToken=CgtNYWMvMTA1NDkzLw
+
+        Note: Cannot use ThreadPoolExecutor to run parallel, because the api does not support
+        """
+
+        for os_type, prefix in self.os_type.items():
+            print('Info: Get all the existed positions for {0}...'.format(os_type))
+            url = self.chromium_prefix_url_template.format(prefix)
+            next_page_token = self.__get_existed_positions_core(url, os_type, ini_start=True)
+            while next_page_token is not None:
+                url = self.chromium_prefix_url_with_token_template.format(prefix, next_page_token)
+                next_page_token = self.__get_existed_positions_core(url, os_type)
 
     @staticmethod
     def check_future_result(futures):
@@ -65,28 +120,34 @@ class Chromium(object):
             return new_releases
 
     def get_chromium_versions(self):
-        """Function: get_chromium_versions"""
+        """Function: get_chromium_versions
 
-        print('Info: Start to get all chromium versions...')
+        By take advantage of the api: https://omahaproxy.appspot.com/history.json?channel=stable&os=mac to get all the
+        chromium release version
+        available channel: stable, beta, dev, canary,
+        available os: max, win, win64, android
+        """
+
+        print('Info: Start to get all chromium stable versions...')
         history_json_format = '{0}/history.json?channel={1}&os={2}'
-        for os_type in self.os_type:
+        for os_type in self.os_type.keys():
             url = history_json_format.format(self.omahaproxy_host, self.channel, os_type)
             try:
                 res = self.session.get(url, timeout=self.time_out)
                 status_code = res.status_code
                 content = res.content
                 if status_code != 200:
-                    warning_message = 'Warning: Unexpected status code ' \
-                                      'when requesting history url: {0}, {1}'.format(url, status_code)
-                    print(Fore.YELLOW + warning_message)
+                    error_message = 'Error: Unexpected status code ' \
+                                      'when requesting history url: {0}, {1}'.format(status_code, url)
+                    print(Fore.RED + error_message)
                     continue
                 releases = json.loads(content)
                 history_json_file = '{0}.history.json'.format(os_type)
                 history_json_file_exists = os.path.exists(history_json_file)
                 new_releases = self.__process_difference(history_json_file, history_json_file_exists, releases)
                 if not new_releases:
-                    print('Info: No new release found, system stopping...')
-                    sys.exit(0)
+                    print('Info: No new release found for os type {0}'.format(os_type))
+                    continue
                 all_releases = releases + new_releases
                 with open(history_json_file, 'w+') as f:
                     json.dump(all_releases, f)
@@ -103,7 +164,10 @@ class Chromium(object):
                 print(Fore.RED + error_message)
 
     def prepare_chromium_position_urls(self):
-        """Function: get_chromium_position_urls"""
+        """Function: get_chromium_position_urls
+
+        Prepare the url https://omahaproxy.appspot.com/deps.json?version=77.0.3865.120 to get the base position.
+        """
 
         print('Info: Prepare the position urls...')
         deps_json_format = '{0}/deps.json?version={1}'
@@ -121,9 +185,9 @@ class Chromium(object):
             status_code = res.status_code
             content = res.content
             if status_code != 200:
-                warning_message = 'Warning: Unexpected status code ' \
-                                  'when requesting position url: {0}, {1}'.format(position_url, status_code)
-                print(Fore.YELLOW + warning_message)
+                error_message = 'Error: Unexpected status code ' \
+                                  'when requesting position url: {0}, {1}'.format(status_code, position_url)
+                print(Fore.YELLOW + error_message)
             else:
                 position_json = json.loads(content)
                 try:
@@ -139,11 +203,19 @@ class Chromium(object):
             error_message = 'Error: Unexpected error when requesting position url: {0}, {1}'.format(position_url, e)
             print(Fore.RED + error_message)
 
-    def get_chromium_positions(self, workers=10):
+    def get_chromium_positions(self, workers=3):
         """Function: get_chromium_positions
+
+        Request the url https://omahaproxy.appspot.com/deps.json?version=77.0.3865.120 to get the base position.
 
         :param workers: concurrent requests to get the positions (default 3)
         """
+
+        # # Only for test purpose
+        # value = {'version': '77.0.3865.120',
+        #          'position_url': 'https://omahaproxy.appspot.com/deps.json?version=77.0.3865.120',
+        #          'position': 681094}
+        # self.chromium_positions.setdefault('mac', []).append(value)
 
         print('Info: Start to get all chromium positions...')
         pool = ThreadPoolExecutor(max_workers=workers)
@@ -160,110 +232,58 @@ class Chromium(object):
         pool.shutdown(wait=True)
         self.check_future_result(futures)
 
-    def __get_chromium_download_url_core(self, name_templates, position, value, os_type, win=False, win64=False):
-        """Private Function: __chromium_download_core """
+    def __get_download_url(self, os_type, position, value):
+        """Private Function: Ken"""
 
-        status_codes = list()
-        for chromium_file_name, chromium_download_name_template in name_templates.items():
-            chromium_download_name = chromium_download_name_template.format(position)
-            chromium_download_url = self.chromium_download_url_template.format(chromium_download_name)
+        prefix = self.chromium_existed_positions[os_type][position]
+        url = self.chromium_prefix_url_template.format(prefix)
+        res = self.session.get(url, timeout=self.time_out)
+        status_code = res.status_code
+        if status_code != 200:
+            error_message = 'Error: Unexpected status code ' \
+                            'when requesting prefix url: {0}, {1}'.format(status_code, url)
+            print(Fore.RED + error_message)
+        else:
+            content = json.loads(res.content)
             try:
-                res = self.session.head(chromium_download_url, timeout=self.time_out)
-                status_code = res.status_code
-                if win64 is True and status_code != 200:
-                    chromium_download_url = chromium_download_url.replace('chrome-win.zip', 'chrome-win32.zip')
-                    res = self.session.head(chromium_download_url, timeout=self.time_out)
-                    status_code = res.status_code
-                if win is True and status_code != 200:
-                    chromium_download_url = chromium_download_url.replace('chrome-win32.zip', 'chrome-win.zip')
-                    res = self.session.head(chromium_download_url, timeout=self.time_out)
-                    status_code = res.status_code
-                status_codes.append(status_code)
-                if status_code == 200:
-                    time.sleep(5)
-                    value['download_position'] = position
-                    value['download_url'] = chromium_download_url
-                    value['download_name'] = chromium_file_name
-                    self.chromium_downloads.setdefault(os_type, []).append(value)
-                    print('Info: Find the downloading url {0}...'.format(chromium_download_url))
-                time.sleep(5)
-            except (requests.RequestException,
-                    requests.exceptions.SSLError,
-                    requests.packages.urllib3.exceptions.SSLError) as e:
-                error_message = 'Error: Unexpected error ' \
-                                'when requesting download url: {0}, {1}'.format(chromium_download_url, e)
+                items = content['items']
+                sizes = [int(item['size']) for item in items]
+                index = sizes.index(max(sizes))
+                download_url = items[index]['mediaLink']
+                value['download_url'] = download_url
+                value['download_position'] = position
+                self.chromium_downloads.setdefault(os_type, []).append(value)
+            except KeyError:
+                error_message = 'Error: Failed to get the download url from prefix: {0}'.format(url)
                 print(Fore.RED + error_message)
 
-        return status_codes
-
-    def __parallel_get_download_chromium_url(self, os_type, version, position_url, position):
+    def __parallel_get_download_chromium_url(self, os_type, value, position):
         """Private Function: __parallel_requests_to_download_chromium"""
 
-        # Format name
-        win = False
-        win64 = False
-        if os_type == 'mac':
-            mac_name = 'Mac%2F{0}%2Fchrome-mac.zip'
-            name_templates = {'chrome-mac.zip': mac_name}
-        elif os_type == 'linux':
-            linux_x64_name = 'Linux_x64%2F{0}%2Fchrome-linux.zip'
-            linux_x32_name = 'Linux%2F{0}%2Fchrome-linux.zip'
-            name_templates = {'chrome-linux-x64.zip': linux_x64_name,
-                              'chrome-linux-x32.zip': linux_x32_name}
-        elif os_type == 'win64':
-            win_x64_name = 'Win_x64%2F{0}%2Fchrome-win.zip'
-            name_templates = {'chrome-win-x64.zip': win_x64_name}
-            win64 = True
+        existed_positions_by_os_type = self.chromium_existed_positions[os_type].keys()
+        position = str(position)
+        if position in existed_positions_by_os_type:
+            self.__get_download_url(os_type, position, value)
         else:
-            win_x32_name = 'Win%2F{0}%2Fchrome-win32.zip'
-            name_templates = {'chrome-win-x32.zip': win_x32_name}
-            win = True
-
-        # Prepare download
-        value = {'version': version, 'position_url': position_url, 'position': position}
-        status_codes = self.__get_chromium_download_url_core(name_templates, position, value, os_type, win, win64)
-        check_status_code = all(status_code == 200 for status_code in status_codes)
-        if check_status_code is False:
-            # The solution finds the position from [position, position + offset], the [position - offset, position]
-            # for i in range(position - self.position_offset, position + self.position_offset + 1):
-            #     if 0 < i <= position:
-            #         new_position = i + self.position_offset + 1
-            #     elif i > position:
-            #         new_position = i - self.position_offset - 1
-            #     else:
-            #         continue
-
-            # The solution finds the nearest position [position-offset, position+offset]
             for i in range(1, self.position_offset + 1):
-                new_position_right = position + i
-                new_position_left = position - i
-                if new_position_left <= 0:
+                new_position_right = str(int(position) + i)
+                new_position_left = str(int(position) - i)
+                if int(new_position_left) <= 0:
+                    break
+                if new_position_right in existed_positions_by_os_type:
+                    self.__get_download_url(os_type, new_position_right, value)
+                    break
+                if new_position_left in existed_positions_by_os_type:
+                    self.__get_download_url(os_type, new_position_left, value)
                     break
 
-                # Try left
-                status_codes = self.__get_chromium_download_url_core(name_templates,
-                                                                     new_position_left,
-                                                                     value,
-                                                                     os_type,
-                                                                     win,
-                                                                     win64)
-                check_status_code = all(status_code == 200 for status_code in status_codes)
-                if check_status_code is True:
-                    break
-                else:
-                    # Try right
-                    status_codes = self.__get_chromium_download_url_core(name_templates,
-                                                                         new_position_right,
-                                                                         value,
-                                                                         os_type,
-                                                                         win,
-                                                                         win64)
-                    check_status_code = all(status_code == 200 for status_code in status_codes)
-                    if check_status_code is True:
-                        break
-
-    def get_chromium_download_url(self, workers=10):
+    def get_chromium_download_url(self, workers=100):
         """Function: chromium_download
+
+        Use https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?
+        delimiter=/&
+        prefix=Mac/681090/&
+        fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken
 
         :param workers: how many concurrent requests to get the chromium url (default 3)
         """
@@ -276,10 +296,10 @@ class Chromium(object):
                 version = value['version']
                 position_url = value['position_url']
                 position = value['position']
+                value = {'version': version, 'position_url': position_url, 'position': position}
                 future = pool.submit(self.__parallel_get_download_chromium_url,
                                      os_type=os_type,
-                                     version=version,
-                                     position_url=position_url,
+                                     value=value,
                                      position=position)
                 futures.append(future)
         pool.shutdown(wait=True)
@@ -297,7 +317,7 @@ class Chromium(object):
         if json_report_exists is True:
             with open(json_report) as f:
                 existed_chromium_downloads = json.loads(f.read())
-                for os_type in self.os_type:
+                for os_type in self.os_type.keys():
                     chromium_downloads[os_type] += existed_chromium_downloads[os_type]
         with open(json_report, 'w+') as f:
             json.dump(chromium_downloads, f, indent=4)
@@ -305,6 +325,7 @@ class Chromium(object):
         # CSV report
         csv_report = 'chromium.stable.csv'
         csv_rows = list()
+        headers = ['os', 'version', 'position_url', 'position', 'download_position', 'download_url']
         for os_type, values in chromium_downloads.items():
             for value in values:
                 version = value['version']
@@ -312,14 +333,13 @@ class Chromium(object):
                 position = value['position']
                 download_position = value['download_position']
                 download_url = value['download_url']
-                download_name = value['download_name']
-                csv_row = [os_type, version, position_url, position, download_position, download_url, download_name]
+                csv_row = [os_type, version, position_url, position, download_position, download_url]
                 csv_rows.append(csv_row)
         with open(csv_report, 'w+') as f:
             csv_writer = csv.writer(f)
             csv_writer.writerows(csv_rows)
 
-    def __chromium_download_core(self, os_type, version, download_url, download_name):
+    def __chromium_download_core(self, os_type, version, download_url):
         """Private Function: __chromium_download_core"""
 
         cur_dir = os.getcwd()
@@ -327,7 +347,7 @@ class Chromium(object):
         chromium_save_dir_exist_status = os.path.exists(chromium_save_dir)
         if chromium_save_dir_exist_status is False:
             os.makedirs(chromium_save_dir)
-        chromium_file_path = os.path.join(chromium_save_dir, download_name)
+        chromium_file_path = os.path.join(chromium_save_dir, 'chrome.zip')
         print('Info: Starting downloading {0}...'.format(chromium_file_path))
         try:
             with self.session.get(download_url, stream=True) as r:
@@ -346,7 +366,7 @@ class Chromium(object):
         :param workers: how many concurrent requests to download chromium (default 3)
         """
 
-        # Only for test purpose
+        # # Only for test purpose
         # self.os_type = ['linux']
         # self.chromium_downloads = {
         #     'linux': [
@@ -356,8 +376,7 @@ class Chromium(object):
         #             'position': 330231,
         #             'download_position': 330234,
         #             'download_url': 'https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/'
-        #                             'Linux_x64%2F330234%2Fchrome-linux.zip?alt=media',
-        #             'download_name': 'chrome-linux.zip'
+        #                             'Linux_x64%2F330234%2Fchrome-linux.zip?alt=media'
         #         }
         #     ]
         # }
@@ -369,12 +388,10 @@ class Chromium(object):
             for value in values:
                 version = value['version']
                 download_url = value['download_url']
-                download_name = value['download_name']
                 future = pool.submit(self.__chromium_download_core,
                                      os_type=os_type,
                                      version=version,
-                                     download_url=download_url,
-                                     download_name=download_name)
+                                     download_url=download_url)
                 futures.append(future)
         pool.shutdown(wait=True)
         self.check_future_result(futures)
@@ -383,6 +400,7 @@ class Chromium(object):
 if __name__ == '__main__':
     chromium = Chromium()
     chromium.get_chromium_versions()
+    chromium.get_existed_positions()
     chromium.prepare_chromium_position_urls()
     chromium.get_chromium_positions()
     chromium.get_chromium_download_url()
