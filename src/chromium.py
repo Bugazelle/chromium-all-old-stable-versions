@@ -37,7 +37,7 @@ class Chromium(object):
         self.chromium_positions = dict()
         self.chromium_downloads = dict()
         self.time_out = 300
-        self.position_offset = 10
+        self.position_offset = 100
 
     @staticmethod
     def check_future_result(futures):
@@ -224,13 +224,36 @@ class Chromium(object):
         status_codes = self.__get_chromium_download_url_core(name_templates, position, value, os_type, win, win64)
         check_status_code = all(status_code == 200 for status_code in status_codes)
         if check_status_code is False:
-            for i in range(position - self.position_offset, position + self.position_offset + 1):
-                if i <= position:
-                    new_position = i + self.position_offset + 1
-                else:
-                    new_position = i - self.position_offset - 1
+            # The solution finds the position from [position, position + offset], the [position - offset, position]
+            # for i in range(position - self.position_offset, position + self.position_offset + 1):
+            #     if 0 < i <= position:
+            #         new_position = i + self.position_offset + 1
+            #     elif i > position:
+            #         new_position = i - self.position_offset - 1
+            #     else:
+            #         continue
+
+            # The solution finds the nearest position [position-offset, position+offset]
+            for i in range(1, self.position_offset + 1):
+                new_position_right = position + i
+                new_position_left = position - i
+                if new_position_left <= 0:
+                    break
+
+                # Try left
                 status_codes = self.__get_chromium_download_url_core(name_templates,
-                                                                     new_position,
+                                                                     new_position_left,
+                                                                     value,
+                                                                     os_type,
+                                                                     win,
+                                                                     win64)
+                check_status_code = all(status_code == 200 for status_code in status_codes)
+                if check_status_code is True:
+                    break
+
+                # Try right
+                status_codes = self.__get_chromium_download_url_core(name_templates,
+                                                                     new_position_right,
                                                                      value,
                                                                      os_type,
                                                                      win,
