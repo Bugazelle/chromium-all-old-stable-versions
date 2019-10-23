@@ -39,7 +39,7 @@ class Chromium(object):
                                             'kind,prefixes,nextPageToken'
         self.chromium_prefix_url_with_token_template = self.chromium_prefix_url_template + '&pageToken={1}'
         status_forcelist = [500, 502, 503, 504, 522, 524, 408, 400, 401, 403]
-        retries = Retry(total=5, read=5, connect=5, backoff_factor=3, status_forcelist=status_forcelist)
+        retries = Retry(total=10, read=10, connect=10, backoff_factor=3, status_forcelist=status_forcelist)
         self.session = requests.session()
         self.session.mount('http://', HTTPAdapter(max_retries=retries))
         self.session.mount('https://', HTTPAdapter(max_retries=retries))
