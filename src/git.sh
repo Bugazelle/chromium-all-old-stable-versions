@@ -21,9 +21,9 @@ cp -a $HOME/*.json $HOME/$repo_name/src
 mv $HOME/$repo_name/src/chromium.stable.json $HOME/$repo_name/
 cp -a $HOME/chromium.stable.csv $HOME/$repo_name/
 cp -a $HOME/Downloads/. $HOME/$repo_name/ || true
-git lfs track "*.zip"
-git add .gitattributes
-git commit -m "[Auto] Track *.zip files using Git LFS"
+# git lfs track "*.zip"
+# git add .gitattributes
+# git commit -m "[Auto] Track *.zip files using Git LFS"
 git add .;
 git commit -am "[Auto] Push Data From Docker Hub";
 git push origin master;
