@@ -58,11 +58,17 @@ class Chromium(object):
         res = self.session.get(url, timeout=self.time_out)
         status_code = res.status_code
         if status_code != 200:
-            print(Fore.YELLOW + 'Fatal: Unexpected status code detected '
-                                'when requesting prefix url: {0}, {1}'.format(status_code, url))
+            error_message = 'Fatal: Unexpected status code detected ' \
+                             'when requesting prefix url: {0}, {1}'.format(status_code, url)
+            print(Fore.YELLOW + error_message)
             sys.exit(1)
         content = json.loads(res.content)
-        prefixes = content['prefixes']
+        try:
+            prefixes = content['prefixes']
+        except KeyError:
+            error_message = 'Fatal: Prefixes not in response: {0}, {1}'.format(url, content)
+            print(Fore.YELLOW + error_message)
+            sys.exit(1)
         prefixes_with_position = {re.search('/(.*?)/', prefix).group(1): prefix for prefix in prefixes}
         if ini_start is True:
             self.chromium_existed_positions[os_type] = prefixes_with_position
