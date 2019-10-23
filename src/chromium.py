@@ -137,16 +137,19 @@ class Chromium(object):
         print('Info: Start to get all chromium stable versions...')
         history_json_format = '{0}/history.json?channel={1}&os={2}'
         for os_type in self.os_type.keys():
-            url = history_json_format.format(self.omahaproxy_host, self.channel, os_type)
+            if os_type == 'linux64':
+                url = history_json_format.format(self.omahaproxy_host, self.channel, 'linux')
+            else:
+                url = history_json_format.format(self.omahaproxy_host, self.channel, os_type)
             try:
                 res = self.session.get(url, timeout=self.time_out)
                 status_code = res.status_code
                 content = res.content
                 if status_code != 200:
-                    error_message = 'Error: Unexpected status code ' \
+                    error_message = 'Fatal: Unexpected status code ' \
                                       'when requesting history url: {0}, {1}'.format(status_code, url)
                     print(Fore.RED + error_message)
-                    continue
+                    sys.exit(1)
                 releases = json.loads(content)
                 history_json_file = '{0}.history.json'.format(os_type)
                 history_json_file_exists = os.path.exists(history_json_file)
@@ -253,11 +256,12 @@ class Chromium(object):
             content = json.loads(res.content)
             try:
                 items = content['items']
-                sizes = [int(item['size']) for item in items]
+                sizes = [int(item['size']) for item in items
+                         if 'browser_tests' not in item['name'] and 'syms' not in item['name']]
                 index = sizes.index(max(sizes))
                 download_url = items[index]['mediaLink']
                 value['download_url'] = download_url
-                value['download_position'] = position
+                value['download_position'] = int(position)
                 self.chromium_downloads.setdefault(os_type, []).append(value)
             except KeyError:
                 error_message = 'Error: Failed to get the download url from prefix: {0}'.format(url)
@@ -332,6 +336,7 @@ class Chromium(object):
         csv_report = 'chromium.stable.csv'
         csv_rows = list()
         headers = ['os', 'version', 'position_url', 'position', 'download_position', 'download_url']
+        csv_rows.append(headers)
         for os_type, values in chromium_downloads.items():
             for value in values:
                 version = value['version']
