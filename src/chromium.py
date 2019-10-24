@@ -256,8 +256,9 @@ class Chromium(object):
             content = json.loads(res.content)
             try:
                 items = content['items']
-                sizes = [int(item['size']) for item in items
+                items = [item for item in items
                          if 'browser_tests' not in item['name'] and 'syms' not in item['name']]
+                sizes = [int(item['size']) for item in items]
                 index = sizes.index(max(sizes))
                 download_url = items[index]['mediaLink']
                 value['download_url'] = download_url
