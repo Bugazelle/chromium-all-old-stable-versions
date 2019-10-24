@@ -346,7 +346,7 @@ class Chromium(object):
                 position_url = value['position_url']
                 position = value['position']
                 download_position = value['download_position']
-                download_prefix = value[''download_prefix'']
+                download_prefix = value['download_prefix']
                 download_url = value['download_url']
                 csv_row = [os_type, version, position_url, position, download_position, download_prefix, download_url]
                 csv_rows.append(csv_row)
