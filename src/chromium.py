@@ -244,6 +244,7 @@ class Chromium(object):
     def __get_download_url(self, os_type, position, value):
         """Private Function: Ken"""
 
+        filter_strings = ['browser_tests', 'syms', 'shell', 'host', 'exe']
         prefix = self.chromium_existed_positions[os_type][position]
         url = self.chromium_prefix_url_template.format(prefix)
         res = self.session.get(url, timeout=self.time_out)
@@ -257,12 +258,13 @@ class Chromium(object):
             try:
                 items = content['items']
                 items = [item for item in items
-                         if 'browser_tests' not in item['name'] and 'syms' not in item['name']]
+                         if all(filter_string not in item['name'] for filter_string in filter_strings)]
                 sizes = [int(item['size']) for item in items]
                 index = sizes.index(max(sizes))
                 download_url = items[index]['mediaLink']
-                value['download_url'] = download_url
                 value['download_position'] = int(position)
+                value['download_prefix'] = url
+                value['download_url'] = download_url
                 self.chromium_downloads.setdefault(os_type, []).append(value)
             except KeyError:
                 error_message = 'Error: Failed to get the download url from prefix: {0}'.format(url)
@@ -336,7 +338,7 @@ class Chromium(object):
         # CSV report
         csv_report = 'chromium.stable.csv'
         csv_rows = list()
-        headers = ['os', 'version', 'position_url', 'position', 'download_position', 'download_url']
+        headers = ['os', 'version', 'position_url', 'position', 'download_position', 'download_prefix', 'download_url']
         csv_rows.append(headers)
         for os_type, values in chromium_downloads.items():
             for value in values:
@@ -344,8 +346,9 @@ class Chromium(object):
                 position_url = value['position_url']
                 position = value['position']
                 download_position = value['download_position']
+                download_prefix = value[''download_prefix'']
                 download_url = value['download_url']
-                csv_row = [os_type, version, position_url, position, download_position, download_url]
+                csv_row = [os_type, version, position_url, position, download_position, download_prefix, download_url]
                 csv_rows.append(csv_row)
         with open(csv_report, 'w+') as f:
             csv_writer = csv.writer(f)
