@@ -5,6 +5,7 @@ from colorama import Fore, init
 from copy import deepcopy
 import traceback
 import requests
+import argparse
 import shutil
 import time
 import json
@@ -20,15 +21,16 @@ init(autoreset=True)
 class Chromium(object):
     """Download all the chromium old stable versions"""
 
-    def __init__(self, channel='stable'):
+    def __init__(self, channel='stable', fore_crawl=False):
         self.channel = channel
+        self.force_crawl = self.validate_boole(fore_crawl)
         self.strip_chars = ' \r\n\t/"\',\\'
-        # self.os_type = {'mac': 'Mac/'}
         self.os_type = {'mac': 'Mac/',
                         'win': 'Win/',
                         'win64': 'Win_x64/',
                         'linux': 'Linux/',
-                        'linux64': 'Linux_x64/'}
+                        'linux64': 'Linux_x64/',
+                        'android': 'Android/'}
         self.omahaproxy_host = 'https://omahaproxy.appspot.com'
         self.chromium_download_url_template = 'https://www.googleapis.com/download/storage/v1/b/' \
                                               'chromium-browser-snapshots/o/{0}?alt=media'
@@ -51,6 +53,20 @@ class Chromium(object):
         self.time_out = 300
         self.position_offset = 100
         self.chromium_existed_positions = dict()
+
+    @staticmethod
+    def validate_boole(target):
+        """Function: validate boole"""
+
+        target = str(target).lower()
+        if target != 'true' and target != 'false':
+            raise Exception('Error: The expected input for {0} should be: True or False'.format(target))
+        if target == 'true':
+            target = True
+        else:
+            target = False
+
+        return target
 
     def __get_existed_positions_core(self, url, os_type, ini_start=False):
         """Private Function: __get_existed_positions_core"""
@@ -111,11 +127,10 @@ class Chromium(object):
                 print(traceback.format_exc())
                 raise Exception('Error: Exception found {0}'.format(e))
 
-    @staticmethod
-    def __process_difference(history_json_file, history_json_file_exists, releases):
+    def __process_difference(self, history_json_file, history_json_file_exists, releases):
         """Private Function: __process_difference"""
 
-        if history_json_file_exists is False:
+        if history_json_file_exists is False or self.force_crawl is True:
             with open(history_json_file, 'w+') as f:
                 json.dump(releases, f)
             return releases
@@ -163,7 +178,7 @@ class Chromium(object):
                 for release in new_releases:
                     try:
                         version = release['version']
-                        self.chromium_versions.setdefault(os_type, []).append(version)
+                        self.chromium_versions.setdefault(os_type, {})[version] = list()
                     except KeyError:
                         pass
             except (requests.RequestException,
@@ -181,10 +196,10 @@ class Chromium(object):
         print('Info: Prepare the position urls...')
         deps_json_format = '{0}/deps.json?version={1}'
         for os_type, versions in self.chromium_versions.items():
-            for version in versions:
+            for version in versions.keys():
                 url = deps_json_format.format(self.omahaproxy_host, version)
-                value = {'version': version, 'position_url': url}
-                self.chromium_position_urls.setdefault(os_type, []).append(value)
+                value = {'position_url': url}
+                self.chromium_position_urls.setdefault(os_type, {})[version] = value
 
     def __parallel_requests_to_get_positions(self, os_type, version, position_url):
         """Private Function: __parallel_requests_to_get_positions"""
@@ -201,8 +216,8 @@ class Chromium(object):
                 position_json = json.loads(content)
                 try:
                     chromium_base_position = int(position_json['chromium_base_position'])
-                    value = {'version': version, 'position_url': position_url, 'position': chromium_base_position}
-                    self.chromium_positions.setdefault(os_type, []).append(value)
+                    value = {'position_url': position_url, 'position': chromium_base_position}
+                    self.chromium_positions.setdefault(os_type, {})[version] = value
                 except (KeyError, TypeError):
                     pass
             time.sleep(5)
@@ -221,17 +236,17 @@ class Chromium(object):
         """
 
         # # Only for test purpose
-        # value = {'version': '77.0.3865.120',
-        #          'position_url': 'https://omahaproxy.appspot.com/deps.json?version=77.0.3865.120',
-        #          'position': 681094}
-        # self.chromium_positions.setdefault('mac', []).append(value)
+        # value = {
+        #             'position_url': 'https://omahaproxy.appspot.com/deps.json?version=77.0.3865.120',
+        #             'position': 681094
+        # }
+        # self.chromium_positions.setdefault('mac', {})['77.0.3865.120'].append(value)
 
         print('Info: Start to get all chromium positions...')
         pool = ThreadPoolExecutor(max_workers=workers)
         futures = list()
         for os_type, values in self.chromium_position_urls.items():
-            for value in values:
-                version = value['version']
+            for version, value in values.items():
                 position_url = value['position_url']
                 future = pool.submit(self.__parallel_requests_to_get_positions,
                                      os_type=os_type,
@@ -241,7 +256,7 @@ class Chromium(object):
         pool.shutdown(wait=True)
         self.check_future_result(futures)
 
-    def __get_download_url(self, os_type, position, value):
+    def __get_download_url(self, os_type, version, position, value):
         """Private Function: Ken"""
 
         filter_strings = ['browser_tests', 'syms', 'shell', 'host', 'exe']
@@ -265,18 +280,18 @@ class Chromium(object):
                 value['download_position'] = int(position)
                 value['download_prefix'] = url
                 value['download_url'] = download_url
-                self.chromium_downloads.setdefault(os_type, []).append(value)
+                self.chromium_downloads.setdefault(os_type, {})[version] = value
             except KeyError:
                 error_message = 'Error: Failed to get the download url from prefix: {0}'.format(url)
                 print(Fore.RED + error_message)
 
-    def __parallel_get_download_chromium_url(self, os_type, value, position):
+    def __parallel_get_download_chromium_url(self, os_type, version, value, position):
         """Private Function: __parallel_requests_to_download_chromium"""
 
         existed_positions_by_os_type = self.chromium_existed_positions[os_type].keys()
         position = str(position)
         if position in existed_positions_by_os_type:
-            self.__get_download_url(os_type, position, value)
+            self.__get_download_url(os_type, version, position, value)
         else:
             for i in range(1, self.position_offset + 1):
                 new_position_right = str(int(position) + i)
@@ -284,10 +299,10 @@ class Chromium(object):
                 if int(new_position_left) <= 0:
                     break
                 if new_position_right in existed_positions_by_os_type:
-                    self.__get_download_url(os_type, new_position_right, value)
+                    self.__get_download_url(os_type, version, new_position_right, value)
                     break
                 if new_position_left in existed_positions_by_os_type:
-                    self.__get_download_url(os_type, new_position_left, value)
+                    self.__get_download_url(os_type, version, new_position_left, value)
                     break
 
     def get_chromium_download_url(self, workers=100):
@@ -305,13 +320,13 @@ class Chromium(object):
         pool = ThreadPoolExecutor(max_workers=workers)
         futures = list()
         for os_type, values in self.chromium_positions.items():
-            for value in values:
-                version = value['version']
+            for version, value in values.items():
                 position_url = value['position_url']
                 position = value['position']
-                value = {'version': version, 'position_url': position_url, 'position': position}
+                value = {'position_url': position_url, 'position': position}
                 future = pool.submit(self.__parallel_get_download_chromium_url,
                                      os_type=os_type,
+                                     version=version,
                                      value=value,
                                      position=position)
                 futures.append(future)
@@ -327,11 +342,11 @@ class Chromium(object):
         json_report = 'chromium.stable.json'
         json_report_exists = os.path.exists(json_report)
         chromium_downloads = deepcopy(self.chromium_downloads)
-        if json_report_exists is True:
+        if json_report_exists is True and self.force_crawl is False:
             with open(json_report) as f:
                 existed_chromium_downloads = json.loads(f.read())
                 for os_type in self.os_type.keys():
-                    chromium_downloads[os_type] += existed_chromium_downloads[os_type]
+                    chromium_downloads[os_type].update(existed_chromium_downloads[os_type])
         with open(json_report, 'w+') as f:
             json.dump(chromium_downloads, f, indent=4)
 
@@ -341,8 +356,7 @@ class Chromium(object):
         headers = ['os', 'version', 'position_url', 'position', 'download_position', 'download_prefix', 'download_url']
         csv_rows.append(headers)
         for os_type, values in chromium_downloads.items():
-            for value in values:
-                version = value['version']
+            for version, value in values.items():
                 position_url = value['position_url']
                 position = value['position']
                 download_position = value['download_position']
@@ -384,24 +398,22 @@ class Chromium(object):
         # # Only for test purpose
         # self.os_type = ['linux']
         # self.chromium_downloads = {
-        #     'linux': [
-        #         {
-        #             'version': '44.0.2403.157',
+        #     'linux': {
+        #         '44.0.2403.157': {
         #             'position_url': 'https://omahaproxy.appspot.com/deps.json?version=44.0.2403.157',
         #             'position': 330231,
         #             'download_position': 330234,
         #             'download_url': 'https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/'
         #                             'Linux_x64%2F330234%2Fchrome-linux.zip?alt=media'
         #         }
-        #     ]
+        #     }
         # }
 
         print('Info: Start to download chromium...')
         pool = ThreadPoolExecutor(max_workers=workers)
         futures = list()
         for os_type, values in self.chromium_downloads.items():
-            for value in values:
-                version = value['version']
+            for version, value in values.items():
                 download_url = value['download_url']
                 future = pool.submit(self.__chromium_download_core,
                                      os_type=os_type,
@@ -413,7 +425,11 @@ class Chromium(object):
 
 
 if __name__ == '__main__':
-    chromium = Chromium()
+    parser = argparse.ArgumentParser(description='Crawl the chromium...')
+    parser.add_argument('-f', '--force', nargs='?', default=False, const=False,
+                        help='Force crawl all. Default: False')
+    args = parser.parse_args()
+    chromium = Chromium(fore_crawl=args.force)
     chromium.get_chromium_versions()
     chromium.get_existed_positions()
     chromium.prepare_chromium_position_urls()
@@ -421,5 +437,5 @@ if __name__ == '__main__':
     chromium.get_chromium_download_url()
     chromium.report()
     # Download takes time, and not necessary to download all to git
-    # Find the chromium.json, chromium.csv to get all download links
+    # Find the chromium.stable.json, chromium.stable.csv to get all download links
     # chromium.chromium_download()
