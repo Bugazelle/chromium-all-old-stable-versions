@@ -11,7 +11,7 @@ List all possible chromium stable versions. Hope could be the help to you. :)
 2. [chromium.stable.csv](https://raw.githubusercontent.com/Bugazelle/chromium-all-old-stable-versions/master/chromium.stable.csv)
 
 > Something you need to know: 
-> 1. The omahaproxy only provides the chromium_**base**_position for main version. 
+> 1. The [omahaproxy](https://omahaproxy.appspot.com/) only provides the chromium_**base**_position for main version. 
 >    For example 77.x.xxxx.xx, the [77.0.3865.75 - 681094](https://omahaproxy.appspot.com/deps.json?version=77.0.3865.90), [77.0.3865.90 - 681094](https://omahaproxy.appspot.com/deps.json?version=77.0.3865.90), they have the same position 681094.
 >    So, the chromium download urls for 77.x.xxxx.xx are the same.
 >    Based on the [official document](https://www.chromium.org/getting-involved/download-chromium), seems no better solution to fix this.
