@@ -25,7 +25,7 @@ List all possible chromium stable versions. Hope could be the help to you. :)
 
    https://omahaproxy.appspot.com/history.json?channel=stable&os=linux
 
-   > OS: Linux, Mac, Win, Win64
+   > OS: Linux, Mac, Win, Win64, Android
    
 2. Get All Existed Positions: googleapis
 
