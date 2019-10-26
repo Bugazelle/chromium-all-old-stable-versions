@@ -71,31 +71,37 @@ class Chromium(object):
     def __get_existed_positions_core(self, url, os_type, ini_start=False):
         """Private Function: __get_existed_positions_core"""
 
-        res = self.session.get(url, timeout=self.time_out)
-        status_code = res.status_code
-        if status_code != 200:
-            error_message = 'Fatal: Unexpected status code detected ' \
-                             'when requesting prefix url: {0}, {1}'.format(status_code, url)
-            print(Fore.YELLOW + error_message)
-            sys.exit(1)
-        content = json.loads(res.content)
         try:
-            prefixes = content['prefixes']
-        except KeyError:
-            error_message = 'Fatal: Prefixes not in response: {0}, {1}'.format(url, content)
-            print(Fore.YELLOW + error_message)
-            sys.exit(1)
-        prefixes_with_position = {re.search('/(.*?)/', prefix).group(1): prefix for prefix in prefixes}
-        if ini_start is True:
-            self.chromium_existed_positions[os_type] = prefixes_with_position
-        else:
-            self.chromium_existed_positions[os_type].update(prefixes_with_position)
-        try:
-            next_page_token = content['nextPageToken']
-        except KeyError:
-            next_page_token = None
+            res = self.session.get(url, timeout=self.time_out)
+            status_code = res.status_code
+            if status_code != 200:
+                error_message = 'Fatal: Unexpected status code detected ' \
+                                'when requesting prefix url: {0}, {1}'.format(status_code, url)
+                print(Fore.YELLOW + error_message)
+                sys.exit(1)
+            content = json.loads(res.content)
+            try:
+                prefixes = content['prefixes']
+            except KeyError:
+                error_message = 'Fatal: Prefixes not in response: {0}, {1}'.format(url, content)
+                print(Fore.YELLOW + error_message)
+                sys.exit(1)
+            prefixes_with_position = {re.search('/(.*?)/', prefix).group(1): prefix for prefix in prefixes}
+            if ini_start is True:
+                self.chromium_existed_positions[os_type] = prefixes_with_position
+            else:
+                self.chromium_existed_positions[os_type].update(prefixes_with_position)
+            try:
+                next_page_token = content['nextPageToken']
+            except KeyError:
+                next_page_token = None
 
-        return next_page_token
+            return next_page_token
+        except (requests.RequestException,
+                requests.exceptions.SSLError,
+                requests.packages.urllib3.exceptions.SSLError) as e:
+            error_message = 'Error: Unexpected error when requesting history url: {0}, {1}'.format(url, e)
+            print(Fore.RED + error_message)
 
     def get_existed_positions(self):
         """Function: get_existed_positions
