@@ -56,9 +56,13 @@ And then push the chromium json files back to repo.
 
 ## Chrome (Not Chromium) Old/History Versions
 
-1. Linux NPM Packages: (http://orion.lcg.ufrj.br/RPMS/myrpms/google/
+1. Linux NPM Packages: http://orion.lcg.ufrj.br/RPMS/myrpms/google/
 
-2. Linux Deb, Mac, Windows Packages: https://www.slimjet.com/chrome/google-chrome-old-version.php
+2. Linux DEB Packages: 
+
+   Specific the version like: 77.0.3865.120-1. And download via: https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_77.0.3865.120-1_amd64.deb
+
+3. Linux Deb, Mac, Windows Packages: https://www.slimjet.com/chrome/google-chrome-old-version.php
 
 ## Something Else
 
