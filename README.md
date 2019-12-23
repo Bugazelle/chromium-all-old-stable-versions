@@ -1,8 +1,6 @@
 Chromium All Old Stable Versions
 ====================
 
-> Updated at: 2019.10.27
-
 List all possible chromium stable versions. Hope could be the help to you. :)
 
 ## Download Links
