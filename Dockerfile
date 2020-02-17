@@ -15,6 +15,8 @@ ENV HOME=/home/chromium
 
 # Copy src to docker
 COPY ./src/ $HOME/src
+COPY ./chromium.stable.json $HOME
+COPY ./chromium.stable.csv $HOME
 
 # Set working directory
 WORKDIR $HOME

@@ -137,8 +137,6 @@ class Chromium(object):
         """Private Function: __process_difference"""
 
         if history_json_file_exists is False or self.force_crawl is True:
-            with open(history_json_file, 'w+') as f:
-                json.dump(releases, f)
             return releases
         else:
             with open(history_json_file) as f:
@@ -178,9 +176,12 @@ class Chromium(object):
                 if not new_releases:
                     print('Info: No new release found for os type {0}'.format(os_type))
                     continue
-                all_releases = releases + new_releases
+                if releases != new_releases:
+                    all_releases = releases + new_releases
+                else:
+                    all_releases = releases
                 with open(history_json_file, 'w+') as f:
-                    json.dump(all_releases, f)
+                    json.dump(all_releases, f, indent=4)
                 for release in new_releases:
                     try:
                         version = release['version']

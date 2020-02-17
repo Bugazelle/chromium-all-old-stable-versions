@@ -15,6 +15,32 @@ List all possible chromium stable versions. Hope could be the help to you. :)
 >    Based on the [official document](https://www.chromium.org/getting-involved/download-chromium), seems no better solution to fix this.
 > 2. Some of certain positions don't have the chromium build. To get chromium, get the nearest position from: [position-100, position+100]
 
+## Command to install at Ubuntu
+
+Here is the command for reference to install the Chromium at Ubuntu
+
+```
+CHROMIUM_VERSION=77.0.3865.120
+wget --no-check-certificate https://raw.githubusercontent.com/Bugazelle/chromium-all-old-stable-versions/master/chromium.stable.json
+
+# Parse the json
+download=$(jq -r ".linux64.\"${CHROMIUM_VERSION}\".download_url" chromium.stable.json)
+position=$(jq -r ".linux64.\"${CHROMIUM_VERSION}\".download_position" chromium.stable.json)
+echo "download url is: ${download}"
+echo "position is: ${position}"
+
+# Download
+wget --no-check-certificate -O chromium.zip ${download}
+unzip chromium.zip
+rm -f chromium.zip
+
+# Configure the --no-sandbox and --ignore-certificate-errors
+sed -i 's/\"$@\"/--no-sandbox --ignore-certificate-errors \"$@\"/' chrome-linux/chrome-wrapper
+
+# Set to the system: assume the current folder is: /headless/
+sudo ln -s /headless/chrome-linux/chrome-wrapper /usr/bin/chromium
+```
+
 ## Download Process
 
 1. Get Version: history.json
