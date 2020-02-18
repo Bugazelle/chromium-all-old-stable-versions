@@ -356,7 +356,8 @@ class Chromium(object):
                     try:
                         chromium_downloads[os_type].update(existed_chromium_downloads[os_type])
                     except KeyError:
-                        pass
+                        chromium_downloads[os_type] = dict()
+                        chromium_downloads[os_type].update(existed_chromium_downloads[os_type])
         with open(json_report, 'w+') as f:
             json.dump(chromium_downloads, f, indent=4)
 
