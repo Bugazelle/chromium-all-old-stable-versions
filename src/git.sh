@@ -26,7 +26,7 @@ cp -a $HOME/Downloads/. $HOME/$repo_name/ || true
 # git commit -m "[Auto] Track *.zip files using Git LFS"
 git add .;
 git commit -am "[Auto] Push Data From Docker Hub";
-git push origin master;
+git push origin $GIT_BRANCH;
 
 # Clean
 cd ..
