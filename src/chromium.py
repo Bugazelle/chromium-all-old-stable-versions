@@ -353,7 +353,10 @@ class Chromium(object):
             with open(json_report) as f:
                 existed_chromium_downloads = json.loads(f.read())
                 for os_type in self.os_type.keys():
-                    chromium_downloads[os_type].update(existed_chromium_downloads[os_type])
+                    try:
+                        chromium_downloads[os_type].update(existed_chromium_downloads[os_type])
+                    except KeyError:
+                        pass
         with open(json_report, 'w+') as f:
             json.dump(chromium_downloads, f, indent=4)
 
