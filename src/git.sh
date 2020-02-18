@@ -14,7 +14,7 @@ git config user.name "$GIT_NAME"
 git config user.email "$GIT_EMAIL"
 
 # Push
-git checkout master
+git checkout $GIT_BRANCH
 git fetch origin
 git pull
 cp -a $HOME/*.json $HOME/$repo_name/src

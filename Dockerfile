@@ -10,6 +10,7 @@ ARG GIT_TOKEN=0
 ARG GIT_REPO=https://${GIT_TOKEN}@github.com/Bugazelle/chromium-all-old-stable-versions.git
 ARG GIT_NAME=Bugazelle
 ARG GIT_EMAIL=zi_cheng@qq.com
+ARG GIT_BRANCH=master
 ARG FORCE_CRAWL=false
 ENV HOME=/home/chromium
 
