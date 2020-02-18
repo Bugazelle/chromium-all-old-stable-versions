@@ -1,1 +1,1796 @@
-[{"timestamp": "2019-12-17 18:20:04.900867", "version": "79.0.3945.88", "os": "linux", "channel": "stable"}, {"timestamp": "2019-12-10 19:30:05.516723", "version": "79.0.3945.79", "os": "linux", "channel": "stable"}, {"timestamp": "2019-11-18 20:44:02.784612", "version": "78.0.3904.108", "os": "linux", "channel": "stable"}, {"timestamp": "2019-11-06 19:47:03.831295", "version": "78.0.3904.97", "os": "linux", "channel": "stable"}, {"timestamp": "2019-10-31 19:37:04.803620", "version": "78.0.3904.87", "os": "linux", "channel": "stable"}, {"timestamp": "2019-10-22 19:08:04.217172", "version": "78.0.3904.70", "os": "linux", "channel": "stable"}, {"timestamp": "2019-10-10 17:12:04.308793", "version": "77.0.3865.120", "os": "linux", "channel": "stable"}, {"timestamp": "2019-09-18 17:14:04.680336", "version": "77.0.3865.90", "os": "linux", "channel": "stable"}, {"timestamp": "2019-09-10 18:49:04.067062", "version": "77.0.3865.75", "os": "linux", "channel": "stable"}, {"timestamp": "2019-08-26 18:34:03.153225", "version": "76.0.3809.132", "os": "linux", "channel": "stable"}, {"timestamp": "2019-08-06 21:01:04.121931", "version": "76.0.3809.100", "os": "linux", "channel": "stable"}, {"timestamp": "2019-07-30 18:13:08.947563", "version": "76.0.3809.87", "os": "linux", "channel": "stable"}, {"timestamp": "2019-07-15 21:15:04.669700", "version": "75.0.3770.142", "os": "linux", "channel": "stable"}, {"timestamp": "2019-06-18 15:41:03.546671", "version": "75.0.3770.100", "os": "linux", "channel": "stable"}, {"timestamp": "2019-06-13 15:53:02.523047", "version": "75.0.3770.90", "os": "linux", "channel": "stable"}, {"timestamp": "2019-06-04 19:45:03.700342", "version": "75.0.3770.80", "os": "linux", "channel": "stable"}, {"timestamp": "2019-05-21 18:59:05.476411", "version": "74.0.3729.169", "os": "linux", "channel": "stable"}, {"timestamp": "2019-05-14 17:45:04.610708", "version": "74.0.3729.157", "os": "linux", "channel": "stable"}, {"timestamp": "2019-04-30 19:55:03.666565", "version": "74.0.3729.131", "os": "linux", "channel": "stable"}, {"timestamp": "2019-04-23 21:10:03.569026", "version": "74.0.3729.108", "os": "linux", "channel": "stable"}, {"timestamp": "2019-04-04 23:26:02.936301", "version": "73.0.3683.103", "os": "linux", "channel": "stable"}, {"timestamp": "2019-03-20 20:06:06.656302", "version": "73.0.3683.86", "os": "linux", "channel": "stable"}, {"timestamp": "2019-03-12 18:31:04.203619", "version": "73.0.3683.75", "os": "linux", "channel": "stable"}, {"timestamp": "2019-03-01 21:51:03.354486", "version": "72.0.3626.121", "os": "linux", "channel": "stable"}, {"timestamp": "2019-02-21 20:39:05.962885", "version": "72.0.3626.119", "os": "linux", "channel": "stable"}, {"timestamp": "2019-02-13 21:55:03.592840", "version": "72.0.3626.109", "os": "linux", "channel": "stable"}, {"timestamp": "2019-02-06 20:02:05.048057", "version": "72.0.3626.96", "os": "linux", "channel": "stable"}, {"timestamp": "2019-01-29 20:00:05.151304", "version": "72.0.3626.81", "os": "linux", "channel": "stable"}, {"timestamp": "2018-12-12 19:27:04.112635", "version": "71.0.3578.98", "os": "linux", "channel": "stable"}, {"timestamp": "2018-12-04 18:40:03.331546", "version": "71.0.3578.80", "os": "linux", "channel": "stable"}, {"timestamp": "2018-11-19 17:49:08.262244", "version": "70.0.3538.110", "os": "linux", "channel": "stable"}, {"timestamp": "2018-11-09 19:02:02.433467", "version": "70.0.3538.102", "os": "linux", "channel": "stable"}, {"timestamp": "2018-10-24 19:25:05.497152", "version": "70.0.3538.77", "os": "linux", "channel": "stable"}, {"timestamp": "2018-10-16 18:49:05.444128", "version": "70.0.3538.67", "os": "linux", "channel": "stable"}, {"timestamp": "2018-09-17 18:25:04.427580", "version": "69.0.3497.100", "os": "linux", "channel": "stable"}, {"timestamp": "2018-09-11 18:02:02.481281", "version": "69.0.3497.92", "os": "linux", "channel": "stable"}, {"timestamp": "2018-09-04 18:22:03.358010", "version": "69.0.3497.81", "os": "linux", "channel": "stable"}, {"timestamp": "2018-08-08 18:14:04.168370", "version": "68.0.3440.106", "os": "linux", "channel": "stable"}, {"timestamp": "2018-07-31 20:42:03.203520", "version": "68.0.3440.84", "os": "linux", "channel": "stable"}, {"timestamp": "2018-07-24 21:05:03.064160", "version": "68.0.3440.75", "os": "linux", "channel": "stable"}, {"timestamp": "2018-06-25 18:02:02.677511", "version": "67.0.3396.99", "os": "linux", "channel": "stable"}, {"timestamp": "2018-06-12 17:39:02.947720", "version": "67.0.3396.87", "os": "linux", "channel": "stable"}, {"timestamp": "2018-06-06 17:55:03.204030", "version": "67.0.3396.79", "os": "linux", "channel": "stable"}, {"timestamp": "2018-05-29 18:45:02.745410", "version": "67.0.3396.62", "os": "linux", "channel": "stable"}, {"timestamp": "2018-05-15 18:40:01.503450", "version": "66.0.3359.181", "os": "linux", "channel": "stable"}, {"timestamp": "2018-05-10 20:32:03.926460", "version": "66.0.3359.170", "os": "linux", "channel": "stable"}, {"timestamp": "2018-04-26 21:20:03.217770", "version": "66.0.3359.139", "os": "linux", "channel": "stable"}, {"timestamp": "2018-04-17 23:00:02.419170", "version": "66.0.3359.117", "os": "linux", "channel": "stable"}, {"timestamp": "2018-03-20 20:36:05.310530", "version": "65.0.3325.181", "os": "linux", "channel": "stable"}, {"timestamp": "2018-03-13 19:05:03.011880", "version": "65.0.3325.162", "os": "linux", "channel": "stable"}, {"timestamp": "2018-03-06 21:30:01.477120", "version": "65.0.3325.146", "os": "linux", "channel": "stable"}, {"timestamp": "2018-02-23 01:57:03.678020", "version": "64.0.3282.186", "os": "linux", "channel": "stable"}, {"timestamp": "2018-02-13 23:18:02.229170", "version": "64.0.3282.167", "os": "linux", "channel": "stable"}, {"timestamp": "2018-02-02 01:16:01.848010", "version": "64.0.3282.140", "os": "linux", "channel": "stable"}, {"timestamp": "2018-01-24 19:33:03.083050", "version": "64.0.3282.119", "os": "linux", "channel": "stable"}, {"timestamp": "2018-01-04 18:17:02.809740", "version": "63.0.3239.132", "os": "linux", "channel": "stable"}, {"timestamp": "2017-12-14 22:21:02.647230", "version": "63.0.3239.108", "os": "linux", "channel": "stable"}, {"timestamp": "2017-12-06 19:59:02.618500", "version": "63.0.3239.84", "os": "linux", "channel": "stable"}, {"timestamp": "2017-11-13 20:08:01.571380", "version": "62.0.3202.94", "os": "linux", "channel": "stable"}, {"timestamp": "2017-11-06 19:46:01.333390", "version": "62.0.3202.89", "os": "linux", "channel": "stable"}, {"timestamp": "2017-10-26 19:02:02.339580", "version": "62.0.3202.75", "os": "linux", "channel": "stable"}, {"timestamp": "2017-10-17 20:55:02.280610", "version": "62.0.3202.62", "os": "linux", "channel": "stable"}, {"timestamp": "2017-09-22 03:20:01.848610", "version": "61.0.3163.100", "os": "linux", "channel": "stable"}, {"timestamp": "2017-09-14 18:09:03.370530", "version": "61.0.3163.91", "os": "linux", "channel": "stable"}, {"timestamp": "2017-09-05 18:34:02.697580", "version": "61.0.3163.79", "os": "linux", "channel": "stable"}, {"timestamp": "2017-08-24 18:01:02.247750", "version": "60.0.3112.113", "os": "linux", "channel": "stable"}, {"timestamp": "2017-08-14 20:19:01.864700", "version": "60.0.3112.101", "os": "linux", "channel": "stable"}, {"timestamp": "2017-08-02 20:19:01.646640", "version": "60.0.3112.90", "os": "linux", "channel": "stable"}, {"timestamp": "2017-07-25 18:58:01.396300", "version": "60.0.3112.78", "os": "linux", "channel": "stable"}, {"timestamp": "2017-06-26 17:18:01.822550", "version": "59.0.3071.115", "os": "linux", "channel": "stable"}, {"timestamp": "2017-06-20 21:43:01.640240", "version": "59.0.3071.109", "os": "linux", "channel": "stable"}, {"timestamp": "2017-06-15 18:21:02.415900", "version": "59.0.3071.104", "os": "linux", "channel": "stable"}, {"timestamp": "2017-06-05 19:52:02.308890", "version": "59.0.3071.86", "os": "linux", "channel": "stable"}, {"timestamp": "2017-05-09 17:47:02.158930", "version": "58.0.3029.110", "os": "linux", "channel": "stable"}, {"timestamp": "2017-05-02 18:05:02.029050", "version": "58.0.3029.96", "os": "linux", "channel": "stable"}, {"timestamp": "2017-04-19 17:55:02.692820", "version": "58.0.3029.81", "os": "linux", "channel": "stable"}, {"timestamp": "2017-03-29 19:15:02.066400", "version": "57.0.2987.133", "os": "linux", "channel": "stable"}, {"timestamp": "2017-03-16 19:52:02.261250", "version": "57.0.2987.110", "os": "linux", "channel": "stable"}, {"timestamp": "2017-03-09 19:49:02.841800", "version": "57.0.2987.98", "os": "linux", "channel": "stable"}, {"timestamp": "2017-02-02 01:29:01.528620", "version": "56.0.2924.87", "os": "linux", "channel": "stable"}, {"timestamp": "2017-01-25 22:51:03.051730", "version": "56.0.2924.76", "os": "linux", "channel": "stable"}, {"timestamp": "2016-12-12 19:49:01.488170", "version": "55.0.2883.87", "os": "linux", "channel": "stable"}, {"timestamp": "2016-12-12 19:35:01.838980", "version": "52.0.2743.116", "os": "linux", "channel": "stable"}, {"timestamp": "2016-12-02 18:17:01.750670", "version": "55.0.2883.75", "os": "linux", "channel": "stable"}, {"timestamp": "2016-11-10 19:34:01.349120", "version": "54.0.2840.100", "os": "linux", "channel": "stable"}, {"timestamp": "2016-11-01 18:41:02.213720", "version": "54.0.2840.90", "os": "linux", "channel": "stable"}, {"timestamp": "2016-10-20 22:26:01.958700", "version": "54.0.2840.71", "os": "linux", "channel": "stable"}, {"timestamp": "2016-10-12 18:37:01.718900", "version": "54.0.2840.59", "os": "linux", "channel": "stable"}, {"timestamp": "2016-10-04 22:57:01.459420", "version": "53.0.2785.143", "os": "linux", "channel": "stable"}, {"timestamp": "2016-09-14 22:14:01.864860", "version": "53.0.2785.116", "os": "linux", "channel": "stable"}, {"timestamp": "2016-09-13 18:56:02.279550", "version": "53.0.2785.113", "os": "linux", "channel": "stable"}, {"timestamp": "2016-09-07 22:41:03.302000", "version": "53.0.2785.101", "os": "linux", "channel": "stable"}, {"timestamp": "2016-09-02 18:28:04.458530", "version": "53.0.2785.92", "os": "linux", "channel": "stable"}, {"timestamp": "2016-08-31 19:34:01.675620", "version": "53.0.2785.89", "os": "linux", "channel": "stable"}, {"timestamp": "2016-07-20 18:56:03.268710", "version": "52.0.2743.82", "os": "linux", "channel": "stable"}, {"timestamp": "2016-06-24 00:25:01.155500", "version": "51.0.2704.106", "os": "linux", "channel": "stable"}, {"timestamp": "2016-06-16 17:38:02.023190", "version": "51.0.2704.103", "os": "linux", "channel": "stable"}, {"timestamp": "2016-06-06 18:38:01.226440", "version": "51.0.2704.84", "os": "linux", "channel": "stable"}, {"timestamp": "2016-06-01 21:16:02.273420", "version": "51.0.2704.79", "os": "linux", "channel": "stable"}, {"timestamp": "2016-05-25 21:02:01.717780", "version": "51.0.2704.63", "os": "linux", "channel": "stable"}, {"timestamp": "2016-05-11 17:58:02.967020", "version": "50.0.2661.102", "os": "linux", "channel": "stable"}, {"timestamp": "2016-04-28 18:10:01.712790", "version": "50.0.2661.94", "os": "linux", "channel": "stable"}, {"timestamp": "2016-04-20 22:47:01.136050", "version": "50.0.2661.86", "os": "linux", "channel": "stable"}, {"timestamp": "2016-04-13 18:21:02.101240", "version": "50.0.2661.75", "os": "linux", "channel": "stable"}, {"timestamp": "2016-04-07 18:22:01.688540", "version": "49.0.2623.112", "os": "linux", "channel": "stable"}, {"timestamp": "2016-03-28 18:30:02.038700", "version": "49.0.2623.110", "os": "linux", "channel": "stable"}, {"timestamp": "2016-03-24 17:36:01.273310", "version": "49.0.2623.108", "os": "linux", "channel": "stable"}, {"timestamp": "2016-03-09 00:05:08.395010", "version": "49.0.2623.87", "os": "linux", "channel": "stable"}, {"timestamp": "2016-03-02 20:23:07.770520", "version": "49.0.2623.75", "os": "linux", "channel": "stable"}, {"timestamp": "2016-02-18 20:23:07.019020", "version": "48.0.2564.116", "os": "linux", "channel": "stable"}, {"timestamp": "2016-02-09 19:07:05.198510", "version": "48.0.2564.109", "os": "linux", "channel": "stable"}, {"timestamp": "2016-02-03 22:23:05.536540", "version": "48.0.2564.103", "os": "linux", "channel": "stable"}, {"timestamp": "2016-01-27 21:12:06.413020", "version": "48.0.2564.97", "os": "linux", "channel": "stable"}, {"timestamp": "2016-01-20 23:04:05.150410", "version": "48.0.2564.82", "os": "linux", "channel": "stable"}, {"timestamp": "2016-01-13 22:00:05.140780", "version": "47.0.2526.111", "os": "linux", "channel": "stable"}, {"timestamp": "2015-12-15 20:06:03.342010", "version": "47.0.2526.106", "os": "linux", "channel": "stable"}, {"timestamp": "2015-12-08 20:04:03.387360", "version": "47.0.2526.80", "os": "linux", "channel": "stable"}, {"timestamp": "2015-12-01 19:50:03.825710", "version": "47.0.2526.73", "os": "linux", "channel": "stable"}, {"timestamp": "2015-11-10 21:30:05.788760", "version": "46.0.2490.86", "os": "linux", "channel": "stable"}, {"timestamp": "2015-10-22 19:00:03.830940", "version": "46.0.2490.80", "os": "linux", "channel": "stable"}, {"timestamp": "2015-10-13 18:00:04.796200", "version": "46.0.2490.71", "os": "linux", "channel": "stable"}, {"timestamp": "2015-09-24 22:43:04.136860", "version": "45.0.2454.101", "os": "linux", "channel": "stable"}, {"timestamp": "2015-09-21 18:25:03.169010", "version": "45.0.2454.99", "os": "linux", "channel": "stable"}, {"timestamp": "2015-09-15 19:23:02.448760", "version": "45.0.2454.93", "os": "linux", "channel": "stable"}, {"timestamp": "2015-09-01 19:09:03.401770", "version": "45.0.2454.85", "os": "linux", "channel": "stable"}, {"timestamp": "2015-08-20 17:47:03.808070", "version": "44.0.2403.157", "os": "linux", "channel": "stable"}, {"timestamp": "2015-08-11 15:36:03.083610", "version": "44.0.2403.155", "os": "linux", "channel": "stable"}, {"timestamp": "2015-08-04 17:41:03.312000", "version": "44.0.2403.130", "os": "linux", "channel": "stable"}, {"timestamp": "2015-07-28 18:09:03.818710", "version": "44.0.2403.125", "os": "linux", "channel": "stable"}, {"timestamp": "2015-07-24 17:46:03.292010", "version": "44.0.2403.107", "os": "linux", "channel": "stable"}, {"timestamp": "2015-07-21 17:40:03.553900", "version": "44.0.2403.89", "os": "linux", "channel": "stable"}, {"timestamp": "2015-07-14 13:14:05.180440", "version": "43.0.2357.134", "os": "linux", "channel": "stable"}, {"timestamp": "2015-07-07 15:06:04.279940", "version": "43.0.2357.132", "os": "linux", "channel": "stable"}, {"timestamp": "2015-06-22 15:32:06.470400", "version": "43.0.2357.130", "os": "linux", "channel": "stable"}, {"timestamp": "2015-06-11 16:34:04.189060", "version": "43.0.2357.125", "os": "linux", "channel": "stable"}, {"timestamp": "2015-06-09 13:00:04.628380", "version": "43.0.2357.124", "os": "linux", "channel": "stable"}, {"timestamp": "2015-05-25 15:29:02.827020", "version": "43.0.2357.81", "os": "linux", "channel": "stable"}, {"timestamp": "2015-05-19 15:58:06.363460", "version": "43.0.2357.65", "os": "linux", "channel": "stable"}, {"timestamp": "2015-05-12 15:58:05.597710", "version": "42.0.2311.152", "os": "linux", "channel": "stable"}, {"timestamp": "2015-04-28 17:39:59.436470", "version": "42.0.2311.135", "os": "linux", "channel": "stable"}, {"timestamp": "2015-04-14 17:38:07.925770", "version": "42.0.2311.90", "os": "linux", "channel": "stable"}, {"timestamp": "2015-04-01 17:48:13.881670", "version": "41.0.2272.118", "os": "linux", "channel": "stable"}, {"timestamp": "2015-03-20 04:24:20.077340", "version": "41.0.2272.101", "os": "linux", "channel": "stable"}, {"timestamp": "2015-03-10 18:34:55.233560", "version": "41.0.2272.89", "os": "linux", "channel": "stable"}, {"timestamp": "2015-03-03 19:03:07.355610", "version": "41.0.2272.76", "os": "linux", "channel": "stable"}, {"timestamp": "2015-02-19 16:27:01.951950", "version": "40.0.2214.115", "os": "linux", "channel": "stable"}, {"timestamp": "2015-02-05 17:13:49.379570", "version": "40.0.2214.111", "os": "linux", "channel": "stable"}, {"timestamp": "2015-02-04 00:12:02.549880", "version": "40.0.2214.95", "os": "linux", "channel": "stable"}, {"timestamp": "2015-01-29 19:54:27.189740", "version": "40.0.2214.94", "os": "linux", "channel": "stable"}, {"timestamp": "2015-01-27 01:42:59.515820", "version": "40.0.2214.93", "os": "linux", "channel": "stable"}, {"timestamp": "2015-01-21 19:36:09.206130", "version": "40.0.2214.91", "os": "linux", "channel": "stable"}, {"timestamp": "2015-01-13 20:45:25.909700", "version": "39.0.2171.99", "os": "linux", "channel": "stable"}, {"timestamp": "2014-12-09 20:11:00.157270", "version": "39.0.2171.95", "os": "linux", "channel": "stable"}, {"timestamp": "2014-11-25 23:04:58.385400", "version": "39.0.2171.71", "os": "linux", "channel": "stable"}, {"timestamp": "2014-11-18 16:45:41.414590", "version": "39.0.2171.65", "os": "linux", "channel": "stable"}, {"timestamp": "2014-11-11 19:06:25.075690", "version": "38.0.2125.122", "os": "linux", "channel": "stable"}, {"timestamp": "2014-10-27 18:58:47.173780", "version": "38.0.2125.111", "os": "linux", "channel": "stable"}, {"timestamp": "2014-10-14 20:03:28.016180", "version": "38.0.2125.104", "os": "linux", "channel": "stable"}, {"timestamp": "2014-10-07 19:45:21.307270", "version": "38.0.2125.101", "os": "linux", "channel": "stable"}, {"timestamp": "2014-09-09 16:43:22.316240", "version": "37.0.2062.120", "os": "linux", "channel": "stable"}, {"timestamp": "2014-08-26 14:11:22.119930", "version": "37.0.2062.94", "os": "linux", "channel": "stable"}, {"timestamp": "2014-08-12 19:33:17.924610", "version": "36.0.1985.143", "os": "linux", "channel": "stable"}, {"timestamp": "2014-07-16 19:02:12.183600", "version": "36.0.1985.125", "os": "linux", "channel": "stable"}, {"timestamp": "2014-06-10 17:11:04.345430", "version": "35.0.1916.153", "os": "linux", "channel": "stable"}, {"timestamp": "2014-05-20 16:52:36.988000", "version": "35.0.1916.114", "os": "linux", "channel": "stable"}, {"timestamp": "2014-05-13 17:52:02.919960", "version": "34.0.1847.137", "os": "linux", "channel": "stable"}, {"timestamp": "2014-04-24 17:50:04.713960", "version": "34.0.1847.132", "os": "linux", "channel": "stable"}, {"timestamp": "2014-04-08 21:04:43.153820", "version": "34.0.1847.116", "os": "linux", "channel": "stable"}, {"timestamp": "2014-03-15 08:52:58.692420", "version": "33.0.1750.152", "os": "linux", "channel": "stable"}, {"timestamp": "2014-03-11 16:13:45.506060", "version": "33.0.1750.149", "os": "linux", "channel": "stable"}, {"timestamp": "2014-03-04 01:08:05.428040", "version": "33.0.1750.146", "os": "linux", "channel": "stable"}, {"timestamp": "2014-02-21 02:57:04.911100", "version": "33.0.1750.117", "os": "linux", "channel": "stable"}, {"timestamp": "2014-02-19 16:51:16.112150", "version": "33.0.1750.115", "os": "linux", "channel": "stable"}, {"timestamp": "2014-02-19 16:34:28.562130", "version": "32.0.1700.107", "os": "linux", "channel": "stable"}, {"timestamp": "2014-01-27 22:15:05.037830", "version": "32.0.1700.102", "os": "linux", "channel": "stable"}, {"timestamp": "2014-01-15 03:16:41.430120", "version": "32.0.1700.77", "os": "linux", "channel": "stable"}, {"timestamp": "2013-12-04 21:49:02.384540", "version": "31.0.1650.63", "os": "linux", "channel": "stable"}, {"timestamp": "2013-12-04 19:12:12.534520", "version": "31.0.1650.57", "os": "linux", "channel": "stable"}, {"timestamp": "2013-11-15 02:54:15.169820", "version": "31.0.1650.48", "os": "linux", "channel": "stable"}, {"timestamp": "2013-10-23 05:35:31.704760", "version": "30.0.1599.114", "os": "linux", "channel": "stable"}, {"timestamp": "2013-10-16 09:19:15.745570", "version": "30.0.1599.101", "os": "linux", "channel": "stable"}, {"timestamp": "2013-10-01 17:59:51.475750", "version": "30.0.1599.66", "os": "linux", "channel": "stable"}, {"timestamp": "2013-09-19 04:05:35.265050", "version": "29.0.1547.76", "os": "linux", "channel": "stable"}, {"timestamp": "2013-09-03 08:27:31.924830", "version": "29.0.1547.65", "os": "linux", "channel": "stable"}, {"timestamp": "2013-09-03 08:09:29.023750", "version": "29.0.1547.62", "os": "linux", "channel": "stable"}, {"timestamp": "2013-08-21 10:03:11.630370", "version": "29.0.1547.57", "os": "linux", "channel": "stable"}, {"timestamp": "2013-07-30 16:35:39.585910", "version": "28.0.1500.95", "os": "linux", "channel": "stable"}, {"timestamp": "2013-07-03 18:27:56.825640", "version": "28.0.1500.71", "os": "linux", "channel": "stable"}, {"timestamp": "2013-07-03 04:43:15.180580", "version": "28.0.1500.70", "os": "linux", "channel": "stable"}, {"timestamp": "2013-07-02 14:34:37.525170", "version": "28.0.1500.68", "os": "linux", "channel": "stable"}, {"timestamp": "2013-06-28 02:47:29.983230", "version": "28.0.1500.63", "os": "linux", "channel": "stable"}, {"timestamp": "2013-06-20 00:50:18.203620", "version": "28.0.1500.52", "os": "linux", "channel": "stable"}, {"timestamp": "2013-06-17 22:10:01.714930", "version": "28.0.1500.45", "os": "linux", "channel": "stable"}, {"timestamp": "2013-06-04 21:51:00.824490", "version": "27.0.1453.110", "os": "linux", "channel": "stable"}, {"timestamp": "2013-05-21 21:29:55.194600", "version": "27.0.1453.93", "os": "linux", "channel": "stable"}, {"timestamp": "2013-04-09 17:04:52.272270", "version": "26.0.1410.63", "os": "linux", "channel": "stable"}, {"timestamp": "2013-03-26 17:02:57.875950", "version": "26.0.1410.43", "os": "linux", "channel": "stable"}, {"timestamp": "2013-03-12 17:03:14.761132", "version": "25.0.1364.172", "os": "linux", "channel": "stable"}, {"timestamp": "2013-03-08 02:00:44.250734", "version": "25.0.1364.160", "os": "linux", "channel": "stable"}, {"timestamp": "2013-03-04 17:29:28.835037", "version": "25.0.1364.152", "os": "linux", "channel": "stable"}, {"timestamp": "2013-02-21 21:55:01.083299", "version": "25.0.1364.97", "os": "linux", "channel": "stable"}, {"timestamp": "2013-02-12 18:13:34.257944", "version": "24.0.1312.70", "os": "linux", "channel": "stable"}, {"timestamp": "2013-02-06 16:13:50.284918", "version": "24.0.1312.69", "os": "linux", "channel": "stable"}, {"timestamp": "2013-02-04 18:50:27.997913", "version": "24.0.1312.68", "os": "linux", "channel": "stable"}, {"timestamp": "2013-01-30 18:02:34.647277", "version": "24.0.1312.57", "os": "linux", "channel": "stable"}, {"timestamp": "2013-01-22 18:05:25.213262", "version": "24.0.1312.56", "os": "linux", "channel": "stable"}, {"timestamp": "2013-01-10 18:15:58.021612", "version": "24.0.1312.52", "os": "linux", "channel": "stable"}, {"timestamp": "2012-12-11 18:00:21.620292", "version": "23.0.1271.97", "os": "linux", "channel": "stable"}, {"timestamp": "2012-11-29 19:10:12.932958", "version": "23.0.1271.95", "os": "linux", "channel": "stable"}, {"timestamp": "2012-11-26 17:50:47.467186", "version": "23.0.1271.91", "os": "linux", "channel": "stable"}, {"timestamp": "2012-11-06 18:00:03.661027", "version": "23.0.1271.64", "os": "linux", "channel": "stable"}, {"timestamp": "2012-10-10 15:44:20.033699", "version": "22.0.1229.94", "os": "linux", "channel": "stable"}, {"timestamp": "2012-10-08 16:40:32.212692", "version": "22.0.1229.92", "os": "linux", "channel": "stable"}, {"timestamp": "2012-09-25 17:23:24.309732", "version": "22.0.1229.79", "os": "linux", "channel": "stable"}, {"timestamp": "2012-08-30 20:24:08.805298", "version": "21.0.1180.89", "os": "linux", "channel": "stable"}, {"timestamp": "2012-08-21 18:11:15.839721", "version": "21.0.1180.81", "os": "linux", "channel": "stable"}, {"timestamp": "2012-08-14 17:23:17.643738", "version": "21.0.1180.79", "os": "linux", "channel": "stable"}, {"timestamp": "2012-08-13 18:43:07.939917", "version": "21.0.1180.77", "os": "linux", "channel": "stable"}, {"timestamp": "2012-08-08 17:28:44.078167", "version": "21.0.1180.75", "os": "linux", "channel": "stable"}, {"timestamp": "2012-07-31 20:08:52.612537", "version": "21.0.1180.57", "os": "linux", "channel": "stable"}, {"timestamp": "2012-07-11 16:43:38.627849", "version": "20.0.1132.57", "os": "linux", "channel": "stable"}, {"timestamp": "2012-06-28 23:22:16.956268", "version": "20.0.1132.47", "os": "linux", "channel": "stable"}, {"timestamp": "2012-06-26 21:23:19.616515", "version": "20.0.1132.43", "os": "linux", "channel": "stable"}, {"timestamp": "2012-06-08 20:44:11.337586", "version": "19.0.1084.56", "os": "linux", "channel": "stable"}, {"timestamp": "2012-05-23 22:12:01.692914", "version": "19.0.1084.52", "os": "linux", "channel": "stable"}, {"timestamp": "2012-05-15 14:09:20.330226", "version": "19.0.1084.46", "os": "linux", "channel": "stable"}, {"timestamp": "2012-04-30 19:47:23.164723", "version": "18.0.1025.168", "os": "linux", "channel": "stable"}, {"timestamp": "2012-04-12 23:43:57.671196", "version": "18.0.1025.162", "os": "linux", "channel": "stable"}, {"timestamp": "2012-04-05 16:59:02.646244", "version": "18.0.1025.151", "os": "linux", "channel": "stable"}, {"timestamp": "2012-03-28 16:56:32.143549", "version": "18.0.1025.142", "os": "linux", "channel": "stable"}, {"timestamp": "2012-03-22 00:51:27.863592", "version": "17.0.963.83", "os": "linux", "channel": "stable"}, {"timestamp": "2012-03-10 18:05:03.433406", "version": "17.0.963.79", "os": "linux", "channel": "stable"}, {"timestamp": "2012-03-08 17:35:03.498036", "version": "17.0.963.78", "os": "linux", "channel": "stable"}, {"timestamp": "2012-03-06 17:47:09.129601", "version": "17.0.963.66", "os": "linux", "channel": "stable"}, {"timestamp": "2012-03-05 02:33:21.694198", "version": "17.0.963.65", "os": "linux", "channel": "stable"}, {"timestamp": "2012-02-15 19:15:02.876248", "version": "17.0.963.56", "os": "linux", "channel": "stable"}, {"timestamp": "2012-02-15 07:31:52.591842", "version": "17.0.963.46", "os": "linux", "channel": "stable"}, {"timestamp": "2012-02-15 01:25:22.965911", "version": "17.0.963.54", "os": "linux", "channel": "stable"}, {"timestamp": "2012-01-23 22:34:00.019210", "version": "16.0.912.77", "os": "linux", "channel": "stable"}, {"timestamp": "2012-01-06 00:40:06.810309", "version": "16.0.912.75", "os": "linux", "channel": "stable"}, {"timestamp": "2011-12-13 01:36:09.865793", "version": "16.0.912.63", "os": "linux", "channel": "stable"}, {"timestamp": "2011-11-17 00:17:59.406668", "version": "15.0.874.121", "os": "linux", "channel": "stable"}, {"timestamp": "2011-11-10 18:05:04.626737", "version": "15.0.874.120", "os": "linux", "channel": "stable"}, {"timestamp": "2011-10-26 19:30:03.207702", "version": "15.0.874.106", "os": "linux", "channel": "stable"}, {"timestamp": "2011-10-25 15:58:40.312155", "version": "15.0.874.102", "os": "linux", "channel": "stable"}, {"timestamp": "2011-10-04 16:36:03.869049", "version": "14.0.835.202", "os": "linux", "channel": "stable"}, {"timestamp": "2011-09-20 19:00:27.698876", "version": "14.0.835.186", "os": "linux", "channel": "stable"}, {"timestamp": "2011-09-16 14:33:15.420623", "version": "14.0.835.163", "os": "linux", "channel": "stable"}, {"timestamp": "2011-09-03 17:09:31.658764", "version": "13.0.782.220", "os": "linux", "channel": "stable"}, {"timestamp": "2011-08-30 17:59:05.071258", "version": "13.0.782.218", "os": "linux", "channel": "stable"}, {"timestamp": "2011-08-22 20:58:18.833826", "version": "13.0.782.215", "os": "linux", "channel": "stable"}, {"timestamp": "2011-08-09 14:47:12.362583", "version": "13.0.782.112", "os": "linux", "channel": "stable"}, {"timestamp": "2011-08-02 15:07:14.151672", "version": "13.0.782.107", "os": "linux", "channel": "stable"}, {"timestamp": "2011-07-12 20:00:36.481829", "version": "12.0.742.124", "os": "linux", "channel": "stable"}, {"timestamp": "2011-06-28 16:56:23.698494", "version": "12.0.742.112", "os": "linux", "channel": "stable"}, {"timestamp": "2011-06-14 21:15:01.744485", "version": "12.0.742.100", "os": "linux", "channel": "stable"}, {"timestamp": "2011-06-07 15:34:02.554546", "version": "12.0.742.91", "os": "linux", "channel": "stable"}, {"timestamp": "2011-06-06 00:46:41.948526", "version": "11.0.696.77", "os": "linux", "channel": "stable"}, {"timestamp": "2011-05-24 21:06:41.971968", "version": "11.0.696.71", "os": "linux", "channel": "stable"}, {"timestamp": "2011-05-12 16:38:22.360473", "version": "11.0.696.68", "os": "linux", "channel": "stable"}, {"timestamp": "2011-05-06 21:41:21.221070", "version": "11.0.696.65", "os": "linux", "channel": "stable"}, {"timestamp": "2011-04-27 15:06:00.956830", "version": "11.0.696.57", "os": "linux", "channel": "stable"}, {"timestamp": "2011-04-14 19:30:03.558057", "version": "10.0.648.205", "os": "linux", "channel": "stable"}, {"timestamp": "2011-03-24 21:20:45.380881", "version": "10.0.648.204", "os": "linux", "channel": "stable"}, {"timestamp": "2011-03-17 19:28:07.789346", "version": "10.0.648.151", "os": "linux", "channel": "stable"}, {"timestamp": "2011-03-15 18:35:15.940658", "version": "10.0.648.134", "os": "linux", "channel": "stable"}, {"timestamp": "2011-03-11 19:43:51.466036", "version": "10.0.648.133", "os": "linux", "channel": "stable"}, {"timestamp": "2011-03-08 15:45:06.967987", "version": "10.0.648.127", "os": "linux", "channel": "stable"}, {"timestamp": "2011-02-28 23:15:02.717099", "version": "9.0.597.107", "os": "linux", "channel": "stable"}, {"timestamp": "2011-02-11 21:35:35.548234", "version": "9.0.597.98", "os": "linux", "channel": "stable"}, {"timestamp": "2011-02-08 16:33:08.016077", "version": "9.0.597.94", "os": "linux", "channel": "stable"}, {"timestamp": "2011-02-03 17:08:20.101045", "version": "9.0.597.84", "os": "linux", "channel": "stable"}, {"timestamp": "2011-01-12 23:14:32.773839", "version": "8.0.552.237", "os": "linux", "channel": "stable"}, {"timestamp": "2010-12-13 19:04:54.889914", "version": "8.0.552.224", "os": "linux", "channel": "stable"}, {"timestamp": "2010-12-02 19:08:19.714492", "version": "8.0.552.215", "os": "linux", "channel": "stable"}, {"timestamp": "2010-11-04 16:00:17.834913", "version": "7.0.517.44", "os": "linux", "channel": "stable"}, {"timestamp": "2010-10-19 17:01:00.466800", "version": "7.0.517.41", "os": "linux", "channel": "stable"}, {"timestamp": "2010-09-24 01:03:27.696501", "version": "6.0.472.63", "os": "linux", "channel": "stable"}, {"timestamp": "2010-09-17 21:46:10.526648", "version": "6.0.472.62", "os": "linux", "channel": "stable"}, {"timestamp": "2010-09-15 00:47:22.631666", "version": "6.0.472.59", "os": "linux", "channel": "stable"}, {"timestamp": "2010-09-07 23:12:35.707384", "version": "6.0.472.55", "os": "linux", "channel": "stable"}, {"timestamp": "2010-09-02 14:00:42.893489", "version": "6.0.472.53", "os": "linux", "channel": "stable"}, {"timestamp": "2010-08-19 22:10:41.225848", "version": "5.0.375.127", "os": "linux", "channel": "stable"}, {"timestamp": "2010-08-11 00:13:23.424959", "version": "5.0.375.126", "os": "linux", "channel": "stable"}, {"timestamp": "2010-07-26 22:42:11.286959", "version": "5.0.375.125", "os": "linux", "channel": "stable"}, {"timestamp": "2010-07-01 22:33:46.846596", "version": "5.0.375.99", "os": "linux", "channel": "stable"}, {"timestamp": "2010-06-24 23:27:31.855934", "version": "5.0.375.86", "os": "linux", "channel": "stable"}, {"timestamp": "2010-06-08 21:12:09.986195", "version": "5.0.375.70", "os": "linux", "channel": "stable"}, {"timestamp": "2010-05-26 18:04:09.752483", "version": "5.0.375.55", "os": "linux", "channel": "stable"}, {"timestamp": "2019-12-17 18:20:04.900867", "version": "79.0.3945.88", "os": "linux", "channel": "stable"}, {"timestamp": "2019-12-10 19:30:05.516723", "version": "79.0.3945.79", "os": "linux", "channel": "stable"}, {"timestamp": "2019-11-18 20:44:02.784612", "version": "78.0.3904.108", "os": "linux", "channel": "stable"}, {"timestamp": "2019-11-06 19:47:03.831295", "version": "78.0.3904.97", "os": "linux", "channel": "stable"}, {"timestamp": "2019-10-31 19:37:04.803620", "version": "78.0.3904.87", "os": "linux", "channel": "stable"}, {"timestamp": "2019-10-22 19:08:04.217172", "version": "78.0.3904.70", "os": "linux", "channel": "stable"}, {"timestamp": "2019-10-10 17:12:04.308793", "version": "77.0.3865.120", "os": "linux", "channel": "stable"}, {"timestamp": "2019-09-18 17:14:04.680336", "version": "77.0.3865.90", "os": "linux", "channel": "stable"}, {"timestamp": "2019-09-10 18:49:04.067062", "version": "77.0.3865.75", "os": "linux", "channel": "stable"}, {"timestamp": "2019-08-26 18:34:03.153225", "version": "76.0.3809.132", "os": "linux", "channel": "stable"}, {"timestamp": "2019-08-06 21:01:04.121931", "version": "76.0.3809.100", "os": "linux", "channel": "stable"}, {"timestamp": "2019-07-30 18:13:08.947563", "version": "76.0.3809.87", "os": "linux", "channel": "stable"}, {"timestamp": "2019-07-15 21:15:04.669700", "version": "75.0.3770.142", "os": "linux", "channel": "stable"}, {"timestamp": "2019-06-18 15:41:03.546671", "version": "75.0.3770.100", "os": "linux", "channel": "stable"}, {"timestamp": "2019-06-13 15:53:02.523047", "version": "75.0.3770.90", "os": "linux", "channel": "stable"}, {"timestamp": "2019-06-04 19:45:03.700342", "version": "75.0.3770.80", "os": "linux", "channel": "stable"}, {"timestamp": "2019-05-21 18:59:05.476411", "version": "74.0.3729.169", "os": "linux", "channel": "stable"}, {"timestamp": "2019-05-14 17:45:04.610708", "version": "74.0.3729.157", "os": "linux", "channel": "stable"}, {"timestamp": "2019-04-30 19:55:03.666565", "version": "74.0.3729.131", "os": "linux", "channel": "stable"}, {"timestamp": "2019-04-23 21:10:03.569026", "version": "74.0.3729.108", "os": "linux", "channel": "stable"}, {"timestamp": "2019-04-04 23:26:02.936301", "version": "73.0.3683.103", "os": "linux", "channel": "stable"}, {"timestamp": "2019-03-20 20:06:06.656302", "version": "73.0.3683.86", "os": "linux", "channel": "stable"}, {"timestamp": "2019-03-12 18:31:04.203619", "version": "73.0.3683.75", "os": "linux", "channel": "stable"}, {"timestamp": "2019-03-01 21:51:03.354486", "version": "72.0.3626.121", "os": "linux", "channel": "stable"}, {"timestamp": "2019-02-21 20:39:05.962885", "version": "72.0.3626.119", "os": "linux", "channel": "stable"}, {"timestamp": "2019-02-13 21:55:03.592840", "version": "72.0.3626.109", "os": "linux", "channel": "stable"}, {"timestamp": "2019-02-06 20:02:05.048057", "version": "72.0.3626.96", "os": "linux", "channel": "stable"}, {"timestamp": "2019-01-29 20:00:05.151304", "version": "72.0.3626.81", "os": "linux", "channel": "stable"}, {"timestamp": "2018-12-12 19:27:04.112635", "version": "71.0.3578.98", "os": "linux", "channel": "stable"}, {"timestamp": "2018-12-04 18:40:03.331546", "version": "71.0.3578.80", "os": "linux", "channel": "stable"}, {"timestamp": "2018-11-19 17:49:08.262244", "version": "70.0.3538.110", "os": "linux", "channel": "stable"}, {"timestamp": "2018-11-09 19:02:02.433467", "version": "70.0.3538.102", "os": "linux", "channel": "stable"}, {"timestamp": "2018-10-24 19:25:05.497152", "version": "70.0.3538.77", "os": "linux", "channel": "stable"}, {"timestamp": "2018-10-16 18:49:05.444128", "version": "70.0.3538.67", "os": "linux", "channel": "stable"}, {"timestamp": "2018-09-17 18:25:04.427580", "version": "69.0.3497.100", "os": "linux", "channel": "stable"}, {"timestamp": "2018-09-11 18:02:02.481281", "version": "69.0.3497.92", "os": "linux", "channel": "stable"}, {"timestamp": "2018-09-04 18:22:03.358010", "version": "69.0.3497.81", "os": "linux", "channel": "stable"}, {"timestamp": "2018-08-08 18:14:04.168370", "version": "68.0.3440.106", "os": "linux", "channel": "stable"}, {"timestamp": "2018-07-31 20:42:03.203520", "version": "68.0.3440.84", "os": "linux", "channel": "stable"}, {"timestamp": "2018-07-24 21:05:03.064160", "version": "68.0.3440.75", "os": "linux", "channel": "stable"}, {"timestamp": "2018-06-25 18:02:02.677511", "version": "67.0.3396.99", "os": "linux", "channel": "stable"}, {"timestamp": "2018-06-12 17:39:02.947720", "version": "67.0.3396.87", "os": "linux", "channel": "stable"}, {"timestamp": "2018-06-06 17:55:03.204030", "version": "67.0.3396.79", "os": "linux", "channel": "stable"}, {"timestamp": "2018-05-29 18:45:02.745410", "version": "67.0.3396.62", "os": "linux", "channel": "stable"}, {"timestamp": "2018-05-15 18:40:01.503450", "version": "66.0.3359.181", "os": "linux", "channel": "stable"}, {"timestamp": "2018-05-10 20:32:03.926460", "version": "66.0.3359.170", "os": "linux", "channel": "stable"}, {"timestamp": "2018-04-26 21:20:03.217770", "version": "66.0.3359.139", "os": "linux", "channel": "stable"}, {"timestamp": "2018-04-17 23:00:02.419170", "version": "66.0.3359.117", "os": "linux", "channel": "stable"}, {"timestamp": "2018-03-20 20:36:05.310530", "version": "65.0.3325.181", "os": "linux", "channel": "stable"}, {"timestamp": "2018-03-13 19:05:03.011880", "version": "65.0.3325.162", "os": "linux", "channel": "stable"}, {"timestamp": "2018-03-06 21:30:01.477120", "version": "65.0.3325.146", "os": "linux", "channel": "stable"}, {"timestamp": "2018-02-23 01:57:03.678020", "version": "64.0.3282.186", "os": "linux", "channel": "stable"}, {"timestamp": "2018-02-13 23:18:02.229170", "version": "64.0.3282.167", "os": "linux", "channel": "stable"}, {"timestamp": "2018-02-02 01:16:01.848010", "version": "64.0.3282.140", "os": "linux", "channel": "stable"}, {"timestamp": "2018-01-24 19:33:03.083050", "version": "64.0.3282.119", "os": "linux", "channel": "stable"}, {"timestamp": "2018-01-04 18:17:02.809740", "version": "63.0.3239.132", "os": "linux", "channel": "stable"}, {"timestamp": "2017-12-14 22:21:02.647230", "version": "63.0.3239.108", "os": "linux", "channel": "stable"}, {"timestamp": "2017-12-06 19:59:02.618500", "version": "63.0.3239.84", "os": "linux", "channel": "stable"}, {"timestamp": "2017-11-13 20:08:01.571380", "version": "62.0.3202.94", "os": "linux", "channel": "stable"}, {"timestamp": "2017-11-06 19:46:01.333390", "version": "62.0.3202.89", "os": "linux", "channel": "stable"}, {"timestamp": "2017-10-26 19:02:02.339580", "version": "62.0.3202.75", "os": "linux", "channel": "stable"}, {"timestamp": "2017-10-17 20:55:02.280610", "version": "62.0.3202.62", "os": "linux", "channel": "stable"}, {"timestamp": "2017-09-22 03:20:01.848610", "version": "61.0.3163.100", "os": "linux", "channel": "stable"}, {"timestamp": "2017-09-14 18:09:03.370530", "version": "61.0.3163.91", "os": "linux", "channel": "stable"}, {"timestamp": "2017-09-05 18:34:02.697580", "version": "61.0.3163.79", "os": "linux", "channel": "stable"}, {"timestamp": "2017-08-24 18:01:02.247750", "version": "60.0.3112.113", "os": "linux", "channel": "stable"}, {"timestamp": "2017-08-14 20:19:01.864700", "version": "60.0.3112.101", "os": "linux", "channel": "stable"}, {"timestamp": "2017-08-02 20:19:01.646640", "version": "60.0.3112.90", "os": "linux", "channel": "stable"}, {"timestamp": "2017-07-25 18:58:01.396300", "version": "60.0.3112.78", "os": "linux", "channel": "stable"}, {"timestamp": "2017-06-26 17:18:01.822550", "version": "59.0.3071.115", "os": "linux", "channel": "stable"}, {"timestamp": "2017-06-20 21:43:01.640240", "version": "59.0.3071.109", "os": "linux", "channel": "stable"}, {"timestamp": "2017-06-15 18:21:02.415900", "version": "59.0.3071.104", "os": "linux", "channel": "stable"}, {"timestamp": "2017-06-05 19:52:02.308890", "version": "59.0.3071.86", "os": "linux", "channel": "stable"}, {"timestamp": "2017-05-09 17:47:02.158930", "version": "58.0.3029.110", "os": "linux", "channel": "stable"}, {"timestamp": "2017-05-02 18:05:02.029050", "version": "58.0.3029.96", "os": "linux", "channel": "stable"}, {"timestamp": "2017-04-19 17:55:02.692820", "version": "58.0.3029.81", "os": "linux", "channel": "stable"}, {"timestamp": "2017-03-29 19:15:02.066400", "version": "57.0.2987.133", "os": "linux", "channel": "stable"}, {"timestamp": "2017-03-16 19:52:02.261250", "version": "57.0.2987.110", "os": "linux", "channel": "stable"}, {"timestamp": "2017-03-09 19:49:02.841800", "version": "57.0.2987.98", "os": "linux", "channel": "stable"}, {"timestamp": "2017-02-02 01:29:01.528620", "version": "56.0.2924.87", "os": "linux", "channel": "stable"}, {"timestamp": "2017-01-25 22:51:03.051730", "version": "56.0.2924.76", "os": "linux", "channel": "stable"}, {"timestamp": "2016-12-12 19:49:01.488170", "version": "55.0.2883.87", "os": "linux", "channel": "stable"}, {"timestamp": "2016-12-12 19:35:01.838980", "version": "52.0.2743.116", "os": "linux", "channel": "stable"}, {"timestamp": "2016-12-02 18:17:01.750670", "version": "55.0.2883.75", "os": "linux", "channel": "stable"}, {"timestamp": "2016-11-10 19:34:01.349120", "version": "54.0.2840.100", "os": "linux", "channel": "stable"}, {"timestamp": "2016-11-01 18:41:02.213720", "version": "54.0.2840.90", "os": "linux", "channel": "stable"}, {"timestamp": "2016-10-20 22:26:01.958700", "version": "54.0.2840.71", "os": "linux", "channel": "stable"}, {"timestamp": "2016-10-12 18:37:01.718900", "version": "54.0.2840.59", "os": "linux", "channel": "stable"}, {"timestamp": "2016-10-04 22:57:01.459420", "version": "53.0.2785.143", "os": "linux", "channel": "stable"}, {"timestamp": "2016-09-14 22:14:01.864860", "version": "53.0.2785.116", "os": "linux", "channel": "stable"}, {"timestamp": "2016-09-13 18:56:02.279550", "version": "53.0.2785.113", "os": "linux", "channel": "stable"}, {"timestamp": "2016-09-07 22:41:03.302000", "version": "53.0.2785.101", "os": "linux", "channel": "stable"}, {"timestamp": "2016-09-02 18:28:04.458530", "version": "53.0.2785.92", "os": "linux", "channel": "stable"}, {"timestamp": "2016-08-31 19:34:01.675620", "version": "53.0.2785.89", "os": "linux", "channel": "stable"}, {"timestamp": "2016-07-20 18:56:03.268710", "version": "52.0.2743.82", "os": "linux", "channel": "stable"}, {"timestamp": "2016-06-24 00:25:01.155500", "version": "51.0.2704.106", "os": "linux", "channel": "stable"}, {"timestamp": "2016-06-16 17:38:02.023190", "version": "51.0.2704.103", "os": "linux", "channel": "stable"}, {"timestamp": "2016-06-06 18:38:01.226440", "version": "51.0.2704.84", "os": "linux", "channel": "stable"}, {"timestamp": "2016-06-01 21:16:02.273420", "version": "51.0.2704.79", "os": "linux", "channel": "stable"}, {"timestamp": "2016-05-25 21:02:01.717780", "version": "51.0.2704.63", "os": "linux", "channel": "stable"}, {"timestamp": "2016-05-11 17:58:02.967020", "version": "50.0.2661.102", "os": "linux", "channel": "stable"}, {"timestamp": "2016-04-28 18:10:01.712790", "version": "50.0.2661.94", "os": "linux", "channel": "stable"}, {"timestamp": "2016-04-20 22:47:01.136050", "version": "50.0.2661.86", "os": "linux", "channel": "stable"}, {"timestamp": "2016-04-13 18:21:02.101240", "version": "50.0.2661.75", "os": "linux", "channel": "stable"}, {"timestamp": "2016-04-07 18:22:01.688540", "version": "49.0.2623.112", "os": "linux", "channel": "stable"}, {"timestamp": "2016-03-28 18:30:02.038700", "version": "49.0.2623.110", "os": "linux", "channel": "stable"}, {"timestamp": "2016-03-24 17:36:01.273310", "version": "49.0.2623.108", "os": "linux", "channel": "stable"}, {"timestamp": "2016-03-09 00:05:08.395010", "version": "49.0.2623.87", "os": "linux", "channel": "stable"}, {"timestamp": "2016-03-02 20:23:07.770520", "version": "49.0.2623.75", "os": "linux", "channel": "stable"}, {"timestamp": "2016-02-18 20:23:07.019020", "version": "48.0.2564.116", "os": "linux", "channel": "stable"}, {"timestamp": "2016-02-09 19:07:05.198510", "version": "48.0.2564.109", "os": "linux", "channel": "stable"}, {"timestamp": "2016-02-03 22:23:05.536540", "version": "48.0.2564.103", "os": "linux", "channel": "stable"}, {"timestamp": "2016-01-27 21:12:06.413020", "version": "48.0.2564.97", "os": "linux", "channel": "stable"}, {"timestamp": "2016-01-20 23:04:05.150410", "version": "48.0.2564.82", "os": "linux", "channel": "stable"}, {"timestamp": "2016-01-13 22:00:05.140780", "version": "47.0.2526.111", "os": "linux", "channel": "stable"}, {"timestamp": "2015-12-15 20:06:03.342010", "version": "47.0.2526.106", "os": "linux", "channel": "stable"}, {"timestamp": "2015-12-08 20:04:03.387360", "version": "47.0.2526.80", "os": "linux", "channel": "stable"}, {"timestamp": "2015-12-01 19:50:03.825710", "version": "47.0.2526.73", "os": "linux", "channel": "stable"}, {"timestamp": "2015-11-10 21:30:05.788760", "version": "46.0.2490.86", "os": "linux", "channel": "stable"}, {"timestamp": "2015-10-22 19:00:03.830940", "version": "46.0.2490.80", "os": "linux", "channel": "stable"}, {"timestamp": "2015-10-13 18:00:04.796200", "version": "46.0.2490.71", "os": "linux", "channel": "stable"}, {"timestamp": "2015-09-24 22:43:04.136860", "version": "45.0.2454.101", "os": "linux", "channel": "stable"}, {"timestamp": "2015-09-21 18:25:03.169010", "version": "45.0.2454.99", "os": "linux", "channel": "stable"}, {"timestamp": "2015-09-15 19:23:02.448760", "version": "45.0.2454.93", "os": "linux", "channel": "stable"}, {"timestamp": "2015-09-01 19:09:03.401770", "version": "45.0.2454.85", "os": "linux", "channel": "stable"}, {"timestamp": "2015-08-20 17:47:03.808070", "version": "44.0.2403.157", "os": "linux", "channel": "stable"}, {"timestamp": "2015-08-11 15:36:03.083610", "version": "44.0.2403.155", "os": "linux", "channel": "stable"}, {"timestamp": "2015-08-04 17:41:03.312000", "version": "44.0.2403.130", "os": "linux", "channel": "stable"}, {"timestamp": "2015-07-28 18:09:03.818710", "version": "44.0.2403.125", "os": "linux", "channel": "stable"}, {"timestamp": "2015-07-24 17:46:03.292010", "version": "44.0.2403.107", "os": "linux", "channel": "stable"}, {"timestamp": "2015-07-21 17:40:03.553900", "version": "44.0.2403.89", "os": "linux", "channel": "stable"}, {"timestamp": "2015-07-14 13:14:05.180440", "version": "43.0.2357.134", "os": "linux", "channel": "stable"}, {"timestamp": "2015-07-07 15:06:04.279940", "version": "43.0.2357.132", "os": "linux", "channel": "stable"}, {"timestamp": "2015-06-22 15:32:06.470400", "version": "43.0.2357.130", "os": "linux", "channel": "stable"}, {"timestamp": "2015-06-11 16:34:04.189060", "version": "43.0.2357.125", "os": "linux", "channel": "stable"}, {"timestamp": "2015-06-09 13:00:04.628380", "version": "43.0.2357.124", "os": "linux", "channel": "stable"}, {"timestamp": "2015-05-25 15:29:02.827020", "version": "43.0.2357.81", "os": "linux", "channel": "stable"}, {"timestamp": "2015-05-19 15:58:06.363460", "version": "43.0.2357.65", "os": "linux", "channel": "stable"}, {"timestamp": "2015-05-12 15:58:05.597710", "version": "42.0.2311.152", "os": "linux", "channel": "stable"}, {"timestamp": "2015-04-28 17:39:59.436470", "version": "42.0.2311.135", "os": "linux", "channel": "stable"}, {"timestamp": "2015-04-14 17:38:07.925770", "version": "42.0.2311.90", "os": "linux", "channel": "stable"}, {"timestamp": "2015-04-01 17:48:13.881670", "version": "41.0.2272.118", "os": "linux", "channel": "stable"}, {"timestamp": "2015-03-20 04:24:20.077340", "version": "41.0.2272.101", "os": "linux", "channel": "stable"}, {"timestamp": "2015-03-10 18:34:55.233560", "version": "41.0.2272.89", "os": "linux", "channel": "stable"}, {"timestamp": "2015-03-03 19:03:07.355610", "version": "41.0.2272.76", "os": "linux", "channel": "stable"}, {"timestamp": "2015-02-19 16:27:01.951950", "version": "40.0.2214.115", "os": "linux", "channel": "stable"}, {"timestamp": "2015-02-05 17:13:49.379570", "version": "40.0.2214.111", "os": "linux", "channel": "stable"}, {"timestamp": "2015-02-04 00:12:02.549880", "version": "40.0.2214.95", "os": "linux", "channel": "stable"}, {"timestamp": "2015-01-29 19:54:27.189740", "version": "40.0.2214.94", "os": "linux", "channel": "stable"}, {"timestamp": "2015-01-27 01:42:59.515820", "version": "40.0.2214.93", "os": "linux", "channel": "stable"}, {"timestamp": "2015-01-21 19:36:09.206130", "version": "40.0.2214.91", "os": "linux", "channel": "stable"}, {"timestamp": "2015-01-13 20:45:25.909700", "version": "39.0.2171.99", "os": "linux", "channel": "stable"}, {"timestamp": "2014-12-09 20:11:00.157270", "version": "39.0.2171.95", "os": "linux", "channel": "stable"}, {"timestamp": "2014-11-25 23:04:58.385400", "version": "39.0.2171.71", "os": "linux", "channel": "stable"}, {"timestamp": "2014-11-18 16:45:41.414590", "version": "39.0.2171.65", "os": "linux", "channel": "stable"}, {"timestamp": "2014-11-11 19:06:25.075690", "version": "38.0.2125.122", "os": "linux", "channel": "stable"}, {"timestamp": "2014-10-27 18:58:47.173780", "version": "38.0.2125.111", "os": "linux", "channel": "stable"}, {"timestamp": "2014-10-14 20:03:28.016180", "version": "38.0.2125.104", "os": "linux", "channel": "stable"}, {"timestamp": "2014-10-07 19:45:21.307270", "version": "38.0.2125.101", "os": "linux", "channel": "stable"}, {"timestamp": "2014-09-09 16:43:22.316240", "version": "37.0.2062.120", "os": "linux", "channel": "stable"}, {"timestamp": "2014-08-26 14:11:22.119930", "version": "37.0.2062.94", "os": "linux", "channel": "stable"}, {"timestamp": "2014-08-12 19:33:17.924610", "version": "36.0.1985.143", "os": "linux", "channel": "stable"}, {"timestamp": "2014-07-16 19:02:12.183600", "version": "36.0.1985.125", "os": "linux", "channel": "stable"}, {"timestamp": "2014-06-10 17:11:04.345430", "version": "35.0.1916.153", "os": "linux", "channel": "stable"}, {"timestamp": "2014-05-20 16:52:36.988000", "version": "35.0.1916.114", "os": "linux", "channel": "stable"}, {"timestamp": "2014-05-13 17:52:02.919960", "version": "34.0.1847.137", "os": "linux", "channel": "stable"}, {"timestamp": "2014-04-24 17:50:04.713960", "version": "34.0.1847.132", "os": "linux", "channel": "stable"}, {"timestamp": "2014-04-08 21:04:43.153820", "version": "34.0.1847.116", "os": "linux", "channel": "stable"}, {"timestamp": "2014-03-15 08:52:58.692420", "version": "33.0.1750.152", "os": "linux", "channel": "stable"}, {"timestamp": "2014-03-11 16:13:45.506060", "version": "33.0.1750.149", "os": "linux", "channel": "stable"}, {"timestamp": "2014-03-04 01:08:05.428040", "version": "33.0.1750.146", "os": "linux", "channel": "stable"}, {"timestamp": "2014-02-21 02:57:04.911100", "version": "33.0.1750.117", "os": "linux", "channel": "stable"}, {"timestamp": "2014-02-19 16:51:16.112150", "version": "33.0.1750.115", "os": "linux", "channel": "stable"}, {"timestamp": "2014-02-19 16:34:28.562130", "version": "32.0.1700.107", "os": "linux", "channel": "stable"}, {"timestamp": "2014-01-27 22:15:05.037830", "version": "32.0.1700.102", "os": "linux", "channel": "stable"}, {"timestamp": "2014-01-15 03:16:41.430120", "version": "32.0.1700.77", "os": "linux", "channel": "stable"}, {"timestamp": "2013-12-04 21:49:02.384540", "version": "31.0.1650.63", "os": "linux", "channel": "stable"}, {"timestamp": "2013-12-04 19:12:12.534520", "version": "31.0.1650.57", "os": "linux", "channel": "stable"}, {"timestamp": "2013-11-15 02:54:15.169820", "version": "31.0.1650.48", "os": "linux", "channel": "stable"}, {"timestamp": "2013-10-23 05:35:31.704760", "version": "30.0.1599.114", "os": "linux", "channel": "stable"}, {"timestamp": "2013-10-16 09:19:15.745570", "version": "30.0.1599.101", "os": "linux", "channel": "stable"}, {"timestamp": "2013-10-01 17:59:51.475750", "version": "30.0.1599.66", "os": "linux", "channel": "stable"}, {"timestamp": "2013-09-19 04:05:35.265050", "version": "29.0.1547.76", "os": "linux", "channel": "stable"}, {"timestamp": "2013-09-03 08:27:31.924830", "version": "29.0.1547.65", "os": "linux", "channel": "stable"}, {"timestamp": "2013-09-03 08:09:29.023750", "version": "29.0.1547.62", "os": "linux", "channel": "stable"}, {"timestamp": "2013-08-21 10:03:11.630370", "version": "29.0.1547.57", "os": "linux", "channel": "stable"}, {"timestamp": "2013-07-30 16:35:39.585910", "version": "28.0.1500.95", "os": "linux", "channel": "stable"}, {"timestamp": "2013-07-03 18:27:56.825640", "version": "28.0.1500.71", "os": "linux", "channel": "stable"}, {"timestamp": "2013-07-03 04:43:15.180580", "version": "28.0.1500.70", "os": "linux", "channel": "stable"}, {"timestamp": "2013-07-02 14:34:37.525170", "version": "28.0.1500.68", "os": "linux", "channel": "stable"}, {"timestamp": "2013-06-28 02:47:29.983230", "version": "28.0.1500.63", "os": "linux", "channel": "stable"}, {"timestamp": "2013-06-20 00:50:18.203620", "version": "28.0.1500.52", "os": "linux", "channel": "stable"}, {"timestamp": "2013-06-17 22:10:01.714930", "version": "28.0.1500.45", "os": "linux", "channel": "stable"}, {"timestamp": "2013-06-04 21:51:00.824490", "version": "27.0.1453.110", "os": "linux", "channel": "stable"}, {"timestamp": "2013-05-21 21:29:55.194600", "version": "27.0.1453.93", "os": "linux", "channel": "stable"}, {"timestamp": "2013-04-09 17:04:52.272270", "version": "26.0.1410.63", "os": "linux", "channel": "stable"}, {"timestamp": "2013-03-26 17:02:57.875950", "version": "26.0.1410.43", "os": "linux", "channel": "stable"}, {"timestamp": "2013-03-12 17:03:14.761132", "version": "25.0.1364.172", "os": "linux", "channel": "stable"}, {"timestamp": "2013-03-08 02:00:44.250734", "version": "25.0.1364.160", "os": "linux", "channel": "stable"}, {"timestamp": "2013-03-04 17:29:28.835037", "version": "25.0.1364.152", "os": "linux", "channel": "stable"}, {"timestamp": "2013-02-21 21:55:01.083299", "version": "25.0.1364.97", "os": "linux", "channel": "stable"}, {"timestamp": "2013-02-12 18:13:34.257944", "version": "24.0.1312.70", "os": "linux", "channel": "stable"}, {"timestamp": "2013-02-06 16:13:50.284918", "version": "24.0.1312.69", "os": "linux", "channel": "stable"}, {"timestamp": "2013-02-04 18:50:27.997913", "version": "24.0.1312.68", "os": "linux", "channel": "stable"}, {"timestamp": "2013-01-30 18:02:34.647277", "version": "24.0.1312.57", "os": "linux", "channel": "stable"}, {"timestamp": "2013-01-22 18:05:25.213262", "version": "24.0.1312.56", "os": "linux", "channel": "stable"}, {"timestamp": "2013-01-10 18:15:58.021612", "version": "24.0.1312.52", "os": "linux", "channel": "stable"}, {"timestamp": "2012-12-11 18:00:21.620292", "version": "23.0.1271.97", "os": "linux", "channel": "stable"}, {"timestamp": "2012-11-29 19:10:12.932958", "version": "23.0.1271.95", "os": "linux", "channel": "stable"}, {"timestamp": "2012-11-26 17:50:47.467186", "version": "23.0.1271.91", "os": "linux", "channel": "stable"}, {"timestamp": "2012-11-06 18:00:03.661027", "version": "23.0.1271.64", "os": "linux", "channel": "stable"}, {"timestamp": "2012-10-10 15:44:20.033699", "version": "22.0.1229.94", "os": "linux", "channel": "stable"}, {"timestamp": "2012-10-08 16:40:32.212692", "version": "22.0.1229.92", "os": "linux", "channel": "stable"}, {"timestamp": "2012-09-25 17:23:24.309732", "version": "22.0.1229.79", "os": "linux", "channel": "stable"}, {"timestamp": "2012-08-30 20:24:08.805298", "version": "21.0.1180.89", "os": "linux", "channel": "stable"}, {"timestamp": "2012-08-21 18:11:15.839721", "version": "21.0.1180.81", "os": "linux", "channel": "stable"}, {"timestamp": "2012-08-14 17:23:17.643738", "version": "21.0.1180.79", "os": "linux", "channel": "stable"}, {"timestamp": "2012-08-13 18:43:07.939917", "version": "21.0.1180.77", "os": "linux", "channel": "stable"}, {"timestamp": "2012-08-08 17:28:44.078167", "version": "21.0.1180.75", "os": "linux", "channel": "stable"}, {"timestamp": "2012-07-31 20:08:52.612537", "version": "21.0.1180.57", "os": "linux", "channel": "stable"}, {"timestamp": "2012-07-11 16:43:38.627849", "version": "20.0.1132.57", "os": "linux", "channel": "stable"}, {"timestamp": "2012-06-28 23:22:16.956268", "version": "20.0.1132.47", "os": "linux", "channel": "stable"}, {"timestamp": "2012-06-26 21:23:19.616515", "version": "20.0.1132.43", "os": "linux", "channel": "stable"}, {"timestamp": "2012-06-08 20:44:11.337586", "version": "19.0.1084.56", "os": "linux", "channel": "stable"}, {"timestamp": "2012-05-23 22:12:01.692914", "version": "19.0.1084.52", "os": "linux", "channel": "stable"}, {"timestamp": "2012-05-15 14:09:20.330226", "version": "19.0.1084.46", "os": "linux", "channel": "stable"}, {"timestamp": "2012-04-30 19:47:23.164723", "version": "18.0.1025.168", "os": "linux", "channel": "stable"}, {"timestamp": "2012-04-12 23:43:57.671196", "version": "18.0.1025.162", "os": "linux", "channel": "stable"}, {"timestamp": "2012-04-05 16:59:02.646244", "version": "18.0.1025.151", "os": "linux", "channel": "stable"}, {"timestamp": "2012-03-28 16:56:32.143549", "version": "18.0.1025.142", "os": "linux", "channel": "stable"}, {"timestamp": "2012-03-22 00:51:27.863592", "version": "17.0.963.83", "os": "linux", "channel": "stable"}, {"timestamp": "2012-03-10 18:05:03.433406", "version": "17.0.963.79", "os": "linux", "channel": "stable"}, {"timestamp": "2012-03-08 17:35:03.498036", "version": "17.0.963.78", "os": "linux", "channel": "stable"}, {"timestamp": "2012-03-06 17:47:09.129601", "version": "17.0.963.66", "os": "linux", "channel": "stable"}, {"timestamp": "2012-03-05 02:33:21.694198", "version": "17.0.963.65", "os": "linux", "channel": "stable"}, {"timestamp": "2012-02-15 19:15:02.876248", "version": "17.0.963.56", "os": "linux", "channel": "stable"}, {"timestamp": "2012-02-15 07:31:52.591842", "version": "17.0.963.46", "os": "linux", "channel": "stable"}, {"timestamp": "2012-02-15 01:25:22.965911", "version": "17.0.963.54", "os": "linux", "channel": "stable"}, {"timestamp": "2012-01-23 22:34:00.019210", "version": "16.0.912.77", "os": "linux", "channel": "stable"}, {"timestamp": "2012-01-06 00:40:06.810309", "version": "16.0.912.75", "os": "linux", "channel": "stable"}, {"timestamp": "2011-12-13 01:36:09.865793", "version": "16.0.912.63", "os": "linux", "channel": "stable"}, {"timestamp": "2011-11-17 00:17:59.406668", "version": "15.0.874.121", "os": "linux", "channel": "stable"}, {"timestamp": "2011-11-10 18:05:04.626737", "version": "15.0.874.120", "os": "linux", "channel": "stable"}, {"timestamp": "2011-10-26 19:30:03.207702", "version": "15.0.874.106", "os": "linux", "channel": "stable"}, {"timestamp": "2011-10-25 15:58:40.312155", "version": "15.0.874.102", "os": "linux", "channel": "stable"}, {"timestamp": "2011-10-04 16:36:03.869049", "version": "14.0.835.202", "os": "linux", "channel": "stable"}, {"timestamp": "2011-09-20 19:00:27.698876", "version": "14.0.835.186", "os": "linux", "channel": "stable"}, {"timestamp": "2011-09-16 14:33:15.420623", "version": "14.0.835.163", "os": "linux", "channel": "stable"}, {"timestamp": "2011-09-03 17:09:31.658764", "version": "13.0.782.220", "os": "linux", "channel": "stable"}, {"timestamp": "2011-08-30 17:59:05.071258", "version": "13.0.782.218", "os": "linux", "channel": "stable"}, {"timestamp": "2011-08-22 20:58:18.833826", "version": "13.0.782.215", "os": "linux", "channel": "stable"}, {"timestamp": "2011-08-09 14:47:12.362583", "version": "13.0.782.112", "os": "linux", "channel": "stable"}, {"timestamp": "2011-08-02 15:07:14.151672", "version": "13.0.782.107", "os": "linux", "channel": "stable"}, {"timestamp": "2011-07-12 20:00:36.481829", "version": "12.0.742.124", "os": "linux", "channel": "stable"}, {"timestamp": "2011-06-28 16:56:23.698494", "version": "12.0.742.112", "os": "linux", "channel": "stable"}, {"timestamp": "2011-06-14 21:15:01.744485", "version": "12.0.742.100", "os": "linux", "channel": "stable"}, {"timestamp": "2011-06-07 15:34:02.554546", "version": "12.0.742.91", "os": "linux", "channel": "stable"}, {"timestamp": "2011-06-06 00:46:41.948526", "version": "11.0.696.77", "os": "linux", "channel": "stable"}, {"timestamp": "2011-05-24 21:06:41.971968", "version": "11.0.696.71", "os": "linux", "channel": "stable"}, {"timestamp": "2011-05-12 16:38:22.360473", "version": "11.0.696.68", "os": "linux", "channel": "stable"}, {"timestamp": "2011-05-06 21:41:21.221070", "version": "11.0.696.65", "os": "linux", "channel": "stable"}, {"timestamp": "2011-04-27 15:06:00.956830", "version": "11.0.696.57", "os": "linux", "channel": "stable"}, {"timestamp": "2011-04-14 19:30:03.558057", "version": "10.0.648.205", "os": "linux", "channel": "stable"}, {"timestamp": "2011-03-24 21:20:45.380881", "version": "10.0.648.204", "os": "linux", "channel": "stable"}, {"timestamp": "2011-03-17 19:28:07.789346", "version": "10.0.648.151", "os": "linux", "channel": "stable"}, {"timestamp": "2011-03-15 18:35:15.940658", "version": "10.0.648.134", "os": "linux", "channel": "stable"}, {"timestamp": "2011-03-11 19:43:51.466036", "version": "10.0.648.133", "os": "linux", "channel": "stable"}, {"timestamp": "2011-03-08 15:45:06.967987", "version": "10.0.648.127", "os": "linux", "channel": "stable"}, {"timestamp": "2011-02-28 23:15:02.717099", "version": "9.0.597.107", "os": "linux", "channel": "stable"}, {"timestamp": "2011-02-11 21:35:35.548234", "version": "9.0.597.98", "os": "linux", "channel": "stable"}, {"timestamp": "2011-02-08 16:33:08.016077", "version": "9.0.597.94", "os": "linux", "channel": "stable"}, {"timestamp": "2011-02-03 17:08:20.101045", "version": "9.0.597.84", "os": "linux", "channel": "stable"}, {"timestamp": "2011-01-12 23:14:32.773839", "version": "8.0.552.237", "os": "linux", "channel": "stable"}, {"timestamp": "2010-12-13 19:04:54.889914", "version": "8.0.552.224", "os": "linux", "channel": "stable"}, {"timestamp": "2010-12-02 19:08:19.714492", "version": "8.0.552.215", "os": "linux", "channel": "stable"}, {"timestamp": "2010-11-04 16:00:17.834913", "version": "7.0.517.44", "os": "linux", "channel": "stable"}, {"timestamp": "2010-10-19 17:01:00.466800", "version": "7.0.517.41", "os": "linux", "channel": "stable"}, {"timestamp": "2010-09-24 01:03:27.696501", "version": "6.0.472.63", "os": "linux", "channel": "stable"}, {"timestamp": "2010-09-17 21:46:10.526648", "version": "6.0.472.62", "os": "linux", "channel": "stable"}, {"timestamp": "2010-09-15 00:47:22.631666", "version": "6.0.472.59", "os": "linux", "channel": "stable"}, {"timestamp": "2010-09-07 23:12:35.707384", "version": "6.0.472.55", "os": "linux", "channel": "stable"}, {"timestamp": "2010-09-02 14:00:42.893489", "version": "6.0.472.53", "os": "linux", "channel": "stable"}, {"timestamp": "2010-08-19 22:10:41.225848", "version": "5.0.375.127", "os": "linux", "channel": "stable"}, {"timestamp": "2010-08-11 00:13:23.424959", "version": "5.0.375.126", "os": "linux", "channel": "stable"}, {"timestamp": "2010-07-26 22:42:11.286959", "version": "5.0.375.125", "os": "linux", "channel": "stable"}, {"timestamp": "2010-07-01 22:33:46.846596", "version": "5.0.375.99", "os": "linux", "channel": "stable"}, {"timestamp": "2010-06-24 23:27:31.855934", "version": "5.0.375.86", "os": "linux", "channel": "stable"}, {"timestamp": "2010-06-08 21:12:09.986195", "version": "5.0.375.70", "os": "linux", "channel": "stable"}, {"timestamp": "2010-05-26 18:04:09.752483", "version": "5.0.375.55", "os": "linux", "channel": "stable"}]
+[
+    {
+        "timestamp": "2020-02-13 19:38:03.994704",
+        "version": "80.0.3987.106",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-02-11 18:08:04.061012",
+        "version": "80.0.3987.100",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-02-04 21:29:04.742162",
+        "version": "80.0.3987.87",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-01-16 20:10:05.541690",
+        "version": "79.0.3945.130",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-01-07 19:24:04.558912",
+        "version": "79.0.3945.117",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-12-17 18:20:04.900867",
+        "version": "79.0.3945.88",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-12-10 19:30:05.516723",
+        "version": "79.0.3945.79",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-11-18 20:44:02.784612",
+        "version": "78.0.3904.108",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-11-06 19:47:03.831295",
+        "version": "78.0.3904.97",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-10-31 19:37:04.803620",
+        "version": "78.0.3904.87",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-10-22 19:08:04.217172",
+        "version": "78.0.3904.70",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-10-10 17:12:04.308793",
+        "version": "77.0.3865.120",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-09-18 17:14:04.680336",
+        "version": "77.0.3865.90",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-09-10 18:49:04.067062",
+        "version": "77.0.3865.75",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-08-26 18:34:03.153225",
+        "version": "76.0.3809.132",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-08-06 21:01:04.121931",
+        "version": "76.0.3809.100",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-07-30 18:13:08.947563",
+        "version": "76.0.3809.87",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-07-15 21:15:04.669700",
+        "version": "75.0.3770.142",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-06-18 15:41:03.546671",
+        "version": "75.0.3770.100",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-06-13 15:53:02.523047",
+        "version": "75.0.3770.90",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-06-04 19:45:03.700342",
+        "version": "75.0.3770.80",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-05-21 18:59:05.476411",
+        "version": "74.0.3729.169",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-05-14 17:45:04.610708",
+        "version": "74.0.3729.157",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-04-30 19:55:03.666565",
+        "version": "74.0.3729.131",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-04-23 21:10:03.569026",
+        "version": "74.0.3729.108",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-04-04 23:26:02.936301",
+        "version": "73.0.3683.103",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-03-20 20:06:06.656302",
+        "version": "73.0.3683.86",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-03-12 18:31:04.203619",
+        "version": "73.0.3683.75",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-03-01 21:51:03.354486",
+        "version": "72.0.3626.121",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-02-21 20:39:05.962885",
+        "version": "72.0.3626.119",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-02-13 21:55:03.592840",
+        "version": "72.0.3626.109",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-02-06 20:02:05.048057",
+        "version": "72.0.3626.96",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2019-01-29 20:00:05.151304",
+        "version": "72.0.3626.81",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-12-12 19:27:04.112635",
+        "version": "71.0.3578.98",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-12-04 18:40:03.331546",
+        "version": "71.0.3578.80",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-11-19 17:49:08.262244",
+        "version": "70.0.3538.110",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-11-09 19:02:02.433467",
+        "version": "70.0.3538.102",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-10-24 19:25:05.497152",
+        "version": "70.0.3538.77",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-10-16 18:49:05.444128",
+        "version": "70.0.3538.67",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-09-17 18:25:04.427580",
+        "version": "69.0.3497.100",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-09-11 18:02:02.481281",
+        "version": "69.0.3497.92",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-09-04 18:22:03.358010",
+        "version": "69.0.3497.81",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-08-08 18:14:04.168370",
+        "version": "68.0.3440.106",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-07-31 20:42:03.203520",
+        "version": "68.0.3440.84",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-07-24 21:05:03.064160",
+        "version": "68.0.3440.75",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-06-25 18:02:02.677511",
+        "version": "67.0.3396.99",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-06-12 17:39:02.947720",
+        "version": "67.0.3396.87",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-06-06 17:55:03.204030",
+        "version": "67.0.3396.79",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-05-29 18:45:02.745410",
+        "version": "67.0.3396.62",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-05-15 18:40:01.503450",
+        "version": "66.0.3359.181",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-05-10 20:32:03.926460",
+        "version": "66.0.3359.170",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-04-26 21:20:03.217770",
+        "version": "66.0.3359.139",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-04-17 23:00:02.419170",
+        "version": "66.0.3359.117",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-03-20 20:36:05.310530",
+        "version": "65.0.3325.181",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-03-13 19:05:03.011880",
+        "version": "65.0.3325.162",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-03-06 21:30:01.477120",
+        "version": "65.0.3325.146",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-02-23 01:57:03.678020",
+        "version": "64.0.3282.186",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-02-13 23:18:02.229170",
+        "version": "64.0.3282.167",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-02-02 01:16:01.848010",
+        "version": "64.0.3282.140",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-01-24 19:33:03.083050",
+        "version": "64.0.3282.119",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2018-01-04 18:17:02.809740",
+        "version": "63.0.3239.132",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-12-14 22:21:02.647230",
+        "version": "63.0.3239.108",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-12-06 19:59:02.618500",
+        "version": "63.0.3239.84",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-11-13 20:08:01.571380",
+        "version": "62.0.3202.94",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-11-06 19:46:01.333390",
+        "version": "62.0.3202.89",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-10-26 19:02:02.339580",
+        "version": "62.0.3202.75",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-10-17 20:55:02.280610",
+        "version": "62.0.3202.62",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-09-22 03:20:01.848610",
+        "version": "61.0.3163.100",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-09-14 18:09:03.370530",
+        "version": "61.0.3163.91",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-09-05 18:34:02.697580",
+        "version": "61.0.3163.79",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-08-24 18:01:02.247750",
+        "version": "60.0.3112.113",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-08-14 20:19:01.864700",
+        "version": "60.0.3112.101",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-08-02 20:19:01.646640",
+        "version": "60.0.3112.90",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-07-25 18:58:01.396300",
+        "version": "60.0.3112.78",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-06-26 17:18:01.822550",
+        "version": "59.0.3071.115",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-06-20 21:43:01.640240",
+        "version": "59.0.3071.109",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-06-15 18:21:02.415900",
+        "version": "59.0.3071.104",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-06-05 19:52:02.308890",
+        "version": "59.0.3071.86",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-05-09 17:47:02.158930",
+        "version": "58.0.3029.110",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-05-02 18:05:02.029050",
+        "version": "58.0.3029.96",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-04-19 17:55:02.692820",
+        "version": "58.0.3029.81",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-03-29 19:15:02.066400",
+        "version": "57.0.2987.133",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-03-16 19:52:02.261250",
+        "version": "57.0.2987.110",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-03-09 19:49:02.841800",
+        "version": "57.0.2987.98",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-02-02 01:29:01.528620",
+        "version": "56.0.2924.87",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2017-01-25 22:51:03.051730",
+        "version": "56.0.2924.76",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-12-12 19:49:01.488170",
+        "version": "55.0.2883.87",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-12-12 19:35:01.838980",
+        "version": "52.0.2743.116",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-12-02 18:17:01.750670",
+        "version": "55.0.2883.75",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-11-10 19:34:01.349120",
+        "version": "54.0.2840.100",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-11-01 18:41:02.213720",
+        "version": "54.0.2840.90",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-10-20 22:26:01.958700",
+        "version": "54.0.2840.71",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-10-12 18:37:01.718900",
+        "version": "54.0.2840.59",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-10-04 22:57:01.459420",
+        "version": "53.0.2785.143",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-09-14 22:14:01.864860",
+        "version": "53.0.2785.116",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-09-13 18:56:02.279550",
+        "version": "53.0.2785.113",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-09-07 22:41:03.302000",
+        "version": "53.0.2785.101",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-09-02 18:28:04.458530",
+        "version": "53.0.2785.92",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-08-31 19:34:01.675620",
+        "version": "53.0.2785.89",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-07-20 18:56:03.268710",
+        "version": "52.0.2743.82",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-06-24 00:25:01.155500",
+        "version": "51.0.2704.106",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-06-16 17:38:02.023190",
+        "version": "51.0.2704.103",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-06-06 18:38:01.226440",
+        "version": "51.0.2704.84",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-06-01 21:16:02.273420",
+        "version": "51.0.2704.79",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-05-25 21:02:01.717780",
+        "version": "51.0.2704.63",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-05-11 17:58:02.967020",
+        "version": "50.0.2661.102",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-04-28 18:10:01.712790",
+        "version": "50.0.2661.94",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-04-20 22:47:01.136050",
+        "version": "50.0.2661.86",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-04-13 18:21:02.101240",
+        "version": "50.0.2661.75",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-04-07 18:22:01.688540",
+        "version": "49.0.2623.112",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-03-28 18:30:02.038700",
+        "version": "49.0.2623.110",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-03-24 17:36:01.273310",
+        "version": "49.0.2623.108",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-03-09 00:05:08.395010",
+        "version": "49.0.2623.87",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-03-02 20:23:07.770520",
+        "version": "49.0.2623.75",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-02-18 20:23:07.019020",
+        "version": "48.0.2564.116",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-02-09 19:07:05.198510",
+        "version": "48.0.2564.109",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-02-03 22:23:05.536540",
+        "version": "48.0.2564.103",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-01-27 21:12:06.413020",
+        "version": "48.0.2564.97",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-01-20 23:04:05.150410",
+        "version": "48.0.2564.82",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2016-01-13 22:00:05.140780",
+        "version": "47.0.2526.111",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-12-15 20:06:03.342010",
+        "version": "47.0.2526.106",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-12-08 20:04:03.387360",
+        "version": "47.0.2526.80",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-12-01 19:50:03.825710",
+        "version": "47.0.2526.73",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-11-10 21:30:05.788760",
+        "version": "46.0.2490.86",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-10-22 19:00:03.830940",
+        "version": "46.0.2490.80",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-10-13 18:00:04.796200",
+        "version": "46.0.2490.71",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-09-24 22:43:04.136860",
+        "version": "45.0.2454.101",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-09-21 18:25:03.169010",
+        "version": "45.0.2454.99",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-09-15 19:23:02.448760",
+        "version": "45.0.2454.93",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-09-01 19:09:03.401770",
+        "version": "45.0.2454.85",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-08-20 17:47:03.808070",
+        "version": "44.0.2403.157",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-08-11 15:36:03.083610",
+        "version": "44.0.2403.155",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-08-04 17:41:03.312000",
+        "version": "44.0.2403.130",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-07-28 18:09:03.818710",
+        "version": "44.0.2403.125",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-07-24 17:46:03.292010",
+        "version": "44.0.2403.107",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-07-21 17:40:03.553900",
+        "version": "44.0.2403.89",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-07-14 13:14:05.180440",
+        "version": "43.0.2357.134",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-07-07 15:06:04.279940",
+        "version": "43.0.2357.132",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-06-22 15:32:06.470400",
+        "version": "43.0.2357.130",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-06-11 16:34:04.189060",
+        "version": "43.0.2357.125",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-06-09 13:00:04.628380",
+        "version": "43.0.2357.124",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-05-25 15:29:02.827020",
+        "version": "43.0.2357.81",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-05-19 15:58:06.363460",
+        "version": "43.0.2357.65",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-05-12 15:58:05.597710",
+        "version": "42.0.2311.152",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-04-28 17:39:59.436470",
+        "version": "42.0.2311.135",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-04-14 17:38:07.925770",
+        "version": "42.0.2311.90",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-04-01 17:48:13.881670",
+        "version": "41.0.2272.118",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-03-20 04:24:20.077340",
+        "version": "41.0.2272.101",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-03-10 18:34:55.233560",
+        "version": "41.0.2272.89",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-03-03 19:03:07.355610",
+        "version": "41.0.2272.76",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-02-19 16:27:01.951950",
+        "version": "40.0.2214.115",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-02-05 17:13:49.379570",
+        "version": "40.0.2214.111",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-02-04 00:12:02.549880",
+        "version": "40.0.2214.95",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-01-29 19:54:27.189740",
+        "version": "40.0.2214.94",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-01-27 01:42:59.515820",
+        "version": "40.0.2214.93",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-01-21 19:36:09.206130",
+        "version": "40.0.2214.91",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2015-01-13 20:45:25.909700",
+        "version": "39.0.2171.99",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-12-09 20:11:00.157270",
+        "version": "39.0.2171.95",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-11-25 23:04:58.385400",
+        "version": "39.0.2171.71",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-11-18 16:45:41.414590",
+        "version": "39.0.2171.65",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-11-11 19:06:25.075690",
+        "version": "38.0.2125.122",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-10-27 18:58:47.173780",
+        "version": "38.0.2125.111",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-10-14 20:03:28.016180",
+        "version": "38.0.2125.104",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-10-07 19:45:21.307270",
+        "version": "38.0.2125.101",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-09-09 16:43:22.316240",
+        "version": "37.0.2062.120",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-08-26 14:11:22.119930",
+        "version": "37.0.2062.94",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-08-12 19:33:17.924610",
+        "version": "36.0.1985.143",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-07-16 19:02:12.183600",
+        "version": "36.0.1985.125",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-06-10 17:11:04.345430",
+        "version": "35.0.1916.153",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-05-20 16:52:36.988000",
+        "version": "35.0.1916.114",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-05-13 17:52:02.919960",
+        "version": "34.0.1847.137",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-04-24 17:50:04.713960",
+        "version": "34.0.1847.132",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-04-08 21:04:43.153820",
+        "version": "34.0.1847.116",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-03-15 08:52:58.692420",
+        "version": "33.0.1750.152",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-03-11 16:13:45.506060",
+        "version": "33.0.1750.149",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-03-04 01:08:05.428040",
+        "version": "33.0.1750.146",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-02-21 02:57:04.911100",
+        "version": "33.0.1750.117",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-02-19 16:51:16.112150",
+        "version": "33.0.1750.115",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-02-19 16:34:28.562130",
+        "version": "32.0.1700.107",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-01-27 22:15:05.037830",
+        "version": "32.0.1700.102",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2014-01-15 03:16:41.430120",
+        "version": "32.0.1700.77",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-12-04 21:49:02.384540",
+        "version": "31.0.1650.63",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-12-04 19:12:12.534520",
+        "version": "31.0.1650.57",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-11-15 02:54:15.169820",
+        "version": "31.0.1650.48",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-10-23 05:35:31.704760",
+        "version": "30.0.1599.114",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-10-16 09:19:15.745570",
+        "version": "30.0.1599.101",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-10-01 17:59:51.475750",
+        "version": "30.0.1599.66",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-09-19 04:05:35.265050",
+        "version": "29.0.1547.76",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-09-03 08:27:31.924830",
+        "version": "29.0.1547.65",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-09-03 08:09:29.023750",
+        "version": "29.0.1547.62",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-08-21 10:03:11.630370",
+        "version": "29.0.1547.57",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-07-30 16:35:39.585910",
+        "version": "28.0.1500.95",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-07-03 18:27:56.825640",
+        "version": "28.0.1500.71",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-07-03 04:43:15.180580",
+        "version": "28.0.1500.70",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-07-02 14:34:37.525170",
+        "version": "28.0.1500.68",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-06-28 02:47:29.983230",
+        "version": "28.0.1500.63",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-06-20 00:50:18.203620",
+        "version": "28.0.1500.52",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-06-17 22:10:01.714930",
+        "version": "28.0.1500.45",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-06-04 21:51:00.824490",
+        "version": "27.0.1453.110",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-05-21 21:29:55.194600",
+        "version": "27.0.1453.93",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-04-09 17:04:52.272270",
+        "version": "26.0.1410.63",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-03-26 17:02:57.875950",
+        "version": "26.0.1410.43",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-03-12 17:03:14.761132",
+        "version": "25.0.1364.172",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-03-08 02:00:44.250734",
+        "version": "25.0.1364.160",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-03-04 17:29:28.835037",
+        "version": "25.0.1364.152",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-02-21 21:55:01.083299",
+        "version": "25.0.1364.97",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-02-12 18:13:34.257944",
+        "version": "24.0.1312.70",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-02-06 16:13:50.284918",
+        "version": "24.0.1312.69",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-02-04 18:50:27.997913",
+        "version": "24.0.1312.68",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-01-30 18:02:34.647277",
+        "version": "24.0.1312.57",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-01-22 18:05:25.213262",
+        "version": "24.0.1312.56",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2013-01-10 18:15:58.021612",
+        "version": "24.0.1312.52",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-12-11 18:00:21.620292",
+        "version": "23.0.1271.97",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-11-29 19:10:12.932958",
+        "version": "23.0.1271.95",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-11-26 17:50:47.467186",
+        "version": "23.0.1271.91",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-11-06 18:00:03.661027",
+        "version": "23.0.1271.64",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-10-10 15:44:20.033699",
+        "version": "22.0.1229.94",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-10-08 16:40:32.212692",
+        "version": "22.0.1229.92",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-09-25 17:23:24.309732",
+        "version": "22.0.1229.79",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-08-30 20:24:08.805298",
+        "version": "21.0.1180.89",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-08-21 18:11:15.839721",
+        "version": "21.0.1180.81",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-08-14 17:23:17.643738",
+        "version": "21.0.1180.79",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-08-13 18:43:07.939917",
+        "version": "21.0.1180.77",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-08-08 17:28:44.078167",
+        "version": "21.0.1180.75",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-07-31 20:08:52.612537",
+        "version": "21.0.1180.57",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-07-11 16:43:38.627849",
+        "version": "20.0.1132.57",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-06-28 23:22:16.956268",
+        "version": "20.0.1132.47",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-06-26 21:23:19.616515",
+        "version": "20.0.1132.43",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-06-08 20:44:11.337586",
+        "version": "19.0.1084.56",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-05-23 22:12:01.692914",
+        "version": "19.0.1084.52",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-05-15 14:09:20.330226",
+        "version": "19.0.1084.46",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-04-30 19:47:23.164723",
+        "version": "18.0.1025.168",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-04-12 23:43:57.671196",
+        "version": "18.0.1025.162",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-04-05 16:59:02.646244",
+        "version": "18.0.1025.151",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-03-28 16:56:32.143549",
+        "version": "18.0.1025.142",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-03-22 00:51:27.863592",
+        "version": "17.0.963.83",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-03-10 18:05:03.433406",
+        "version": "17.0.963.79",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-03-08 17:35:03.498036",
+        "version": "17.0.963.78",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-03-06 17:47:09.129601",
+        "version": "17.0.963.66",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-03-05 02:33:21.694198",
+        "version": "17.0.963.65",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-02-15 19:15:02.876248",
+        "version": "17.0.963.56",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-02-15 07:31:52.591842",
+        "version": "17.0.963.46",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-02-15 01:25:22.965911",
+        "version": "17.0.963.54",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-01-23 22:34:00.019210",
+        "version": "16.0.912.77",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2012-01-06 00:40:06.810309",
+        "version": "16.0.912.75",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-12-13 01:36:09.865793",
+        "version": "16.0.912.63",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-11-17 00:17:59.406668",
+        "version": "15.0.874.121",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-11-10 18:05:04.626737",
+        "version": "15.0.874.120",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-10-26 19:30:03.207702",
+        "version": "15.0.874.106",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-10-25 15:58:40.312155",
+        "version": "15.0.874.102",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-10-04 16:36:03.869049",
+        "version": "14.0.835.202",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-09-20 19:00:27.698876",
+        "version": "14.0.835.186",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-09-16 14:33:15.420623",
+        "version": "14.0.835.163",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-09-03 17:09:31.658764",
+        "version": "13.0.782.220",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-08-30 17:59:05.071258",
+        "version": "13.0.782.218",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-08-22 20:58:18.833826",
+        "version": "13.0.782.215",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-08-09 14:47:12.362583",
+        "version": "13.0.782.112",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-08-02 15:07:14.151672",
+        "version": "13.0.782.107",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-07-12 20:00:36.481829",
+        "version": "12.0.742.124",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-06-28 16:56:23.698494",
+        "version": "12.0.742.112",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-06-14 21:15:01.744485",
+        "version": "12.0.742.100",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-06-07 15:34:02.554546",
+        "version": "12.0.742.91",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-06-06 00:46:41.948526",
+        "version": "11.0.696.77",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-05-24 21:06:41.971968",
+        "version": "11.0.696.71",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-05-12 16:38:22.360473",
+        "version": "11.0.696.68",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-05-06 21:41:21.221070",
+        "version": "11.0.696.65",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-04-27 15:06:00.956830",
+        "version": "11.0.696.57",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-04-14 19:30:03.558057",
+        "version": "10.0.648.205",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-03-24 21:20:45.380881",
+        "version": "10.0.648.204",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-03-17 19:28:07.789346",
+        "version": "10.0.648.151",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-03-15 18:35:15.940658",
+        "version": "10.0.648.134",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-03-11 19:43:51.466036",
+        "version": "10.0.648.133",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-03-08 15:45:06.967987",
+        "version": "10.0.648.127",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-02-28 23:15:02.717099",
+        "version": "9.0.597.107",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-02-11 21:35:35.548234",
+        "version": "9.0.597.98",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-02-08 16:33:08.016077",
+        "version": "9.0.597.94",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-02-03 17:08:20.101045",
+        "version": "9.0.597.84",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2011-01-12 23:14:32.773839",
+        "version": "8.0.552.237",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2010-12-13 19:04:54.889914",
+        "version": "8.0.552.224",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2010-12-02 19:08:19.714492",
+        "version": "8.0.552.215",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2010-11-04 16:00:17.834913",
+        "version": "7.0.517.44",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2010-10-19 17:01:00.466800",
+        "version": "7.0.517.41",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2010-09-24 01:03:27.696501",
+        "version": "6.0.472.63",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2010-09-17 21:46:10.526648",
+        "version": "6.0.472.62",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2010-09-15 00:47:22.631666",
+        "version": "6.0.472.59",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2010-09-07 23:12:35.707384",
+        "version": "6.0.472.55",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2010-09-02 14:00:42.893489",
+        "version": "6.0.472.53",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2010-08-19 22:10:41.225848",
+        "version": "5.0.375.127",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2010-08-11 00:13:23.424959",
+        "version": "5.0.375.126",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2010-07-26 22:42:11.286959",
+        "version": "5.0.375.125",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2010-07-01 22:33:46.846596",
+        "version": "5.0.375.99",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2010-06-24 23:27:31.855934",
+        "version": "5.0.375.86",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2010-06-08 21:12:09.986195",
+        "version": "5.0.375.70",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2010-05-26 18:04:09.752483",
+        "version": "5.0.375.55",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-02-13 19:38:03.994704",
+        "version": "80.0.3987.106",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-02-11 18:08:04.061012",
+        "version": "80.0.3987.100",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-02-04 21:29:04.742162",
+        "version": "80.0.3987.87",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-01-16 20:10:05.541690",
+        "version": "79.0.3945.130",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-01-07 19:24:04.558912",
+        "version": "79.0.3945.117",
+        "os": "linux",
+        "channel": "stable"
+    }
+]

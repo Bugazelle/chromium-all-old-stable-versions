@@ -1,11 +1,46 @@
 {
     "mac": {
+        "80.0.3987.106": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=80.0.3987.106",
+            "position": 722274,
+            "download_position": 722274,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Mac/722274/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Mac%2F722274%2Fchrome-mac.zip?generation=1575589468690598&alt=media"
+        },
+        "80.0.3987.87": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=80.0.3987.87",
+            "position": 722274,
+            "download_position": 722274,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Mac/722274/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Mac%2F722274%2Fchrome-mac.zip?generation=1575589468690598&alt=media"
+        },
+        "79.0.3945.130": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=79.0.3945.130",
+            "position": 706915,
+            "download_position": 706915,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Mac/706915/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Mac%2F706915%2Fchrome-mac.zip?generation=1571327466283117&alt=media"
+        },
         "79.0.3945.88": {
             "position_url": "https://omahaproxy.appspot.com/deps.json?version=79.0.3945.88",
             "position": 706915,
             "download_position": 706915,
             "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Mac/706915/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
             "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Mac%2F706915%2Fchrome-mac.zip?generation=1571327466283117&alt=media"
+        },
+        "79.0.3945.117": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=79.0.3945.117",
+            "position": 706915,
+            "download_position": 706915,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Mac/706915/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Mac%2F706915%2Fchrome-mac.zip?generation=1571327466283117&alt=media"
+        },
+        "80.0.3987.100": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=80.0.3987.100",
+            "position": 722274,
+            "download_position": 722274,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Mac/722274/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Mac%2F722274%2Fchrome-mac.zip?generation=1575589468690598&alt=media"
         },
         "79.0.3945.79": {
             "position_url": "https://omahaproxy.appspot.com/deps.json?version=79.0.3945.79",
@@ -1031,6 +1066,41 @@
         }
     },
     "win": {
+        "80.0.3987.100": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=80.0.3987.100",
+            "position": 722274,
+            "download_position": 722276,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Win/722276/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Win%2F722276%2Fchrome-win.zip?generation=1575590351685488&alt=media"
+        },
+        "79.0.3945.130": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=79.0.3945.130",
+            "position": 706915,
+            "download_position": 706915,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Win/706915/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Win%2F706915%2Fchrome-win.zip?generation=1571327510587252&alt=media"
+        },
+        "80.0.3987.106": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=80.0.3987.106",
+            "position": 722274,
+            "download_position": 722276,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Win/722276/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Win%2F722276%2Fchrome-win.zip?generation=1575590351685488&alt=media"
+        },
+        "80.0.3987.87": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=80.0.3987.87",
+            "position": 722274,
+            "download_position": 722276,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Win/722276/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Win%2F722276%2Fchrome-win.zip?generation=1575590351685488&alt=media"
+        },
+        "79.0.3945.117": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=79.0.3945.117",
+            "position": 706915,
+            "download_position": 706915,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Win/706915/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Win%2F706915%2Fchrome-win.zip?generation=1571327510587252&alt=media"
+        },
         "79.0.3945.88": {
             "position_url": "https://omahaproxy.appspot.com/deps.json?version=79.0.3945.88",
             "position": 706915,
@@ -2083,6 +2153,41 @@
         }
     },
     "win64": {
+        "80.0.3987.100": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=80.0.3987.100",
+            "position": 722274,
+            "download_position": 722274,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Win_x64/722274/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Win_x64%2F722274%2Fchrome-win.zip?generation=1575590120225705&alt=media"
+        },
+        "79.0.3945.130": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=79.0.3945.130",
+            "position": 706915,
+            "download_position": 706915,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Win_x64/706915/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Win_x64%2F706915%2Fchrome-win.zip?generation=1571327342065686&alt=media"
+        },
+        "80.0.3987.106": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=80.0.3987.106",
+            "position": 722274,
+            "download_position": 722274,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Win_x64/722274/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Win_x64%2F722274%2Fchrome-win.zip?generation=1575590120225705&alt=media"
+        },
+        "79.0.3945.117": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=79.0.3945.117",
+            "position": 706915,
+            "download_position": 706915,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Win_x64/706915/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Win_x64%2F706915%2Fchrome-win.zip?generation=1571327342065686&alt=media"
+        },
+        "80.0.3987.87": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=80.0.3987.87",
+            "position": 722274,
+            "download_position": 722274,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Win_x64/722274/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Win_x64%2F722274%2Fchrome-win.zip?generation=1575590120225705&alt=media"
+        },
         "78.0.3904.87": {
             "position_url": "https://omahaproxy.appspot.com/deps.json?version=78.0.3904.87",
             "position": 693954,
@@ -2749,380 +2854,42 @@
             "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Win_x64%2F394938%2Fchrome-win32.zip?generation=1463707579148000&alt=media"
         }
     },
-    "linux": {
-        "49.0.2623.87": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=49.0.2623.87",
-            "position": 369907,
-            "download_position": 369908,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/369908/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F369908%2Fchrome-linux.zip?generation=1452908561121000&alt=media"
-        },
-        "50.0.2661.86": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=50.0.2661.86",
-            "position": 378081,
-            "download_position": 378085,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/378085/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F378085%2Fchrome-linux.zip?generation=1456541197691000&alt=media"
-        },
-        "50.0.2661.75": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=50.0.2661.75",
-            "position": 378081,
-            "download_position": 378085,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/378085/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F378085%2Fchrome-linux.zip?generation=1456541197691000&alt=media"
-        },
-        "48.0.2564.103": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=48.0.2564.103",
-            "position": 359700,
-            "download_position": 359696,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/359696/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F359696%2Fchrome-linux.zip?generation=1447463123267000&alt=media"
-        },
-        "48.0.2564.97": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=48.0.2564.97",
-            "position": 359700,
-            "download_position": 359696,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/359696/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F359696%2Fchrome-linux.zip?generation=1447463123267000&alt=media"
-        },
-        "48.0.2564.109": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=48.0.2564.109",
-            "position": 359700,
-            "download_position": 359696,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/359696/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F359696%2Fchrome-linux.zip?generation=1447463123267000&alt=media"
-        },
-        "49.0.2623.75": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=49.0.2623.75",
-            "position": 369907,
-            "download_position": 369908,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/369908/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F369908%2Fchrome-linux.zip?generation=1452908561121000&alt=media"
-        },
-        "50.0.2661.94": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=50.0.2661.94",
-            "position": 378081,
-            "download_position": 378085,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/378085/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F378085%2Fchrome-linux.zip?generation=1456541197691000&alt=media"
-        },
-        "49.0.2623.112": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=49.0.2623.112",
-            "position": 369907,
-            "download_position": 369908,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/369908/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F369908%2Fchrome-linux.zip?generation=1452908561121000&alt=media"
-        },
-        "48.0.2564.116": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=48.0.2564.116",
-            "position": 359700,
-            "download_position": 359696,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/359696/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F359696%2Fchrome-linux.zip?generation=1447463123267000&alt=media"
-        },
-        "47.0.2526.73": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=47.0.2526.73",
-            "position": 352221,
-            "download_position": 352221,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/352221/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F352221%2Fchrome-linux.zip?generation=1443837571201000&alt=media"
-        },
-        "44.0.2403.155": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=44.0.2403.155",
-            "position": 330231,
-            "download_position": 330231,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/330231/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F330231%2Fchrome-linux.zip?generation=1431733472050000&alt=media"
-        },
-        "45.0.2454.85": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=45.0.2454.85",
-            "position": 338390,
-            "download_position": 338391,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/338391/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F338391%2Fchrome-linux.zip?generation=1436571053951000&alt=media"
-        },
-        "45.0.2454.93": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=45.0.2454.93",
-            "position": 338390,
-            "download_position": 338391,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/338391/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F338391%2Fchrome-linux.zip?generation=1436571053951000&alt=media"
-        },
-        "48.0.2564.82": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=48.0.2564.82",
-            "position": 359700,
-            "download_position": 359696,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/359696/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F359696%2Fchrome-linux.zip?generation=1447463123267000&alt=media"
-        },
-        "44.0.2403.157": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=44.0.2403.157",
-            "position": 330231,
-            "download_position": 330231,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/330231/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F330231%2Fchrome-linux.zip?generation=1431733472050000&alt=media"
-        },
-        "47.0.2526.106": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=47.0.2526.106",
-            "position": 352221,
-            "download_position": 352221,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/352221/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F352221%2Fchrome-linux.zip?generation=1443837571201000&alt=media"
-        },
-        "49.0.2623.110": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=49.0.2623.110",
-            "position": 369907,
-            "download_position": 369908,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/369908/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F369908%2Fchrome-linux.zip?generation=1452908561121000&alt=media"
-        },
-        "45.0.2454.99": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=45.0.2454.99",
-            "position": 338390,
-            "download_position": 338391,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/338391/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F338391%2Fchrome-linux.zip?generation=1436571053951000&alt=media"
-        },
-        "43.0.2357.130": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=43.0.2357.130",
-            "position": 323860,
-            "download_position": 323860,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/323860/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F323860%2Fchrome-linux.zip?generation=1428109362406000&alt=media"
-        },
-        "43.0.2357.132": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=43.0.2357.132",
-            "position": 323860,
-            "download_position": 323860,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/323860/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F323860%2Fchrome-linux.zip?generation=1428109362406000&alt=media"
-        },
-        "44.0.2403.125": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=44.0.2403.125",
-            "position": 330231,
-            "download_position": 330231,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/330231/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F330231%2Fchrome-linux.zip?generation=1431733472050000&alt=media"
-        },
-        "43.0.2357.124": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=43.0.2357.124",
-            "position": 323860,
-            "download_position": 323860,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/323860/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F323860%2Fchrome-linux.zip?generation=1428109362406000&alt=media"
-        },
-        "43.0.2357.81": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=43.0.2357.81",
-            "position": 323860,
-            "download_position": 323860,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/323860/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F323860%2Fchrome-linux.zip?generation=1428109362406000&alt=media"
-        },
-        "43.0.2357.65": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=43.0.2357.65",
-            "position": 323860,
-            "download_position": 323860,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/323860/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F323860%2Fchrome-linux.zip?generation=1428109362406000&alt=media"
-        },
-        "42.0.2311.135": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=42.0.2311.135",
-            "position": 317474,
-            "download_position": 317472,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/317472/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F317472%2Fchrome-linux.zip?generation=1424482140361000&alt=media"
-        },
-        "44.0.2403.107": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=44.0.2403.107",
-            "position": 330231,
-            "download_position": 330231,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/330231/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F330231%2Fchrome-linux.zip?generation=1431733472050000&alt=media"
-        },
-        "44.0.2403.89": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=44.0.2403.89",
-            "position": 330231,
-            "download_position": 330231,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/330231/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F330231%2Fchrome-linux.zip?generation=1431733472050000&alt=media"
-        },
-        "46.0.2490.86": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=46.0.2490.86",
-            "position": 344925,
-            "download_position": 344924,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/344924/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F344924%2Fchrome-linux.zip?generation=1440202875395000&alt=media"
-        },
-        "46.0.2490.80": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=46.0.2490.80",
-            "position": 344925,
-            "download_position": 344924,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/344924/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F344924%2Fchrome-linux.zip?generation=1440202875395000&alt=media"
-        },
-        "43.0.2357.134": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=43.0.2357.134",
-            "position": 323860,
-            "download_position": 323860,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/323860/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F323860%2Fchrome-linux.zip?generation=1428109362406000&alt=media"
-        },
-        "44.0.2403.130": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=44.0.2403.130",
-            "position": 330231,
-            "download_position": 330231,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/330231/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F330231%2Fchrome-linux.zip?generation=1431733472050000&alt=media"
-        },
-        "47.0.2526.111": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=47.0.2526.111",
-            "position": 352221,
-            "download_position": 352221,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/352221/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F352221%2Fchrome-linux.zip?generation=1443837571201000&alt=media"
-        },
-        "39.0.2171.95": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=39.0.2171.95",
-            "position": 297060,
-            "download_position": 297059,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/297059/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F297059%2Fchrome-linux.zip?generation=1411772053960000&alt=media"
-        },
-        "41.0.2272.118": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=41.0.2272.118",
-            "position": 310958,
-            "download_position": 310958,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/310958/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F310958%2Fchrome-linux.zip?generation=1420864530808000&alt=media"
-        },
-        "41.0.2272.89": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=41.0.2272.89",
-            "position": 310958,
-            "download_position": 310958,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/310958/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F310958%2Fchrome-linux.zip?generation=1420864530808000&alt=media"
-        },
-        "49.0.2623.108": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=49.0.2623.108",
-            "position": 369907,
-            "download_position": 369908,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/369908/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F369908%2Fchrome-linux.zip?generation=1452908561121000&alt=media"
-        },
-        "50.0.2661.102": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=50.0.2661.102",
-            "position": 378081,
-            "download_position": 378085,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/378085/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F378085%2Fchrome-linux.zip?generation=1456541197691000&alt=media"
-        },
-        "45.0.2454.101": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=45.0.2454.101",
-            "position": 338390,
-            "download_position": 338391,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/338391/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F338391%2Fchrome-linux.zip?generation=1436571053951000&alt=media"
-        },
-        "41.0.2272.76": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=41.0.2272.76",
-            "position": 310958,
-            "download_position": 310958,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/310958/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F310958%2Fchrome-linux.zip?generation=1420864530808000&alt=media"
-        },
-        "41.0.2272.101": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=41.0.2272.101",
-            "position": 310958,
-            "download_position": 310958,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/310958/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F310958%2Fchrome-linux.zip?generation=1420864530808000&alt=media"
-        },
-        "39.0.2171.99": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=39.0.2171.99",
-            "position": 297060,
-            "download_position": 297059,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/297059/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F297059%2Fchrome-linux.zip?generation=1411772053960000&alt=media"
-        },
-        "38.0.2125.111": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=38.0.2125.111",
-            "position": 290040,
-            "download_position": 290041,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/290041/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F290041%2Fchrome-linux.zip?generation=1408146493043000&alt=media"
-        },
-        "38.0.2125.104": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=38.0.2125.104",
-            "position": 290040,
-            "download_position": 290041,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/290041/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F290041%2Fchrome-linux.zip?generation=1408146493043000&alt=media"
-        },
-        "38.0.2125.101": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=38.0.2125.101",
-            "position": 290040,
-            "download_position": 290041,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/290041/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F290041%2Fchrome-linux.zip?generation=1408146493043000&alt=media"
-        },
-        "46.0.2490.71": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=46.0.2490.71",
-            "position": 344925,
-            "download_position": 344924,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/344924/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F344924%2Fchrome-linux.zip?generation=1440202875395000&alt=media"
-        },
-        "37.0.2062.120": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=37.0.2062.120",
-            "position": 278856,
-            "download_position": 278862,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/278862/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F278862%2Fchrome-linux.zip?generation=1406077490996000&alt=media"
-        },
-        "47.0.2526.80": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=47.0.2526.80",
-            "position": 352221,
-            "download_position": 352221,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/352221/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F352221%2Fchrome-linux.zip?generation=1443837571201000&alt=media"
-        },
-        "42.0.2311.152": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=42.0.2311.152",
-            "position": 317474,
-            "download_position": 317472,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/317472/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F317472%2Fchrome-linux.zip?generation=1424482140361000&alt=media"
-        },
-        "38.0.2125.122": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=38.0.2125.122",
-            "position": 290040,
-            "download_position": 290041,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/290041/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F290041%2Fchrome-linux.zip?generation=1408146493043000&alt=media"
-        },
-        "40.0.2214.115": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=40.0.2214.115",
-            "position": 303346,
-            "download_position": 303345,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/303345/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F303345%2Fchrome-linux.zip?generation=1415411850881000&alt=media"
-        },
-        "40.0.2214.111": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=40.0.2214.111",
-            "position": 303346,
-            "download_position": 303345,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/303345/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F303345%2Fchrome-linux.zip?generation=1415411850881000&alt=media"
-        },
-        "43.0.2357.125": {
-            "position_url": "https://omahaproxy.appspot.com/deps.json?version=43.0.2357.125",
-            "position": 323860,
-            "download_position": 323860,
-            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/323860/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
-            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F323860%2Fchrome-linux.zip?generation=1428109362406000&alt=media"
-        }
-    },
     "linux64": {
+        "80.0.3987.106": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=80.0.3987.106",
+            "position": 722274,
+            "download_position": 722276,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux_x64/722276/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux_x64%2F722276%2Fchrome-linux.zip?generation=1575588380806233&alt=media"
+        },
+        "80.0.3987.100": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=80.0.3987.100",
+            "position": 722274,
+            "download_position": 722276,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux_x64/722276/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux_x64%2F722276%2Fchrome-linux.zip?generation=1575588380806233&alt=media"
+        },
+        "80.0.3987.87": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=80.0.3987.87",
+            "position": 722274,
+            "download_position": 722276,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux_x64/722276/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux_x64%2F722276%2Fchrome-linux.zip?generation=1575588380806233&alt=media"
+        },
+        "79.0.3945.130": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=79.0.3945.130",
+            "position": 706915,
+            "download_position": 706915,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux_x64/706915/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux_x64%2F706915%2Fchrome-linux.zip?generation=1571324979333057&alt=media"
+        },
+        "79.0.3945.117": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=79.0.3945.117",
+            "position": 706915,
+            "download_position": 706915,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux_x64/706915/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux_x64%2F706915%2Fchrome-linux.zip?generation=1571324979333057&alt=media"
+        },
         "79.0.3945.79": {
             "position_url": "https://omahaproxy.appspot.com/deps.json?version=79.0.3945.79",
             "position": 706915,
@@ -4189,6 +3956,34 @@
         }
     },
     "android": {
+        "80.0.3987.99": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=80.0.3987.99",
+            "position": 722274,
+            "download_position": 722276,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Android/722276/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Android%2F722276%2Fchrome-android.zip?generation=1575590219192209&alt=media"
+        },
+        "80.0.3987.87": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=80.0.3987.87",
+            "position": 722274,
+            "download_position": 722276,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Android/722276/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Android%2F722276%2Fchrome-android.zip?generation=1575590219192209&alt=media"
+        },
+        "79.0.3945.116": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=79.0.3945.116",
+            "position": 706915,
+            "download_position": 706923,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Android/706923/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Android%2F706923%2Fchrome-android.zip?generation=1571328586310815&alt=media"
+        },
+        "79.0.3945.136": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=79.0.3945.136",
+            "position": 706915,
+            "download_position": 706923,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Android/706923/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Android%2F706923%2Fchrome-android.zip?generation=1571328586310815&alt=media"
+        },
         "78.0.3904.90": {
             "position_url": "https://omahaproxy.appspot.com/deps.json?version=78.0.3904.90",
             "position": 693954,
@@ -4818,6 +4613,379 @@
             "download_position": 323859,
             "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Android/323859/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
             "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Android%2F323859%2Fchrome-android.zip?generation=1428108669605000&alt=media"
+        }
+    },
+    "linux": {
+        "49.0.2623.87": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=49.0.2623.87",
+            "position": 369907,
+            "download_position": 369908,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/369908/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F369908%2Fchrome-linux.zip?generation=1452908561121000&alt=media"
+        },
+        "50.0.2661.86": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=50.0.2661.86",
+            "position": 378081,
+            "download_position": 378085,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/378085/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F378085%2Fchrome-linux.zip?generation=1456541197691000&alt=media"
+        },
+        "50.0.2661.75": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=50.0.2661.75",
+            "position": 378081,
+            "download_position": 378085,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/378085/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F378085%2Fchrome-linux.zip?generation=1456541197691000&alt=media"
+        },
+        "48.0.2564.103": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=48.0.2564.103",
+            "position": 359700,
+            "download_position": 359696,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/359696/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F359696%2Fchrome-linux.zip?generation=1447463123267000&alt=media"
+        },
+        "48.0.2564.97": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=48.0.2564.97",
+            "position": 359700,
+            "download_position": 359696,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/359696/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F359696%2Fchrome-linux.zip?generation=1447463123267000&alt=media"
+        },
+        "48.0.2564.109": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=48.0.2564.109",
+            "position": 359700,
+            "download_position": 359696,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/359696/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F359696%2Fchrome-linux.zip?generation=1447463123267000&alt=media"
+        },
+        "49.0.2623.75": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=49.0.2623.75",
+            "position": 369907,
+            "download_position": 369908,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/369908/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F369908%2Fchrome-linux.zip?generation=1452908561121000&alt=media"
+        },
+        "50.0.2661.94": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=50.0.2661.94",
+            "position": 378081,
+            "download_position": 378085,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/378085/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F378085%2Fchrome-linux.zip?generation=1456541197691000&alt=media"
+        },
+        "49.0.2623.112": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=49.0.2623.112",
+            "position": 369907,
+            "download_position": 369908,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/369908/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F369908%2Fchrome-linux.zip?generation=1452908561121000&alt=media"
+        },
+        "48.0.2564.116": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=48.0.2564.116",
+            "position": 359700,
+            "download_position": 359696,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/359696/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F359696%2Fchrome-linux.zip?generation=1447463123267000&alt=media"
+        },
+        "47.0.2526.73": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=47.0.2526.73",
+            "position": 352221,
+            "download_position": 352221,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/352221/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F352221%2Fchrome-linux.zip?generation=1443837571201000&alt=media"
+        },
+        "44.0.2403.155": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=44.0.2403.155",
+            "position": 330231,
+            "download_position": 330231,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/330231/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F330231%2Fchrome-linux.zip?generation=1431733472050000&alt=media"
+        },
+        "45.0.2454.85": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=45.0.2454.85",
+            "position": 338390,
+            "download_position": 338391,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/338391/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F338391%2Fchrome-linux.zip?generation=1436571053951000&alt=media"
+        },
+        "45.0.2454.93": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=45.0.2454.93",
+            "position": 338390,
+            "download_position": 338391,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/338391/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F338391%2Fchrome-linux.zip?generation=1436571053951000&alt=media"
+        },
+        "48.0.2564.82": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=48.0.2564.82",
+            "position": 359700,
+            "download_position": 359696,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/359696/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F359696%2Fchrome-linux.zip?generation=1447463123267000&alt=media"
+        },
+        "44.0.2403.157": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=44.0.2403.157",
+            "position": 330231,
+            "download_position": 330231,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/330231/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F330231%2Fchrome-linux.zip?generation=1431733472050000&alt=media"
+        },
+        "47.0.2526.106": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=47.0.2526.106",
+            "position": 352221,
+            "download_position": 352221,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/352221/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F352221%2Fchrome-linux.zip?generation=1443837571201000&alt=media"
+        },
+        "49.0.2623.110": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=49.0.2623.110",
+            "position": 369907,
+            "download_position": 369908,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/369908/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F369908%2Fchrome-linux.zip?generation=1452908561121000&alt=media"
+        },
+        "45.0.2454.99": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=45.0.2454.99",
+            "position": 338390,
+            "download_position": 338391,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/338391/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F338391%2Fchrome-linux.zip?generation=1436571053951000&alt=media"
+        },
+        "43.0.2357.130": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=43.0.2357.130",
+            "position": 323860,
+            "download_position": 323860,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/323860/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F323860%2Fchrome-linux.zip?generation=1428109362406000&alt=media"
+        },
+        "43.0.2357.132": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=43.0.2357.132",
+            "position": 323860,
+            "download_position": 323860,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/323860/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F323860%2Fchrome-linux.zip?generation=1428109362406000&alt=media"
+        },
+        "44.0.2403.125": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=44.0.2403.125",
+            "position": 330231,
+            "download_position": 330231,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/330231/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F330231%2Fchrome-linux.zip?generation=1431733472050000&alt=media"
+        },
+        "43.0.2357.124": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=43.0.2357.124",
+            "position": 323860,
+            "download_position": 323860,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/323860/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F323860%2Fchrome-linux.zip?generation=1428109362406000&alt=media"
+        },
+        "43.0.2357.81": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=43.0.2357.81",
+            "position": 323860,
+            "download_position": 323860,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/323860/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F323860%2Fchrome-linux.zip?generation=1428109362406000&alt=media"
+        },
+        "43.0.2357.65": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=43.0.2357.65",
+            "position": 323860,
+            "download_position": 323860,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/323860/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F323860%2Fchrome-linux.zip?generation=1428109362406000&alt=media"
+        },
+        "42.0.2311.135": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=42.0.2311.135",
+            "position": 317474,
+            "download_position": 317472,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/317472/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F317472%2Fchrome-linux.zip?generation=1424482140361000&alt=media"
+        },
+        "44.0.2403.107": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=44.0.2403.107",
+            "position": 330231,
+            "download_position": 330231,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/330231/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F330231%2Fchrome-linux.zip?generation=1431733472050000&alt=media"
+        },
+        "44.0.2403.89": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=44.0.2403.89",
+            "position": 330231,
+            "download_position": 330231,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/330231/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F330231%2Fchrome-linux.zip?generation=1431733472050000&alt=media"
+        },
+        "46.0.2490.86": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=46.0.2490.86",
+            "position": 344925,
+            "download_position": 344924,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/344924/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F344924%2Fchrome-linux.zip?generation=1440202875395000&alt=media"
+        },
+        "46.0.2490.80": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=46.0.2490.80",
+            "position": 344925,
+            "download_position": 344924,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/344924/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F344924%2Fchrome-linux.zip?generation=1440202875395000&alt=media"
+        },
+        "43.0.2357.134": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=43.0.2357.134",
+            "position": 323860,
+            "download_position": 323860,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/323860/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F323860%2Fchrome-linux.zip?generation=1428109362406000&alt=media"
+        },
+        "44.0.2403.130": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=44.0.2403.130",
+            "position": 330231,
+            "download_position": 330231,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/330231/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F330231%2Fchrome-linux.zip?generation=1431733472050000&alt=media"
+        },
+        "47.0.2526.111": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=47.0.2526.111",
+            "position": 352221,
+            "download_position": 352221,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/352221/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F352221%2Fchrome-linux.zip?generation=1443837571201000&alt=media"
+        },
+        "39.0.2171.95": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=39.0.2171.95",
+            "position": 297060,
+            "download_position": 297059,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/297059/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F297059%2Fchrome-linux.zip?generation=1411772053960000&alt=media"
+        },
+        "41.0.2272.118": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=41.0.2272.118",
+            "position": 310958,
+            "download_position": 310958,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/310958/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F310958%2Fchrome-linux.zip?generation=1420864530808000&alt=media"
+        },
+        "41.0.2272.89": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=41.0.2272.89",
+            "position": 310958,
+            "download_position": 310958,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/310958/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F310958%2Fchrome-linux.zip?generation=1420864530808000&alt=media"
+        },
+        "49.0.2623.108": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=49.0.2623.108",
+            "position": 369907,
+            "download_position": 369908,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/369908/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F369908%2Fchrome-linux.zip?generation=1452908561121000&alt=media"
+        },
+        "50.0.2661.102": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=50.0.2661.102",
+            "position": 378081,
+            "download_position": 378085,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/378085/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F378085%2Fchrome-linux.zip?generation=1456541197691000&alt=media"
+        },
+        "45.0.2454.101": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=45.0.2454.101",
+            "position": 338390,
+            "download_position": 338391,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/338391/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F338391%2Fchrome-linux.zip?generation=1436571053951000&alt=media"
+        },
+        "41.0.2272.76": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=41.0.2272.76",
+            "position": 310958,
+            "download_position": 310958,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/310958/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F310958%2Fchrome-linux.zip?generation=1420864530808000&alt=media"
+        },
+        "41.0.2272.101": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=41.0.2272.101",
+            "position": 310958,
+            "download_position": 310958,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/310958/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F310958%2Fchrome-linux.zip?generation=1420864530808000&alt=media"
+        },
+        "39.0.2171.99": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=39.0.2171.99",
+            "position": 297060,
+            "download_position": 297059,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/297059/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F297059%2Fchrome-linux.zip?generation=1411772053960000&alt=media"
+        },
+        "38.0.2125.111": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=38.0.2125.111",
+            "position": 290040,
+            "download_position": 290041,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/290041/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F290041%2Fchrome-linux.zip?generation=1408146493043000&alt=media"
+        },
+        "38.0.2125.104": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=38.0.2125.104",
+            "position": 290040,
+            "download_position": 290041,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/290041/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F290041%2Fchrome-linux.zip?generation=1408146493043000&alt=media"
+        },
+        "38.0.2125.101": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=38.0.2125.101",
+            "position": 290040,
+            "download_position": 290041,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/290041/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F290041%2Fchrome-linux.zip?generation=1408146493043000&alt=media"
+        },
+        "46.0.2490.71": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=46.0.2490.71",
+            "position": 344925,
+            "download_position": 344924,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/344924/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F344924%2Fchrome-linux.zip?generation=1440202875395000&alt=media"
+        },
+        "37.0.2062.120": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=37.0.2062.120",
+            "position": 278856,
+            "download_position": 278862,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/278862/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F278862%2Fchrome-linux.zip?generation=1406077490996000&alt=media"
+        },
+        "47.0.2526.80": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=47.0.2526.80",
+            "position": 352221,
+            "download_position": 352221,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/352221/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F352221%2Fchrome-linux.zip?generation=1443837571201000&alt=media"
+        },
+        "42.0.2311.152": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=42.0.2311.152",
+            "position": 317474,
+            "download_position": 317472,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/317472/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F317472%2Fchrome-linux.zip?generation=1424482140361000&alt=media"
+        },
+        "38.0.2125.122": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=38.0.2125.122",
+            "position": 290040,
+            "download_position": 290041,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/290041/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F290041%2Fchrome-linux.zip?generation=1408146493043000&alt=media"
+        },
+        "40.0.2214.115": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=40.0.2214.115",
+            "position": 303346,
+            "download_position": 303345,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/303345/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F303345%2Fchrome-linux.zip?generation=1415411850881000&alt=media"
+        },
+        "40.0.2214.111": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=40.0.2214.111",
+            "position": 303346,
+            "download_position": 303345,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/303345/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F303345%2Fchrome-linux.zip?generation=1415411850881000&alt=media"
+        },
+        "43.0.2357.125": {
+            "position_url": "https://omahaproxy.appspot.com/deps.json?version=43.0.2357.125",
+            "position": 323860,
+            "download_position": 323860,
+            "download_prefix": "https://www.googleapis.com/storage/v1/b/chromium-browser-snapshots/o?delimiter=/&prefix=Linux/323860/&fields=items(kind,mediaLink,metadata,name,size,updated),kind,prefixes,nextPageToken",
+            "download_url": "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux%2F323860%2Fchrome-linux.zip?generation=1428109362406000&alt=media"
         }
     }
 }
