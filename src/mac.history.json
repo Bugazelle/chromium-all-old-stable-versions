@@ -1,65 +1,5 @@
 [
     {
-        "timestamp": "2020-04-21 19:53:00.456103",
-        "version": "81.0.4044.122",
-        "os": "mac",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-04-15 18:45:01.056026",
-        "version": "81.0.4044.113",
-        "os": "mac",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-04-07 18:59:00.599225",
-        "version": "81.0.4044.92",
-        "os": "mac",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-04-07 17:59:00.917152",
-        "version": "80.0.3987.163",
-        "os": "mac",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-04-07 17:44:01.091504",
-        "version": "80.0.3987.149",
-        "os": "mac",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-03-31 17:23:00.890097",
-        "version": "80.0.3987.162",
-        "os": "mac",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-03-19 17:16:00.845992",
-        "version": "80.0.3987.132",
-        "os": "mac",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-03-05 19:59:00.822774",
-        "version": "80.0.3987.122",
-        "os": "mac",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-02-26 19:07:01.444024",
-        "version": "79.0.3945.130",
-        "os": "mac",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-02-18 18:03:00.640317",
-        "version": "80.0.3987.116",
-        "os": "mac",
-        "channel": "stable"
-    },
-    {
         "timestamp": "2020-02-13 19:23:00.959920",
         "version": "80.0.3987.106",
         "os": "mac",
@@ -74,6 +14,12 @@
     {
         "timestamp": "2020-02-04 21:29:01.094971",
         "version": "80.0.3987.87",
+        "os": "mac",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-01-16 20:10:01.440461",
+        "version": "79.0.3945.130",
         "os": "mac",
         "channel": "stable"
     },
@@ -1824,62 +1770,38 @@
         "channel": "stable"
     },
     {
-        "timestamp": "2020-04-21 19:53:00.456103",
-        "version": "81.0.4044.122",
+        "timestamp": "2020-02-13 19:23:00.959920",
+        "version": "80.0.3987.106",
         "os": "mac",
         "channel": "stable"
     },
     {
-        "timestamp": "2020-04-15 18:45:01.056026",
-        "version": "81.0.4044.113",
+        "timestamp": "2020-02-11 18:08:00.906592",
+        "version": "80.0.3987.100",
         "os": "mac",
         "channel": "stable"
     },
     {
-        "timestamp": "2020-04-07 18:59:00.599225",
-        "version": "81.0.4044.92",
+        "timestamp": "2020-02-04 21:29:01.094971",
+        "version": "80.0.3987.87",
         "os": "mac",
         "channel": "stable"
     },
     {
-        "timestamp": "2020-04-07 17:59:00.917152",
-        "version": "80.0.3987.163",
-        "os": "mac",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-04-07 17:44:01.091504",
-        "version": "80.0.3987.149",
-        "os": "mac",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-03-31 17:23:00.890097",
-        "version": "80.0.3987.162",
-        "os": "mac",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-03-19 17:16:00.845992",
-        "version": "80.0.3987.132",
-        "os": "mac",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-03-05 19:59:00.822774",
-        "version": "80.0.3987.122",
-        "os": "mac",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-02-26 19:07:01.444024",
+        "timestamp": "2020-01-16 20:10:01.440461",
         "version": "79.0.3945.130",
         "os": "mac",
         "channel": "stable"
     },
     {
-        "timestamp": "2020-02-18 18:03:00.640317",
-        "version": "80.0.3987.116",
+        "timestamp": "2020-01-09 21:48:00.383780",
+        "version": "79.0.3945.117",
+        "os": "mac",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-01-09 21:33:00.590309",
+        "version": "79.0.3945.88",
         "os": "mac",
         "channel": "stable"
     }
