@@ -304,6 +304,10 @@ class Chromium(object):
                 new_position_right = str(int(position) + i)
                 new_position_left = str(int(position) - i)
                 if int(new_position_left) <= 0:
+                    value['download_position'] = int(position)
+                    value['download_prefix'] = 'Error: Failed to find working position'
+                    value['download_url'] = 'Error: Failed to find working position'
+                    self.chromium_downloads.setdefault(os_type, {})[version] = value
                     break
                 if new_position_right in existed_positions_by_os_type:
                     self.__get_download_url(os_type, version, new_position_right, value)
