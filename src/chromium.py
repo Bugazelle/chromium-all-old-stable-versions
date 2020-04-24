@@ -176,12 +176,8 @@ class Chromium(object):
                 if not new_releases:
                     print('Info: No new release found for os type {0}'.format(os_type))
                     continue
-                if releases != new_releases:
-                    all_releases = releases + new_releases
-                else:
-                    all_releases = releases
                 with open(history_json_file, 'w+') as f:
-                    json.dump(all_releases, f, indent=4)
+                    json.dump(releases, f, indent=4)
                 for release in new_releases:
                     try:
                         version = release['version']
@@ -296,24 +292,25 @@ class Chromium(object):
         """Private Function: __parallel_requests_to_download_chromium"""
 
         existed_positions_by_os_type = self.chromium_existed_positions[os_type].keys()
-        position = str(position)
-        if position in existed_positions_by_os_type:
-            self.__get_download_url(os_type, version, position, value)
+        if str(position) in existed_positions_by_os_type:
+            self.__get_download_url(os_type, version, str(position), value)
         else:
-            for i in range(1, self.position_offset + 1):
-                new_position_right = str(int(position) + i)
-                new_position_left = str(int(position) - i)
-                if int(new_position_left) <= 0:
-                    value['download_position'] = int(position)
-                    value['download_prefix'] = 'Error: Failed to find working position'
-                    value['download_url'] = 'Error: Failed to find working position'
-                    self.chromium_downloads.setdefault(os_type, {})[version] = value
-                    break
+            for i in range(1, self.position_offset+1):
+                new_position_right = str(position + i)
+                new_position_left = str(position - i)
                 if new_position_right in existed_positions_by_os_type:
                     self.__get_download_url(os_type, version, new_position_right, value)
                     break
                 if new_position_left in existed_positions_by_os_type:
                     self.__get_download_url(os_type, version, new_position_left, value)
+                    break
+                if i == self.position_offset:
+                    position_range = '[{0}, {1}]'.format(new_position_left, new_position_right)
+                    error_message = 'Error: Failed to find working position in: {0}'.format(position_range)
+                    value['download_position'] = position
+                    value['download_prefix'] = error_message
+                    value['download_url'] = error_message
+                    self.chromium_downloads.setdefault(os_type, {})[version] = value
                     break
 
     def get_chromium_download_url(self, workers=100):
