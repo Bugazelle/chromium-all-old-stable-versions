@@ -204,7 +204,7 @@ class Chromium(object):
                 value = {'position_url': url}
                 self.chromium_position_urls.setdefault(os_type, {})[version] = value
 
-    def __parallel_requests_to_get_positions(self, os_type, version, position_url):
+    def __parallel_requests_to_get_positions(self, os_type, version, position_url, recursive=0):
         """Private Function: __parallel_requests_to_get_positions"""
 
         try:
@@ -221,8 +221,17 @@ class Chromium(object):
                     chromium_base_position = int(position_json['chromium_base_position'])
                     value = {'position_url': position_url, 'position': chromium_base_position}
                     self.chromium_positions.setdefault(os_type, {})[version] = value
-                except (KeyError, TypeError):
+                except KeyError:
                     pass
+                except TypeError:
+                    recursive += 1
+                    if recursive >= 180:
+                        warning_message = 'Warning: chromium_base_position stills null,' \
+                                          ' after tried 30 minutes {0}'.format(position_url)
+                        print(Fore.YELLOW + warning_message)
+                    else:
+                        time.sleep(10)
+                        self.__parallel_requests_to_get_positions(os_type, version, position_url, recursive=recursive)
             time.sleep(5)
         except (requests.RequestException,
                 requests.exceptions.SSLError,
@@ -306,7 +315,8 @@ class Chromium(object):
                     break
                 if i == self.position_offset:
                     position_range = '[{0}, {1}]'.format(new_position_left, new_position_right)
-                    error_message = 'Error: Failed to find working position in: {0}'.format(position_range)
+                    error_message = 'Error: For {0}, failed to find working position in: {1}'.format(os_type,
+                                                                                                     position_range)
                     value['download_position'] = position
                     value['download_prefix'] = error_message
                     value['download_url'] = error_message
