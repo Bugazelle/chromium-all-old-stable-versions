@@ -1,5 +1,17 @@
 [
     {
+        "timestamp": "2020-05-20 23:08:02.575619",
+        "version": "81.0.4044.138",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-05-19 19:39:04.995521",
+        "version": "83.0.4103.60",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
         "timestamp": "2020-04-21 18:38:02.565462",
         "version": "81.0.4044.117",
         "os": "android",

@@ -1,5 +1,23 @@
 [
     {
+        "timestamp": "2020-05-19 17:54:01.395596",
+        "version": "83.0.4103.61",
+        "os": "mac",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-05-05 18:53:00.540925",
+        "version": "81.0.4044.138",
+        "os": "mac",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-04-27 22:25:01.160441",
+        "version": "81.0.4044.129",
+        "os": "mac",
+        "channel": "stable"
+    },
+    {
         "timestamp": "2020-04-21 19:53:00.456103",
         "version": "81.0.4044.122",
         "os": "mac",
