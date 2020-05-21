@@ -221,9 +221,10 @@ class Chromium(object):
                     v8_position = position_json['v8_position']
                     if v8_position == 'unknown':
                         pass
-                    chromium_base_position = int(position_json['chromium_base_position'])
-                    value = {'position_url': position_url, 'position': chromium_base_position}
-                    self.chromium_positions.setdefault(os_type, {})[version] = value
+                    else:
+                        chromium_base_position = int(position_json['chromium_base_position'])
+                        value = {'position_url': position_url, 'position': chromium_base_position}
+                        self.chromium_positions.setdefault(os_type, {})[version] = value
                 except KeyError:
                     pass
                 except (TypeError, ValueError):
