@@ -1,5 +1,23 @@
 [
     {
+        "timestamp": "2020-05-19 18:09:03.167623",
+        "version": "83.0.4103.61",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-05-05 18:53:03.527141",
+        "version": "81.0.4044.138",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-04-27 22:25:04.454090",
+        "version": "81.0.4044.129",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
         "timestamp": "2020-04-21 19:53:03.550285",
         "version": "81.0.4044.122",
         "os": "linux",

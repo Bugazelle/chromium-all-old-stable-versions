@@ -1,5 +1,23 @@
 [
     {
+        "timestamp": "2020-05-19 17:54:02.821948",
+        "version": "83.0.4103.61",
+        "os": "win",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-05-05 18:53:01.825258",
+        "version": "81.0.4044.138",
+        "os": "win",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-04-27 22:25:02.748941",
+        "version": "81.0.4044.129",
+        "os": "win",
+        "channel": "stable"
+    },
+    {
         "timestamp": "2020-04-21 19:38:02.092042",
         "version": "81.0.4044.122",
         "os": "win",
