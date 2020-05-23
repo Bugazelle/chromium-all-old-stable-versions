@@ -225,9 +225,7 @@ class Chromium(object):
                         chromium_base_position = int(position_json['chromium_base_position'])
                         value = {'position_url': position_url, 'position': chromium_base_position}
                         self.chromium_positions.setdefault(os_type, {})[version] = value
-                except KeyError:
-                    pass
-                except (TypeError, ValueError):
+                except (KeyError, TypeError, ValueError):
                     recursive += 1
                     if recursive >= 60:
                         warning_message = 'Warning: chromium_base_position stills null, ' \
