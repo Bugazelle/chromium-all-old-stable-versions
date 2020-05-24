@@ -121,6 +121,8 @@ class Chromium(object):
             while next_page_token is not None:
                 url = self.chromium_prefix_url_with_token_template.format(prefix, next_page_token)
                 next_page_token = self.__get_existed_positions_core(url, os_type)
+            for key in self.chromium_existed_positions.keys():
+                print('get_existed_positions: ', key, self.chromium_existed_positions[key])
 
     @staticmethod
     def check_future_result(futures):
@@ -166,7 +168,7 @@ class Chromium(object):
                 content = res.content
                 if status_code != 200:
                     error_message = 'Fatal: Unexpected status code ' \
-                                      'when requesting history url: {0}, {1}'.format(status_code, url)
+                                    'when requesting history url: {0}, {1}'.format(status_code, url)
                     print(Fore.RED + error_message)
                     sys.exit(1)
                 releases = json.loads(content)
@@ -184,6 +186,8 @@ class Chromium(object):
                         self.chromium_versions.setdefault(os_type, {})[version] = list()
                     except KeyError:
                         pass
+                for key in self.chromium_versions.keys():
+                    print('get_chromium_versions: ', key, self.chromium_versions[key])
             except (requests.RequestException,
                     requests.exceptions.SSLError,
                     requests.packages.urllib3.exceptions.SSLError) as e:
@@ -203,6 +207,8 @@ class Chromium(object):
                 url = deps_json_format.format(self.omahaproxy_host, version)
                 value = {'position_url': url}
                 self.chromium_position_urls.setdefault(os_type, {})[version] = value
+        for key in self.chromium_position_urls.keys():
+            print('prepare_chromium_position_urls: ', key, self.chromium_position_urls[key])
 
     def __parallel_requests_to_get_positions(self, os_type, version, position_url, recursive=0):
         """Private Function: __parallel_requests_to_get_positions"""
@@ -269,6 +275,9 @@ class Chromium(object):
                 futures.append(future)
         pool.shutdown(wait=True)
         self.check_future_result(futures)
+
+        for key in self.chromium_positions.keys():
+            print('get_chromium_positions: ', key, self.chromium_positions[key])
 
     def __get_download_url(self, os_type, version, position, value):
         """Private Function: Ken"""
