@@ -1,6 +1,7 @@
 from requests.packages.urllib3.util.retry import Retry
 from concurrent.futures import ThreadPoolExecutor
 from requests.adapters import HTTPAdapter
+from collections import OrderedDict
 from colorama import Fore, init
 from copy import deepcopy
 import traceback
@@ -219,7 +220,7 @@ class Chromium(object):
             content = res.content
             if status_code != 200:
                 error_message = 'Error: Unexpected status code ' \
-                                  'when requesting position url: {0}, {1}'.format(status_code, position_url)
+                                'when requesting position url: {0}, {1}'.format(status_code, position_url)
                 print(Fore.YELLOW + error_message)
             else:
                 try:
@@ -229,9 +230,9 @@ class Chromium(object):
                     self.chromium_positions.setdefault(os_type, {})[version] = value
                 except (KeyError, TypeError, ValueError):
                     recursive += 1
-                    if recursive >= 60:
+                    if recursive >= 30:
                         warning_message = 'Warning: chromium_base_position stills null, ' \
-                                          'after tried 10 minutes {0}'.format(position_url)
+                                          'after tried 5 minutes {0}'.format(position_url)
                         print(Fore.YELLOW + warning_message)
                     else:
                         time.sleep(10)
@@ -358,6 +359,44 @@ class Chromium(object):
         pool.shutdown(wait=True)
         self.check_future_result(futures)
 
+    def __make_up_missing_points(self, current_json):
+        """Private function: __make_up_missing_points
+        What is the issue:
+        Because of the Google API is not stable, sometimes, we could not get the chromium position
+
+        For example:
+        The API could be 502 error: https://omahaproxy.appspot.com/deps.json?version=37.0.2062.120
+        Or event worse, the "chromium_base_position" in response data from above API could be "unknown"
+
+        How to avoid:
+        Compare the current json result with existing master branch json result as bellow
+        Find the points that are not in current json, but in master json
+        And then make the missing points into current json
+        https://raw.githubusercontent.com/Bugazelle/chromium-all-old-stable-versions/master/chromium.stable.json
+        """
+
+        master_json_url = 'https://raw.githubusercontent.com/Bugazelle/chromium-all-old-stable-versions' \
+                          '/master/chromium.stable.json'
+        res = self.session.get(master_json_url, timeout=self.time_out)
+        master_json = res.json()
+
+        master_versions = {k: v.keys() for k, v in master_json.items()}
+        current_versions = {k: v.keys() for k, v in current_json.items()}
+
+        for k in master_versions.keys():
+            master_version_list = master_versions[k]
+            current_version_list = current_versions[k]
+
+            in_master_not_in_current = list(set(master_version_list).difference(set(current_version_list)))
+            diff_count = len(in_master_not_in_current)
+            warning_message = 'Warning: Current json report does not contain data (already fixed): ' \
+                              '{0}, {1}, {2}'.format(k, diff_count, in_master_not_in_current)
+            print(Fore.YELLOW + warning_message)
+            for version in in_master_not_in_current:
+                current_json[k][version] = master_json[k][version]
+
+        return current_json
+
     def report(self):
         """Function: Report"""
 
@@ -376,15 +415,25 @@ class Chromium(object):
                     except KeyError:
                         chromium_downloads[os_type] = dict()
                         chromium_downloads[os_type].update(existed_chromium_downloads[os_type])
+
+        # Make up the missing points
+        chromium_downloads = self.__make_up_missing_points(current_json=chromium_downloads)
+
+        # Generate the json file
+        sorted_chromium_downloads = dict()
+        for k in chromium_downloads.keys():
+            points = chromium_downloads[k]
+            sorted_points = OrderedDict(sorted(points.items(), reverse=True))
+            sorted_chromium_downloads[k] = dict(sorted_points)
         with open(json_report, 'w+') as f:
-            json.dump(chromium_downloads, f, indent=4)
+            json.dump(sorted_chromium_downloads, f, indent=4)
 
         # CSV report
         csv_report = 'chromium.stable.csv'
         csv_rows = list()
         headers = ['os', 'version', 'position_url', 'position', 'download_position', 'download_prefix', 'download_url']
         csv_rows.append(headers)
-        for os_type, values in chromium_downloads.items():
+        for os_type, values in sorted_chromium_downloads.items():
             for version, value in values.items():
                 position_url = value['position_url']
                 position = value['position']
