@@ -122,8 +122,6 @@ class Chromium(object):
             while next_page_token is not None:
                 url = self.chromium_prefix_url_with_token_template.format(prefix, next_page_token)
                 next_page_token = self.__get_existed_positions_core(url, os_type)
-            for key in self.chromium_existed_positions.keys():
-                print('get_existed_positions: ', key, self.chromium_existed_positions[key])
 
     @staticmethod
     def check_future_result(futures):
@@ -208,8 +206,6 @@ class Chromium(object):
                 url = deps_json_format.format(self.omahaproxy_host, version)
                 value = {'position_url': url}
                 self.chromium_position_urls.setdefault(os_type, {})[version] = value
-        for key in self.chromium_position_urls.keys():
-            print('prepare_chromium_position_urls: ', key, self.chromium_position_urls[key])
 
     def __parallel_requests_to_get_positions(self, os_type, version, position_url, recursive=0):
         """Private Function: __parallel_requests_to_get_positions"""
@@ -230,12 +226,11 @@ class Chromium(object):
                     self.chromium_positions.setdefault(os_type, {})[version] = value
                 except (KeyError, TypeError, ValueError):
                     recursive += 1
-                    if recursive >= 6:
+                    if recursive > 3:
                         warning_message = 'Warning: chromium_base_position stills null, ' \
-                                          'after tried 2 minutes {0}'.format(position_url)
+                                          'after tried 3 times {0}'.format(position_url)
                         print(Fore.YELLOW + warning_message)
                     else:
-                        time.sleep(10)
                         self.__parallel_requests_to_get_positions(os_type, version, position_url, recursive=recursive)
             time.sleep(5)
         except (requests.RequestException,
