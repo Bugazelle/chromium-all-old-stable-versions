@@ -1,6 +1,7 @@
 from requests.packages.urllib3.util.retry import Retry
 from concurrent.futures import ThreadPoolExecutor
 from requests.adapters import HTTPAdapter
+from collections import OrderedDict
 from colorama import Fore, init
 from copy import deepcopy
 import traceback
@@ -166,7 +167,7 @@ class Chromium(object):
                 content = res.content
                 if status_code != 200:
                     error_message = 'Fatal: Unexpected status code ' \
-                                      'when requesting history url: {0}, {1}'.format(status_code, url)
+                                    'when requesting history url: {0}, {1}'.format(status_code, url)
                     print(Fore.RED + error_message)
                     sys.exit(1)
                 releases = json.loads(content)
@@ -176,18 +177,16 @@ class Chromium(object):
                 if not new_releases:
                     print('Info: No new release found for os type {0}'.format(os_type))
                     continue
-                if releases != new_releases:
-                    all_releases = releases + new_releases
-                else:
-                    all_releases = releases
                 with open(history_json_file, 'w+') as f:
-                    json.dump(all_releases, f, indent=4)
+                    json.dump(releases, f, indent=4)
                 for release in new_releases:
                     try:
                         version = release['version']
                         self.chromium_versions.setdefault(os_type, {})[version] = list()
                     except KeyError:
                         pass
+                for key in self.chromium_versions.keys():
+                    print('get_chromium_versions: ', key, self.chromium_versions[key])
             except (requests.RequestException,
                     requests.exceptions.SSLError,
                     requests.packages.urllib3.exceptions.SSLError) as e:
@@ -208,7 +207,7 @@ class Chromium(object):
                 value = {'position_url': url}
                 self.chromium_position_urls.setdefault(os_type, {})[version] = value
 
-    def __parallel_requests_to_get_positions(self, os_type, version, position_url):
+    def __parallel_requests_to_get_positions(self, os_type, version, position_url, recursive=0):
         """Private Function: __parallel_requests_to_get_positions"""
 
         try:
@@ -217,16 +216,22 @@ class Chromium(object):
             content = res.content
             if status_code != 200:
                 error_message = 'Error: Unexpected status code ' \
-                                  'when requesting position url: {0}, {1}'.format(status_code, position_url)
+                                'when requesting position url: {0}, {1}'.format(status_code, position_url)
                 print(Fore.YELLOW + error_message)
             else:
-                position_json = json.loads(content)
                 try:
+                    position_json = json.loads(content)
                     chromium_base_position = int(position_json['chromium_base_position'])
                     value = {'position_url': position_url, 'position': chromium_base_position}
                     self.chromium_positions.setdefault(os_type, {})[version] = value
-                except (KeyError, TypeError):
-                    pass
+                except (KeyError, TypeError, ValueError):
+                    recursive += 1
+                    if recursive > 3:
+                        warning_message = 'Warning: chromium_base_position stills null, ' \
+                                          'after tried 3 times {0}'.format(position_url)
+                        print(Fore.YELLOW + warning_message)
+                    else:
+                        self.__parallel_requests_to_get_positions(os_type, version, position_url, recursive=recursive)
             time.sleep(5)
         except (requests.RequestException,
                 requests.exceptions.SSLError,
@@ -263,6 +268,9 @@ class Chromium(object):
         pool.shutdown(wait=True)
         self.check_future_result(futures)
 
+        for key in self.chromium_positions.keys():
+            print('get_chromium_positions: ', key, self.chromium_positions[key])
+
     def __get_download_url(self, os_type, version, position, value):
         """Private Function: Ken"""
 
@@ -296,20 +304,26 @@ class Chromium(object):
         """Private Function: __parallel_requests_to_download_chromium"""
 
         existed_positions_by_os_type = self.chromium_existed_positions[os_type].keys()
-        position = str(position)
-        if position in existed_positions_by_os_type:
-            self.__get_download_url(os_type, version, position, value)
+        if str(position) in existed_positions_by_os_type:
+            self.__get_download_url(os_type, version, str(position), value)
         else:
-            for i in range(1, self.position_offset + 1):
-                new_position_right = str(int(position) + i)
-                new_position_left = str(int(position) - i)
-                if int(new_position_left) <= 0:
-                    break
+            for i in range(1, self.position_offset+1):
+                new_position_right = str(position + i)
+                new_position_left = str(position - i)
                 if new_position_right in existed_positions_by_os_type:
                     self.__get_download_url(os_type, version, new_position_right, value)
                     break
                 if new_position_left in existed_positions_by_os_type:
                     self.__get_download_url(os_type, version, new_position_left, value)
+                    break
+                if i == self.position_offset:
+                    position_range = '[{0}, {1}]'.format(new_position_left, new_position_right)
+                    error_message = 'Error: For {0}, failed to find working position in: {1}'.format(os_type,
+                                                                                                     position_range)
+                    value['download_position'] = position
+                    value['download_prefix'] = error_message
+                    value['download_url'] = error_message
+                    self.chromium_downloads.setdefault(os_type, {})[version] = value
                     break
 
     def get_chromium_download_url(self, workers=100):
@@ -340,6 +354,44 @@ class Chromium(object):
         pool.shutdown(wait=True)
         self.check_future_result(futures)
 
+    def __make_up_missing_points(self, current_json):
+        """Private function: __make_up_missing_points
+        What is the issue:
+        Because of the Google API is not stable, sometimes, we could not get the chromium position
+
+        For example:
+        The API could be 502 error: https://omahaproxy.appspot.com/deps.json?version=37.0.2062.120
+        Or event worse, the "chromium_base_position" in response data from above API could be "unknown"
+
+        How to avoid:
+        Compare the current json result with existing master branch json result as bellow
+        Find the points that are not in current json, but in master json
+        And then make the missing points into current json
+        https://raw.githubusercontent.com/Bugazelle/chromium-all-old-stable-versions/master/chromium.stable.json
+        """
+
+        master_json_url = 'https://raw.githubusercontent.com/Bugazelle/chromium-all-old-stable-versions' \
+                          '/master/chromium.stable.json'
+        res = self.session.get(master_json_url, timeout=self.time_out)
+        master_json = res.json()
+
+        master_versions = {k: v.keys() for k, v in master_json.items()}
+        current_versions = {k: v.keys() for k, v in current_json.items()}
+
+        for k in master_versions.keys():
+            master_version_list = master_versions[k]
+            current_version_list = current_versions[k]
+
+            in_master_not_in_current = list(set(master_version_list).difference(set(current_version_list)))
+            diff_count = len(in_master_not_in_current)
+            warning_message = 'Warning: Current json report does not contain data (already fixed): ' \
+                              '{0}, {1}, {2}'.format(k, diff_count, in_master_not_in_current)
+            print(Fore.YELLOW + warning_message)
+            for version in in_master_not_in_current:
+                current_json[k][version] = master_json[k][version]
+
+        return current_json
+
     def report(self):
         """Function: Report"""
 
@@ -358,15 +410,25 @@ class Chromium(object):
                     except KeyError:
                         chromium_downloads[os_type] = dict()
                         chromium_downloads[os_type].update(existed_chromium_downloads[os_type])
+
+        # Make up the missing points
+        chromium_downloads = self.__make_up_missing_points(current_json=chromium_downloads)
+
+        # Generate the json file
+        sorted_chromium_downloads = dict()
+        for k in chromium_downloads.keys():
+            points = chromium_downloads[k]
+            sorted_points = OrderedDict(sorted(points.items(), reverse=True))
+            sorted_chromium_downloads[k] = dict(sorted_points)
         with open(json_report, 'w+') as f:
-            json.dump(chromium_downloads, f, indent=4)
+            json.dump(sorted_chromium_downloads, f, indent=4)
 
         # CSV report
         csv_report = 'chromium.stable.csv'
         csv_rows = list()
         headers = ['os', 'version', 'position_url', 'position', 'download_position', 'download_prefix', 'download_url']
         csv_rows.append(headers)
-        for os_type, values in chromium_downloads.items():
+        for os_type, values in sorted_chromium_downloads.items():
             for version, value in values.items():
                 position_url = value['position_url']
                 position = value['position']

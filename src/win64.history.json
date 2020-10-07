@@ -1,5 +1,143 @@
 [
     {
+        "timestamp": "2020-10-06 22:14:01.404575",
+        "version": "86.0.4240.75",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-09-21 18:14:00.971391",
+        "version": "85.0.4183.121",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-09-08 16:49:01.030103",
+        "version": "85.0.4183.102",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-08-25 18:29:01.248118",
+        "version": "85.0.4183.83",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-08-18 18:29:01.747233",
+        "version": "84.0.4147.135",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-08-10 18:18:01.216516",
+        "version": "84.0.4147.125",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-07-27 19:54:01.836032",
+        "version": "84.0.4147.105",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-07-14 17:58:00.860039",
+        "version": "84.0.4147.89",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-06-22 17:29:01.638730",
+        "version": "83.0.4103.116",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-06-15 17:44:01.300067",
+        "version": "83.0.4103.106",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-06-03 17:43:01.631111",
+        "version": "83.0.4103.97",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-05-19 17:54:02.189321",
+        "version": "83.0.4103.61",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-05-05 18:53:01.042404",
+        "version": "81.0.4044.138",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-04-27 22:25:01.968376",
+        "version": "81.0.4044.129",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-04-21 19:38:01.239790",
+        "version": "81.0.4044.122",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-04-15 19:00:01.325813",
+        "version": "81.0.4044.113",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-04-07 18:59:01.248720",
+        "version": "81.0.4044.92",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-04-02 19:50:01.352452",
+        "version": "80.0.3987.163",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-03-31 21:53:01.289469",
+        "version": "80.0.3987.162",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-03-17 21:05:01.624323",
+        "version": "80.0.3987.149",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-03-03 18:14:01.670492",
+        "version": "80.0.3987.132",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-02-24 18:10:00.810427",
+        "version": "80.0.3987.122",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-02-18 18:03:01.289857",
+        "version": "80.0.3987.116",
+        "os": "win64",
+        "channel": "stable"
+    },
+    {
         "timestamp": "2020-02-13 19:23:01.974128",
         "version": "80.0.3987.106",
         "os": "win64",
@@ -710,36 +848,6 @@
     {
         "timestamp": "2016-01-22 18:28:00.912130",
         "version": "48.0.2564.82",
-        "os": "win64",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-02-13 19:23:01.974128",
-        "version": "80.0.3987.106",
-        "os": "win64",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-02-11 18:23:01.465027",
-        "version": "80.0.3987.100",
-        "os": "win64",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-02-04 21:29:01.865031",
-        "version": "80.0.3987.87",
-        "os": "win64",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-01-16 20:10:02.335831",
-        "version": "79.0.3945.130",
-        "os": "win64",
-        "channel": "stable"
-    },
-    {
-        "timestamp": "2020-01-07 19:24:01.646129",
-        "version": "79.0.3945.117",
         "os": "win64",
         "channel": "stable"
     }
