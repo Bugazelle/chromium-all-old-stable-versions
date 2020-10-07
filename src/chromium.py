@@ -230,9 +230,9 @@ class Chromium(object):
                     self.chromium_positions.setdefault(os_type, {})[version] = value
                 except (KeyError, TypeError, ValueError):
                     recursive += 1
-                    if recursive >= 30:
+                    if recursive >= 6:
                         warning_message = 'Warning: chromium_base_position stills null, ' \
-                                          'after tried 5 minutes {0}'.format(position_url)
+                                          'after tried 2 minutes {0}'.format(position_url)
                         print(Fore.YELLOW + warning_message)
                     else:
                         time.sleep(10)
