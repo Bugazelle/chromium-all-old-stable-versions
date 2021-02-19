@@ -1,5 +1,77 @@
 [
     {
+        "timestamp": "2021-02-16 18:58:02.155560",
+        "version": "88.0.4324.182",
+        "os": "win",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-02-04 19:24:02.143952",
+        "version": "88.0.4324.150",
+        "os": "win",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-02-02 19:24:03.101770",
+        "version": "88.0.4324.146",
+        "os": "win",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-01-21 19:22:02.089037",
+        "version": "88.0.4324.104",
+        "os": "win",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-01-19 19:37:03.374838",
+        "version": "88.0.4324.96",
+        "os": "win",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-01-06 20:26:02.111279",
+        "version": "87.0.4280.141",
+        "os": "win",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-12-02 19:41:03.913727",
+        "version": "87.0.4280.88",
+        "os": "win",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-11-17 18:29:02.774348",
+        "version": "87.0.4280.66",
+        "os": "win",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-11-11 20:29:02.850949",
+        "version": "86.0.4240.198",
+        "os": "win",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-11-09 19:02:03.116248",
+        "version": "86.0.4240.193",
+        "os": "win",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-11-02 18:35:02.412447",
+        "version": "86.0.4240.183",
+        "os": "win",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-10-20 19:11:03.055901",
+        "version": "86.0.4240.111",
+        "os": "win",
+        "channel": "stable"
+    },
+    {
         "timestamp": "2020-10-06 22:14:02.293708",
         "version": "86.0.4240.75",
         "os": "win",
