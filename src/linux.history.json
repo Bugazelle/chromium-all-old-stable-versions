@@ -1,5 +1,65 @@
 [
     {
+        "timestamp": "2021-05-25 19:28:08.807515",
+        "version": "91.0.4472.77",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-05-10 18:02:20.348648",
+        "version": "90.0.4430.212",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-04-26 18:58:10.847830",
+        "version": "90.0.4430.93",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-04-20 18:40:11.139585",
+        "version": "90.0.4430.85",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-04-14 21:00:09.708248",
+        "version": "90.0.4430.72",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-04-13 21:46:11.522856",
+        "version": "89.0.4389.128",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-03-30 18:51:10.091215",
+        "version": "89.0.4389.114",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-03-12 20:35:10.685282",
+        "version": "89.0.4389.90",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-03-05 21:29:10.071987",
+        "version": "89.0.4389.82",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-03-02 21:01:08.877126",
+        "version": "89.0.4389.72",
+        "os": "linux",
+        "channel": "stable"
+    },
+    {
         "timestamp": "2021-02-16 19:13:11.460678",
         "version": "88.0.4324.182",
         "os": "linux",

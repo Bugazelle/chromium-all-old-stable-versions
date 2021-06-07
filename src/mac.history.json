@@ -1,5 +1,71 @@
 [
     {
+        "timestamp": "2021-05-25 19:14:01.269250",
+        "version": "91.0.4472.77",
+        "os": "mac",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-05-10 19:12:00.760549",
+        "version": "90.0.4430.212",
+        "os": "mac",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-05-10 18:44:00.945562",
+        "version": "90.0.4430.93",
+        "os": "mac",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-04-22 18:36:00.337773",
+        "version": "90.0.4430.85",
+        "os": "mac",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-04-22 18:22:00.926214",
+        "version": "89.0.4389.128",
+        "os": "mac",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-04-14 21:00:00.485400",
+        "version": "90.0.4430.72",
+        "os": "mac",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-04-14 19:00:00.983956",
+        "version": "89.0.4389.114",
+        "os": "mac",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-03-17 22:14:00.549362",
+        "version": "89.0.4389.90",
+        "os": "mac",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-03-17 21:59:00.371818",
+        "version": "89.0.4389.82",
+        "os": "mac",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-03-11 20:13:00.682351",
+        "version": "88.0.4324.192",
+        "os": "mac",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-03-02 20:31:00.905515",
+        "version": "89.0.4389.72",
+        "os": "mac",
+        "channel": "stable"
+    },
+    {
         "timestamp": "2021-02-18 19:42:01.158151",
         "version": "88.0.4324.182",
         "os": "mac",
