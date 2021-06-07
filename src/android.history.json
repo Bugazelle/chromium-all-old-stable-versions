@@ -1,13 +1,151 @@
 [
     {
-        "timestamp": "2020-10-06 20:44:03.251319",
-        "version": "86.0.4240.75",
+        "timestamp": "2021-06-02 22:46:03.089725",
+        "version": "91.0.4472.88",
         "os": "android",
         "channel": "stable"
     },
     {
-        "timestamp": "2020-09-23 19:33:01.858824",
+        "timestamp": "2021-05-25 19:28:03.409730",
+        "version": "91.0.4472.77",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-05-10 19:54:03.054401",
+        "version": "90.0.4430.210",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-04-26 22:28:03.672608",
+        "version": "90.0.4430.91",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-04-20 16:55:03.661788",
+        "version": "90.0.4430.82",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-04-13 20:01:04.114222",
+        "version": "90.0.4430.66",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-03-23 05:52:04.627560",
+        "version": "89.0.4389.105",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-03-12 20:50:05.008662",
+        "version": "89.0.4389.90",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-03-09 00:21:03.671167",
+        "version": "89.0.4389.86",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-03-03 20:16:14.604516",
+        "version": "89.0.4389.72",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-03-03 09:01:04.529660",
+        "version": "88.0.4324.181",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-02-04 20:09:03.248878",
+        "version": "88.0.4324.152",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-02-01 20:16:03.387129",
+        "version": "88.0.4324.141",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-01-19 20:52:03.557883",
+        "version": "88.0.4324.93",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2021-01-06 21:56:04.113859",
+        "version": "87.0.4280.141",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-12-07 20:53:06.076754",
+        "version": "87.0.4280.101",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-12-01 22:39:04.215377",
+        "version": "87.0.4280.86",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-11-17 23:59:04.297287",
+        "version": "87.0.4280.66",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-11-11 19:59:03.694303",
+        "version": "86.0.4240.198",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-11-02 21:20:03.854986",
+        "version": "86.0.4240.185",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-10-22 18:21:03.397938",
+        "version": "86.0.4240.114",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-10-21 01:41:03.659418",
+        "version": "86.0.4240.110",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-10-15 16:50:03.685145",
+        "version": "86.0.4240.99",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-10-15 16:34:58.084132",
         "version": "85.0.4183.127",
+        "os": "android",
+        "channel": "stable"
+    },
+    {
+        "timestamp": "2020-10-06 20:44:03.251319",
+        "version": "86.0.4240.75",
         "os": "android",
         "channel": "stable"
     },
