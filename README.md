@@ -1,7 +1,9 @@
 Chromium All Old Stable Versions
 ====================
 
-List all possible chromium stable versions. Hope could be the help to you. :)
+List all possible chromium stable versions. The provided platforms are: win, win_x64(suggested), linux, linux_x64(suggested), mac, android
+
+Hope could be the help to you. :)
 
 ## Download Links
 
