@@ -419,7 +419,7 @@ class Chromium(object):
         for k in chromium_downloads.keys():
             points = chromium_downloads[k]
             sorted_points = OrderedDict(sorted(points.items(), reverse=True))
-            sorted_chromium_downloads[k] = dict(sorted_points)
+            sorted_chromium_downloads[k] = sorted_points
         with open(json_report, 'w+') as f:
             json.dump(sorted_chromium_downloads, f, indent=4)
 
