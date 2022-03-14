@@ -1,5 +1,29 @@
 [
     {
+        "timestamp": "2022-03-09 22:20:11.738072", 
+        "version": "99.0.4844.58", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-03-09 21:35:06.191968", 
+        "version": "98.0.4758.101", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-03-01 22:21:03.703390", 
+        "version": "99.0.4844.48", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-02-01 18:32:02.986460", 
+        "version": "98.0.4758.87", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
         "timestamp": "2022-01-19 20:07:02.771287", 
         "version": "97.0.4692.98", 
         "os": "android", 
