@@ -1,6 +1,7 @@
 from requests.packages.urllib3.util.retry import Retry
 from concurrent.futures import ThreadPoolExecutor
 from requests.adapters import HTTPAdapter
+from os.path import dirname, abspath
 from collections import OrderedDict
 from colorama import Fore, init
 from copy import deepcopy
@@ -384,6 +385,8 @@ class Chromium(object):
 
             in_master_not_in_current = list(set(master_version_list).difference(set(current_version_list)))
             diff_count = len(in_master_not_in_current)
+            print('*' * 100)
+            print('Info: The current json is {0}, {1}: '.format(k, current_version_list))
             warning_message = 'Warning: Current json report does not contain data (already fixed): ' \
                               '{0}, {1}, {2}'.format(k, diff_count, in_master_not_in_current)
             print(Fore.YELLOW + warning_message)
@@ -398,7 +401,8 @@ class Chromium(object):
         print('Info: Generating json/csv report...')
 
         # Json report
-        json_report = 'chromium.stable.json'
+        parent_dir = dirname(dirname(abspath(__file__)))
+        json_report = os.path.join(parent_dir, 'chromium.stable.json')
         json_report_exists = os.path.exists(json_report)
         chromium_downloads = deepcopy(self.chromium_downloads)
         if json_report_exists is True and self.force_crawl is False:
@@ -424,7 +428,7 @@ class Chromium(object):
             json.dump(sorted_chromium_downloads, f, indent=4)
 
         # CSV report
-        csv_report = 'chromium.stable.csv'
+        csv_report = os.path.join(parent_dir, 'chromium.stable.csv')
         csv_rows = list()
         headers = ['os', 'version', 'position_url', 'position', 'download_position', 'download_prefix', 'download_url']
         csv_rows.append(headers)

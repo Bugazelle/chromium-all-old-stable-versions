@@ -1,5 +1,23 @@
 [
     {
+        "timestamp": "2022-03-02 21:19:06.650575", 
+        "version": "99.0.4844.51", 
+        "os": "linux", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-03-02 14:05:03.108853", 
+        "version": "98.0.4758.102", 
+        "os": "linux", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-02-01 22:47:12.848824", 
+        "version": "98.0.4758.80", 
+        "os": "linux", 
+        "channel": "stable"
+    }, 
+    {
         "timestamp": "2022-01-19 22:37:06.007809", 
         "version": "97.0.4692.99", 
         "os": "linux", 

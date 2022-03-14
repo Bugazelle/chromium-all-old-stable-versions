@@ -18,8 +18,8 @@ git checkout $GIT_BRANCH
 git fetch origin
 git pull
 cp -a $HOME/*.json $HOME/$repo_name/src
-mv $HOME/$repo_name/src/chromium.stable.json $HOME/$repo_name/
-cp -a $HOME/chromium.stable.csv $HOME/$repo_name/
+#mv $HOME/$repo_name/src/chromium.stable.json $HOME/$repo_name/
+#cp -a $HOME/chromium.stable.csv $HOME/$repo_name/
 cp -a $HOME/Downloads/. $HOME/$repo_name/ || true
 # git lfs track "*.zip"
 # git add .gitattributes

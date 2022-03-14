@@ -1,5 +1,29 @@
 [
     {
+        "timestamp": "2022-03-01 20:06:01.838925", 
+        "version": "99.0.4844.51", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-02-14 20:50:02.058610", 
+        "version": "98.0.4758.102", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-02-08 22:21:01.269211", 
+        "version": "98.0.4758.82", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-02-01 22:47:02.123666", 
+        "version": "98.0.4758.80", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
         "timestamp": "2022-01-19 22:22:01.683886", 
         "version": "97.0.4692.99", 
         "os": "win64", 
