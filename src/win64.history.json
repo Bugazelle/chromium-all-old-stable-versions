@@ -1,5 +1,179 @@
 [
     {
+        "timestamp": "2022-11-08 22:39:02.437552", 
+        "version": "107.0.5304.107", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-10-27 20:27:01.785872", 
+        "version": "107.0.5304.88", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-10-25 18:14:02.474931", 
+        "version": "107.0.5304.63", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-10-11 23:19:02.309449", 
+        "version": "106.0.5249.119", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-10-06 00:23:02.185585", 
+        "version": "106.0.5249.103", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-09-30 16:28:02.672177", 
+        "version": "106.0.5249.91", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-09-27 17:45:02.569917", 
+        "version": "106.0.5249.62", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-09-13 17:06:02.261548", 
+        "version": "105.0.5195.127", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-09-02 17:10:02.294086", 
+        "version": "105.0.5195.102", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-08-30 18:11:02.403743", 
+        "version": "105.0.5195.54", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-08-16 20:28:02.257186", 
+        "version": "104.0.5112.102", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-08-02 17:44:01.910537", 
+        "version": "104.0.5112.81", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-07-19 20:03:03.099018", 
+        "version": "103.0.5060.134", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-07-04 16:41:01.650008", 
+        "version": "103.0.5060.114", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-06-27 19:31:01.223722", 
+        "version": "103.0.5060.66", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-06-21 19:34:02.445289", 
+        "version": "103.0.5060.53", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-06-09 18:57:02.369379", 
+        "version": "102.0.5005.115", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-05-24 19:07:01.951270", 
+        "version": "102.0.5005.63", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-05-12 18:31:02.546689", 
+        "version": "101.0.4951.67", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-05-10 18:48:02.049917", 
+        "version": "101.0.4951.64", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-05-06 13:38:01.483875", 
+        "version": "101.0.4951.54", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-05-06 09:53:01.432713", 
+        "version": "100.0.4896.127", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-04-26 20:01:02.667263", 
+        "version": "101.0.4951.41", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-04-11 19:10:02.320609", 
+        "version": "100.0.4896.88", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-04-04 19:49:02.020127", 
+        "version": "100.0.4896.75", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-03-29 18:24:02.476059", 
+        "version": "100.0.4896.60", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-03-25 18:27:01.863715", 
+        "version": "99.0.4844.84", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-03-20 15:48:02.349686", 
+        "version": "99.0.4844.82", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-03-15 19:08:02.564943", 
+        "version": "99.0.4844.74", 
+        "os": "win64", 
+        "channel": "stable"
+    }, 
+    {
         "timestamp": "2022-03-01 20:06:01.838925", 
         "version": "99.0.4844.51", 
         "os": "win64", 
