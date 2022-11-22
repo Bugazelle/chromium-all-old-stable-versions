@@ -1,12 +1,144 @@
 [
     {
-        "timestamp": "2022-03-09 22:20:11.738072", 
+        "timestamp": "2022-11-08 19:39:04.025104", 
+        "version": "107.0.5304.105", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-11-02 18:14:04.397074", 
+        "version": "107.0.5304.91", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-10-17 18:38:04.155871", 
+        "version": "106.0.5249.126", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-10-13 21:42:03.686689", 
+        "version": "106.0.5249.118", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-09-14 22:21:04.237039", 
+        "version": "105.0.5195.136", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-09-13 09:39:02.811905", 
+        "version": "105.0.5195.124", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-09-08 18:18:05.081609", 
+        "version": "105.0.5195.79", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-09-06 18:19:03.268726", 
+        "version": "104.0.5112.97", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-09-02 18:10:02.883719", 
+        "version": "105.0.5195.77", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-07-19 10:06:01.991640", 
+        "version": "103.0.5060.129", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-07-06 17:57:03.996718", 
+        "version": "103.0.5060.71", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-07-04 16:41:03.884224", 
+        "version": "103.0.5060.70", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-06-30 18:44:02.699841", 
+        "version": "102.0.5005.125", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-06-14 20:22:03.123456", 
+        "version": "102.0.5005.78", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-05-11 20:32:03.157014", 
+        "version": "101.0.4951.61", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-05-05 13:53:03.132557", 
+        "version": "101.0.4951.41", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-04-14 20:39:03.437556", 
+        "version": "100.0.4896.127", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-04-13 18:09:03.691563", 
+        "version": "100.0.4896.88", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-04-04 18:49:02.241990", 
+        "version": "100.0.4896.79", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-03-29 17:39:03.499556", 
+        "version": "100.0.4896.58", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-03-29 16:54:03.389893", 
+        "version": "99.0.4844.88", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-03-17 19:33:03.445994", 
+        "version": "99.0.4844.73", 
+        "os": "android", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-03-15 20:08:02.561810", 
         "version": "99.0.4844.58", 
         "os": "android", 
         "channel": "stable"
     }, 
     {
-        "timestamp": "2022-03-09 21:35:06.191968", 
+        "timestamp": "2022-03-14 19:55:03.101731", 
         "version": "98.0.4758.101", 
         "os": "android", 
         "channel": "stable"
