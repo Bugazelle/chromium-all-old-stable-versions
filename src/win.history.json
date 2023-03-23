@@ -1,5 +1,89 @@
 [
     {
+        "timestamp": "2023-03-21 19:47:03.099622", 
+        "version": "111.0.5563.111", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-03-07 19:33:02.537548", 
+        "version": "111.0.5563.65", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-02-22 19:21:01.939965", 
+        "version": "110.0.5481.178", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-02-16 19:23:05.986254", 
+        "version": "110.0.5481.104", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-02-14 17:41:02.082239", 
+        "version": "110.0.5481.100", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-02-13 20:41:02.657162", 
+        "version": "110.0.5481.97", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-02-07 19:33:02.889324", 
+        "version": "110.0.5481.78", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-01-24 19:45:03.712627", 
+        "version": "109.0.5414.120", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-01-10 19:03:03.753401", 
+        "version": "109.0.5414.75", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-12-13 22:59:02.778590", 
+        "version": "108.0.5359.125", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-12-07 17:23:03.283908", 
+        "version": "108.0.5359.99", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-12-02 19:56:02.780735", 
+        "version": "108.0.5359.95", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-11-29 22:09:03.208442", 
+        "version": "108.0.5359.72", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2022-11-24 17:58:03.094489", 
+        "version": "107.0.5304.122", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
         "timestamp": "2022-11-08 22:39:03.260403", 
         "version": "107.0.5304.107", 
         "os": "win", 
