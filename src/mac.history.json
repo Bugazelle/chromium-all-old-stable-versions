@@ -1,5 +1,89 @@
 [
     {
+        "timestamp": "2023-07-25 23:10:00.531219", 
+        "version": "115.0.5790.114", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-07-21 03:40:01.171657", 
+        "version": "115.0.5790.102", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-07-18 18:58:01.073122", 
+        "version": "115.0.5790.98", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-06-26 20:20:00.548037", 
+        "version": "114.0.5735.198", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-06-13 16:48:00.541044", 
+        "version": "114.0.5735.133", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-06-07 18:28:00.653710", 
+        "version": "114.0.5735.106", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-05-30 20:18:00.499652", 
+        "version": "114.0.5735.90", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-05-16 18:11:01.158204", 
+        "version": "113.0.5672.126", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-05-08 20:43:00.446152", 
+        "version": "113.0.5672.92", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-05-02 19:49:00.694168", 
+        "version": "113.0.5672.63", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-04-18 22:37:00.860153", 
+        "version": "112.0.5615.137", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-04-14 17:06:00.765870", 
+        "version": "112.0.5615.121", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-04-04 20:57:00.498284", 
+        "version": "112.0.5615.49", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-03-27 17:39:00.550865", 
+        "version": "111.0.5563.146", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
         "timestamp": "2023-03-21 19:47:01.121652", 
         "version": "111.0.5563.110", 
         "os": "mac", 

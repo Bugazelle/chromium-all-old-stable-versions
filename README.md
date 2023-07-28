@@ -11,11 +11,19 @@ Hope could be the help to you. :)
 2. [chromium.stable.csv](https://raw.githubusercontent.com/Bugazelle/chromium-all-old-stable-versions/master/chromium.stable.csv)
 
 > Something you need to know: 
-> 1. The [omahaproxy](https://omahaproxy.appspot.com/) only provides the chromium_**base**_position for main version. 
+1. The [omahaproxy](https://omahaproxy.appspot.com/) only provides the chromium_**base**_position for main version. 
 >    For example 77.x.xxxx.xx, the [77.0.3865.75 - 681094](https://omahaproxy.appspot.com/deps.json?version=77.0.3865.90), [77.0.3865.90 - 681094](https://omahaproxy.appspot.com/deps.json?version=77.0.3865.90), they have the same position 681094.
 >    So, the chromium download urls for 77.x.xxxx.xx are the same.
 >    Based on the [official document](https://www.chromium.org/getting-involved/download-chromium), seems no better solution to fix this.
-> 2. Some of certain positions don't have the chromium build. To get chromium, get the nearest position from: [position-100, position+100]
+2. Some of certain positions don't have the chromium build. To get chromium, get the nearest position from: [position-100, position+100]
+3. If the json/csv files are not updated on time, run the following script to get the latest chromium
+
+```shell
+# Env: Python2.7
+# Requirements: pip install requests futures colorama
+cd src
+python chromium.py 
+```
 
 ## Command to install at Ubuntu
 
