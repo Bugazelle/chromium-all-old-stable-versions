@@ -1,5 +1,95 @@
 [
     {
+        "timestamp": "2023-07-25 23:10:01.957075", 
+        "version": "115.0.5790.110", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-07-21 03:40:03.029938", 
+        "version": "115.0.5790.102", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-07-18 18:58:02.735976", 
+        "version": "115.0.5790.99", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-06-26 20:20:02.266396", 
+        "version": "114.0.5735.199", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-06-13 16:48:02.927214", 
+        "version": "114.0.5735.134", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-06-05 20:16:03.106377", 
+        "version": "114.0.5735.110", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-05-30 20:18:01.987567", 
+        "version": "114.0.5735.91", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-05-16 18:11:03.234902", 
+        "version": "113.0.5672.127", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-05-08 20:43:02.119774", 
+        "version": "113.0.5672.93", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-05-02 19:49:02.566887", 
+        "version": "113.0.5672.64", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-04-18 22:37:02.931563", 
+        "version": "112.0.5615.138", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-04-14 17:06:03.080361", 
+        "version": "112.0.5615.121", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-04-12 19:22:02.783376", 
+        "version": "112.0.5615.87", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-04-04 20:57:02.071129", 
+        "version": "112.0.5615.50", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-03-27 17:39:02.523269", 
+        "version": "111.0.5563.147", 
+        "os": "win", 
+        "channel": "stable"
+    }, 
+    {
         "timestamp": "2023-03-21 19:47:03.099622", 
         "version": "111.0.5563.111", 
         "os": "win", 
