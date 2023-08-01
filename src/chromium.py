@@ -116,6 +116,10 @@ class Chromium(object):
         Note: Cannot use ThreadPoolExecutor to run parallel, because the api does not support
         """
 
+        if len(self.chromium_versions) == 0:
+            print('Info: No new stable release found for os type win/win64/mac/linux64/linux/android')
+            return
+
         for os_type, prefix in self.os_type.items():
             print('Info: Get all the existed positions for {0}...'.format(os_type))
             url = self.chromium_prefix_url_template.format(prefix)
@@ -176,7 +180,7 @@ class Chromium(object):
                 history_json_file_exists = os.path.exists(history_json_file)
                 new_releases = self.__process_difference(history_json_file, history_json_file_exists, releases)
                 if not new_releases:
-                    print('Info: No new release found for os type {0}'.format(os_type))
+                    print('Info: No new stable release found for os type {0}'.format(os_type))
                     continue
                 with open(history_json_file, 'w+') as f:
                     json.dump(releases, f, indent=4)
@@ -273,7 +277,7 @@ class Chromium(object):
             print('get_chromium_positions: ', key, self.chromium_positions[key])
 
     def __get_download_url(self, os_type, version, position, value):
-        """Private Function: Ken"""
+        """Private Function: get download url for chromium/chromium driver"""
 
         filter_strings = ['browser_tests', 'syms', 'shell', 'host', 'exe']
         prefix = self.chromium_existed_positions[os_type][position]
@@ -293,9 +297,15 @@ class Chromium(object):
                 sizes = [int(item['size']) for item in items]
                 index = sizes.index(max(sizes))
                 download_url = items[index]['mediaLink']
+                try:
+                    driver_download_url = [item['mediaLink'] for item in items if 'driver' in item['name']][0]
+                except IndexError:
+                    driver_download_url = 'Error: Cannot find the chrome driver in prefix, ' \
+                                          'please check the download_prefix manually'
                 value['download_position'] = int(position)
                 value['download_prefix'] = url
                 value['download_url'] = download_url
+                value['driver_download_url'] = driver_download_url
                 self.chromium_downloads.setdefault(os_type, {})[version] = value
             except KeyError:
                 error_message = 'Error: Failed to get the download url from prefix: {0}'.format(url)
@@ -324,6 +334,7 @@ class Chromium(object):
                     value['download_position'] = position
                     value['download_prefix'] = error_message
                     value['download_url'] = error_message
+                    value['driver_download_url'] = error_message
                     self.chromium_downloads.setdefault(os_type, {})[version] = value
                     break
 
@@ -361,8 +372,16 @@ class Chromium(object):
         Because of the Google API is not stable, sometimes, we could not get the chromium position
 
         For example:
-        The API could be 502 error: https://omahaproxy.appspot.com/deps.json?version=37.0.2062.120
-        Or event worse, the "chromium_base_position" in response data from above API could be "unknown"
+        1) The API could be 502 error: https://omahaproxy.appspot.com/deps.json?version=37.0.2062.120
+        2) The "chromium_base_position" in response data from above API could be "unknown"
+        3) Failed to find the position between [position-100, position+100] (cannot fix)
+          seems a google bug, some version's position is strange, for example:
+          Strange: the 115.0.5790.110 position is 1583, but 114.0.5735.91 position is 1135570
+          OS: win64
+          Chrome Version: 115.0.5790.110, 114.0.5735.91
+          Position URL: https://omahaproxy.appspot.com/deps.json?version=115.0.5790.110
+                        https://omahaproxy.appspot.com/deps.json?version=114.0.5735.91
+          Position: 1583, 1135570
 
         How to avoid:
         Compare the current json result with existing master branch json result as bellow
@@ -375,7 +394,6 @@ class Chromium(object):
                           '/master/chromium.stable.json'
         res = self.session.get(master_json_url, timeout=self.time_out)
         master_json = res.json()
-
         master_versions = {k: v.keys() for k, v in master_json.items()}
         current_versions = {k: v.keys() for k, v in current_json.items()}
 
@@ -385,11 +403,15 @@ class Chromium(object):
 
             in_master_not_in_current = list(set(master_version_list).difference(set(current_version_list)))
             diff_count = len(in_master_not_in_current)
-            print('*' * 100)
-            print('Info: The current json is {0}, {1}: '.format(k, current_version_list))
-            warning_message = 'Warning: Current json report does not contain data (already fixed): ' \
-                              '{0}, {1}, {2}'.format(k, diff_count, in_master_not_in_current)
-            print(Fore.YELLOW + warning_message)
+            warning_message = 'Warning: chrome version in master_json_url {3} \n' \
+                              'but not in current crawled json (already fixed): \n' \
+                              'OS Type: {0} \n' \
+                              'Diff Count: {1} \n' \
+                              'In master_json_url but not in current crawled json: {2}'\
+                .format(k, diff_count, in_master_not_in_current, master_json_url)
+            if diff_count > 0:
+                print('*' * 100)
+                print(Fore.YELLOW + warning_message)
             for version in in_master_not_in_current:
                 current_json[k][version] = master_json[k][version]
 
@@ -401,6 +423,8 @@ class Chromium(object):
         print('Info: Generating json/csv report...')
 
         # Json report
+        key_list = ['position', 'download_position', 'download_prefix', 'position_url', 'download_url',
+                    'driver_download_url']
         parent_dir = dirname(dirname(abspath(__file__)))
         json_report = os.path.join(parent_dir, 'chromium.stable.json')
         json_report_exists = os.path.exists(json_report)
@@ -423,6 +447,9 @@ class Chromium(object):
         for k in chromium_downloads.keys():
             points = chromium_downloads[k]
             sorted_points = OrderedDict(sorted(points.items(), key=lambda t: int(t[0].split('.')[0]), reverse=True))
+            for version in sorted_points.keys():
+                download_details = sorted_points[version]
+                sorted_points[version] = OrderedDict((k, download_details[k]) for k in key_list)
             sorted_chromium_downloads[k] = sorted_points
         with open(json_report, 'w+') as f:
             json.dump(sorted_chromium_downloads, f, indent=4)
@@ -430,7 +457,8 @@ class Chromium(object):
         # CSV report
         csv_report = os.path.join(parent_dir, 'chromium.stable.csv')
         csv_rows = list()
-        headers = ['os', 'version', 'position_url', 'position', 'download_position', 'download_prefix', 'download_url']
+        headers = ['os', 'version', 'position_url', 'position', 'download_position', 'download_prefix', 'download_url',
+                   'driver_download_url']
         csv_rows.append(headers)
         for os_type, values in sorted_chromium_downloads.items():
             for version, value in values.items():
@@ -439,7 +467,9 @@ class Chromium(object):
                 download_position = value['download_position']
                 download_prefix = value['download_prefix']
                 download_url = value['download_url']
-                csv_row = [os_type, version, position_url, position, download_position, download_prefix, download_url]
+                driver_download_url = value['driver_download_url']
+                csv_row = [os_type, version, position_url, position, download_position, download_prefix, download_url,
+                           driver_download_url]
                 csv_rows.append(csv_row)
         with open(csv_report, 'w+') as f:
             csv_writer = csv.writer(f)
