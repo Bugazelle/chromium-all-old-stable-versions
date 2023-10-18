@@ -1,5 +1,83 @@
 [
     {
+        "timestamp": "2023-10-17 22:01:05.139497", 
+        "version": "118.0.5993.88", 
+        "os": "linux", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-10-10 21:33:06.491089", 
+        "version": "118.0.5993.70", 
+        "os": "linux", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-10-04 19:01:06.081960", 
+        "version": "117.0.5938.149", 
+        "os": "linux", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-09-27 20:39:04.325457", 
+        "version": "117.0.5938.132", 
+        "os": "linux", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-09-21 18:35:07.513921", 
+        "version": "117.0.5938.92", 
+        "os": "linux", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-09-16 00:13:04.994696", 
+        "version": "117.0.5938.88", 
+        "os": "linux", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-09-14 20:41:04.763732", 
+        "version": "116.0.5845.187", 
+        "os": "linux", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-09-12 20:51:06.770214", 
+        "version": "117.0.5938.62", 
+        "os": "linux", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-09-05 17:35:06.112480", 
+        "version": "116.0.5845.179", 
+        "os": "linux", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-08-29 17:49:05.875226", 
+        "version": "116.0.5845.140", 
+        "os": "linux", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-08-22 22:15:04.585021", 
+        "version": "116.0.5845.110", 
+        "os": "linux", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-08-15 16:39:05.558500", 
+        "version": "116.0.5845.96", 
+        "os": "linux", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-08-02 17:50:03.449956", 
+        "version": "115.0.5790.170", 
+        "os": "linux", 
+        "channel": "stable"
+    }, 
+    {
         "timestamp": "2023-07-25 23:24:04.004020", 
         "version": "115.0.5790.110", 
         "os": "linux", 

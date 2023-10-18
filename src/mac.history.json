@@ -1,5 +1,35 @@
 [
     {
+        "timestamp": "2023-09-18 16:51:00.606367", 
+        "version": "116.0.5845.187", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-08-31 14:09:01.154596", 
+        "version": "116.0.5845.110", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-08-29 17:35:00.736645", 
+        "version": "116.0.5845.140", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-08-15 16:25:12.311179", 
+        "version": "116.0.5845.96", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
+        "timestamp": "2023-08-02 17:36:00.956181", 
+        "version": "115.0.5790.170", 
+        "os": "mac", 
+        "channel": "stable"
+    }, 
+    {
         "timestamp": "2023-07-25 23:10:00.531219", 
         "version": "115.0.5790.114", 
         "os": "mac", 
